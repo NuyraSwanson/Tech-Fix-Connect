@@ -258,3 +258,37 @@
 }
 
 }
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+    .design-hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .design-text h1{
+        font-size: 2.6rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .design-text h1{
+        font-size: 2.2rem;
+    }
+
+    .design-section h2{
+        font-size: 2rem;
+    }
+
+    .button-demo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

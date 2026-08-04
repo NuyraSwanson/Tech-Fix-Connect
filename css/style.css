@@ -582,3 +582,202 @@ footer p{
 
 }
 
+/* ===========================================
+   DESIGN PAGE
+=========================================== */
+
+.design-hero{
+    width: 90%;
+    max-width: 1300px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.design-text{
+    flex: 1;
+}
+
+.design-text h1{
+    font-size: 3.2rem;
+    color: #0B2E59;
+    margin-bottom: 20px;
+}
+
+.design-text p{
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.design-image{
+    flex: 1;
+}
+
+.design-image img{
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+}
+
+
+/* ===========================================
+   SECTION
+=========================================== */
+
+.design-section{
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.design-section h2{
+    text-align: center;
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 50px;
+}
+
+
+/* ===========================================
+   CARDS
+=========================================== */
+
+.design-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+.design-card{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.design-card:hover{
+    transform: translateY(-8px);
+}
+
+.design-card h3{
+    color: #0B2E59;
+    margin: 20px 0 10px;
+}
+
+.design-card p{
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* ===========================================
+   COLOUR BOXES
+=========================================== */
+
+.colour-box{
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.primary{
+    background: #0B2E59;
+}
+
+.accent{
+    background: #18B6C9;
+}
+
+.background{
+    background: #F5F7FA;
+    border: 1px solid #ddd;
+}
+
+.text{
+    background: #333333;
+}
+
+
+/* ===========================================
+   TYPOGRAPHY
+=========================================== */
+
+.font-preview{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    color: #0B2E59;
+}
+
+
+/* ===========================================
+   BUTTON EXAMPLES
+=========================================== */
+
+.button-demo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+/* ===========================================
+   ICONS
+=========================================== */
+
+.design-card i{
+    font-size: 3rem;
+    color: #18B6C9;
+    margin-bottom: 20px;
+}
+
+
+/* ===========================================
+   LOGO SECTION
+=========================================== */
+
+.logo-showcase{
+    text-align: center;
+}
+
+.logo-showcase img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+
+/* ===========================================
+   DESIGN PRINCIPLES
+=========================================== */
+
+.principles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+}
+
+.principle{
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.principle h3{
+    color: #0B2E59;
+    margin-bottom: 15px;
+}
+
+.principle p{
+    color: #555;
+    line-height: 1.8;
+}
+
+
