@@ -8,9 +8,15 @@
 
     <title>TechFix Connect | Track Repair</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
@@ -18,216 +24,355 @@
 
 <body>
 
-    <!-- Navigation -->
+
+<!-- ================= NAVIGATION ================= -->
+
+<header>
 
     <nav class="navbar">
 
         <div class="logo">
 
-            <img src="images/track-repairhero.png" alt="TechFix Connect Logo">
+            <img src="images/logo.png" alt="TechFix Connect Logo">
 
             <h2>TechFix Connect</h2>
 
         </div>
 
+
         <ul class="nav-links">
 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="book-repair.html">Book Repair</a></li>
-            <li><a href="track-repair.html" class="active">Track Repair</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="design.html">Design</a></li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="book-repair.html">Book Repair</a>
+            </li>
+
+            <li>
+                <a href="track-repair.html" class="active">
+                    Track Repair
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+            <li>
+                <a href="design.html">Design</a>
+            </li>
 
         </ul>
 
     </nav>
 
-    <!-- Hero -->
+</header>
 
-    <section class="hero">
 
-        <div class="hero-text">
+<!-- ================= HERO ================= -->
 
-            <div class="hero-badge">
-                Repair Tracking
-            </div>
+<section class="hero">
 
-            <h1>Track Your Device Repair</h1>
+    <div class="hero-text">
+
+        <div class="hero-badge">
+            Repair Tracking
+        </div>
+
+        <h1>
+            Track Your Device Repair
+        </h1>
+
+        <p>
+            Enter your Repair ID to view the current status of your repair,
+            estimated completion date, and technician updates.
+        </p>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+            src="images/stats-time.jpg"
+            alt="Tracking a device repair"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRACKING SEARCH ================= -->
+
+<section class="track-search">
+
+    <h2>Track Your Repair</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <h3>Enter Your Repair ID</h3>
 
             <p>
-                Enter your Repair ID to view the current status of your repair,
-                estimated completion date, and technician updates.
+                Use the Repair ID provided when you booked your repair
+                to view its current status.
+            </p>
+
+
+            <form action="#" method="post">
+
+                <input
+                    type="text"
+                    id="repairId"
+                    name="repairId"
+                    placeholder="Enter Repair ID"
+                    required
+                >
+
+                <br><br>
+
+                <button type="submit" class="btn-primary">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REPAIR STATUS ================= -->
+
+<section class="repair-status">
+
+    <h2>Repair Status</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            <h3>Repair Details</h3>
+
+            <p>
+                <strong>Repair ID:</strong>
+                TFC00125
+            </p>
+
+            <p>
+                <strong>Device:</strong>
+                Dell Inspiron 15 Laptop
+            </p>
+
+            <p>
+                <strong>Status:</strong>
+                Repairing
+            </p>
+
+            <p>
+                <strong>Estimated Completion:</strong>
+                08 August 2026
+            </p>
+
+            <hr>
+
+            <br>
+
+            <p>
+                <strong>Technician Notes:</strong>
+                <br>
+                Replacement keyboard has been installed.
+                Final testing is currently in progress.
             </p>
 
         </div>
 
-        <div class="hero-image">
+    </div>
 
-            <img src="images/stats-time.jpg" alt="Track Repair">
+</section>
 
-        </div>
 
-    </section>
+<!-- ================= STATUS GUIDE ================= -->
 
-    <!-- Search -->
+<section class="status-guide">
 
-    <section>
+    <h2>Repair Status Guide</h2>
 
-        <h2>Track Your Repair</h2>
+    <div class="cards">
 
-        <div class="cards">
 
-            <div class="card">
+        <!-- Received -->
 
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="card">
 
-                <form action="#" method="post">
+            <i class="fa-solid fa-box-open"></i>
 
-                    <input
-                        type="text"
-                        placeholder="Enter Repair ID"
-                        required>
+            <h3>Received</h3>
 
-                    <br><br>
-
-                    <button type="submit" class="btn-primary">
-                        Search
-                    </button>
-
-                </form>
-
-            </div>
+            <p>
+                Your device has been received and logged
+                into our system.
+            </p>
 
         </div>
 
-    </section>
 
-    <!-- Repair Status -->
+        <!-- Diagnosing -->
 
-    <section>
+        <div class="card">
 
-        <h2>Repair Status</h2>
+            <i class="fa-solid fa-stethoscope"></i>
 
-        <div class="cards">
+            <h3>Diagnosing</h3>
 
-            <div class="card">
-
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-
-                <h3>Repair Details</h3>
-
-                <p><strong>Repair ID:</strong> TFC00125</p>
-                <p><strong>Device:</strong> Dell Inspiron 15 Laptop</p>
-                <p><strong>Status:</strong> Repairing</p>
-                <p><strong>Estimated Completion:</strong> 08 August 2026</p>
-
-                <hr><br>
-
-                <p>
-                    <strong>Technician Notes:</strong><br>
-                    Replacement keyboard has been installed.
-                    Final testing is currently in progress.
-                </p>
-
-            </div>
+            <p>
+                Our technician is identifying the fault
+                and required repairs.
+            </p>
 
         </div>
 
-    </section>
 
-    <!-- Status Guide -->
+        <!-- Repairing -->
 
-    <section>
+        <div class="card">
 
-        <h2>Repair Status Guide</h2>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
 
-        <div class="cards">
+            <h3>Repairing</h3>
 
-            <div class="card">
-
-                <i class="fa-solid fa-box-open"></i>
-
-                <h3>Received</h3>
-
-                <p>Your device has been received and logged into our system.</p>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-stethoscope"></i>
-
-                <h3>Diagnosing</h3>
-
-                <p>Our technician is identifying the fault and required repairs.</p>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-
-                <h3>Repairing</h3>
-
-                <p>Your device is currently being repaired.</p>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-circle-check"></i>
-
-                <h3>Ready for Collection</h3>
-
-                <p>Your repair has been completed and your device is ready.</p>
-
-            </div>
+            <p>
+                Your device is currently being repaired
+                by our technician.
+            </p>
 
         </div>
 
-    </section>
 
-    <!-- Footer -->
+        <!-- Completed -->
 
-    <footer>
+        <div class="card">
 
-        <div class="footer-content">
+            <i class="fa-solid fa-circle-check"></i>
 
-            <div>
+            <h3>Ready for Collection</h3>
 
-                <h3>TechFix Connect</h3>
-
-                <p>
-                    Fast, affordable and reliable device repair services
-                    designed specifically for university students.
-                </p>
-
-            </div>
-
-            <div>
-
-                <h3>Quick Links</h3>
-
-                <ul>
-
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="book-repair.html">Book Repair</a></li>
-                    <li><a href="track-repair.html">Track Repair</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-
-            </div>
+            <p>
+                Your repair has been completed and your
+                device is ready for collection.
+            </p>
 
         </div>
 
-        <hr>
+    </div>
 
-        <p>&copy; 2026 TechFix Connect. All Rights Reserved.</p>
+</section>
 
-    </footer>
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <h2>
+            Need Help With Your Repair?
+        </h2>
+
+        <p>
+            If you have questions about your repair or need
+            assistance, our team is here to help.
+        </p>
+
+        <a href="contact.html" class="btn-primary">
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+
+        <!-- About -->
+
+        <div>
+
+            <h3>TechFix Connect</h3>
+
+            <p>
+                Fast, affordable and reliable device repair services
+                designed specifically for university students.
+            </p>
+
+        </div>
+
+
+        <!-- Quick Links -->
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="book-repair.html">Book Repair</a>
+                </li>
+
+                <li>
+                    <a href="track-repair.html">Track Repair</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <hr>
+
+
+    <p class="copyright">
+        &copy; 2026 TechFix Connect. All Rights Reserved.
+    </p>
+
+</footer>
+
 
 </body>
 

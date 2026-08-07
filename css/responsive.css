@@ -224,3 +224,418 @@
     }
 
 }
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 992px) {
+
+    .status-guide .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .track-search,
+    .repair-status,
+    .status-guide {
+        width: 85%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .track-search h2,
+    .repair-status h2,
+    .status-guide h2 {
+        font-size: 2rem;
+    }
+
+    .track-search .card,
+    .repair-status .card {
+        padding: 30px 25px;
+    }
+
+    .status-guide .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .track-search,
+    .repair-status,
+    .status-guide {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .track-search h2,
+    .repair-status h2,
+    .status-guide h2 {
+        font-size: 1.7rem;
+    }
+
+    .track-search .card,
+    .repair-status .card {
+        padding: 25px 20px;
+    }
+
+    .track-search input {
+        font-size: 0.9rem;
+        padding: 13px 15px;
+    }
+
+    .status-guide .card {
+        padding: 25px 20px;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 992px) {
+
+    .about-section,
+    .contact-info,
+    .location-section,
+    .contact-form-section,
+    .faq-section {
+        width: 85%;
+    }
+
+    .contact-info .cards,
+    .faq-section .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 768px) {
+
+    .about-section h2,
+    .contact-info h2,
+    .business-hours h2,
+    .location-section h2,
+    .contact-form-section h2,
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info .cards,
+    .faq-section .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-section .card {
+        padding: 30px 25px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .about-section,
+    .contact-info,
+    .business-hours,
+    .location-section,
+    .contact-form-section,
+    .faq-section {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .about-section h2,
+    .contact-info h2,
+    .business-hours h2,
+    .location-section h2,
+    .contact-form-section h2,
+    .faq-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .about-section .card,
+    .contact-info .card,
+    .faq-section .card {
+        padding: 25px 20px;
+    }
+
+    .contact-form-section .card {
+        padding: 25px 20px;
+    }
+
+    .contact-form-section input,
+    .contact-form-section textarea {
+        font-size: 0.9rem;
+        padding: 12px 14px;
+    }
+
+    .map-container iframe {
+        height: 280px;
+    }
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .services-section,
+    .services-benefits,
+    .service-process {
+        width: 85%;
+    }
+
+    .services-section .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-benefits .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-process .steps {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    .service-process .step::after {
+        display: none;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE / TABLET
+========================================== */
+
+@media (max-width: 768px) {
+
+    .services-section h2,
+    .services-benefits h2,
+    .service-process h2 {
+        font-size: 2rem;
+    }
+
+    .services-section .cards,
+    .services-benefits .cards,
+    .service-process .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 30px 25px;
+    }
+
+    .services-benefits .card {
+        padding: 30px 25px;
+    }
+
+    .service-process .step {
+        padding: 30px 20px;
+    }
+
+    .service-process .step::after {
+        display: none;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .services-section,
+    .services-benefits,
+    .service-process {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .services-section h2,
+    .services-benefits h2,
+    .service-process h2 {
+        font-size: 1.7rem;
+    }
+
+    .section-intro {
+        font-size: 0.9rem;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    .service-card > i {
+        font-size: 2.5rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .service-card p,
+    .service-card ul li {
+        font-size: 0.9rem;
+    }
+
+    .services-benefits .card {
+        padding: 25px 20px;
+    }
+
+    .service-process .step {
+        padding: 25px 20px;
+    }
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .booking-section {
+        width: 85%;
+    }
+
+    .booking-container {
+        padding: 35px;
+    }
+
+    .booking-process {
+        width: 85%;
+    }
+
+    .booking-process .steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .booking-process .step::after {
+        display: none;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .booking-hero {
+        min-height: auto;
+    }
+
+    .booking-section {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .booking-section > h2 {
+        font-size: 2rem;
+    }
+
+    .booking-container {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .form-section {
+        margin-bottom: 35px;
+    }
+
+    .form-section h3 {
+        font-size: 1.15rem;
+    }
+
+    .booking-process {
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    .booking-process h2 {
+        font-size: 2rem;
+    }
+
+    .booking-process .steps {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .booking-process .step::after {
+        display: none;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .booking-container {
+        padding: 20px 15px;
+    }
+
+    .booking-section > h2,
+    .booking-process h2 {
+        font-size: 1.7rem;
+    }
+
+    .booking-section .section-intro {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .form-checkbox {
+        font-size: 0.82rem;
+    }
+
+    .booking-submit {
+        font-size: 0.9rem;
+        padding: 13px;
+    }
+
+}

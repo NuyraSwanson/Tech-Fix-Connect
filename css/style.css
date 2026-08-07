@@ -781,3 +781,1128 @@ footer p{
 }
 
 
+/* ==========================================
+   TRACK REPAIR PAGE
+========================================== */
+
+
+/* ==========================================
+   TRACKING SEARCH
+========================================== */
+
+.track-search {
+    width: 90%;
+    max-width: 1000px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.track-search h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 40px;
+}
+
+.track-search .cards {
+    display: flex;
+    justify-content: center;
+}
+
+.track-search .card {
+    width: 100%;
+    max-width: 650px;
+    padding: 40px;
+}
+
+.track-search .card > i {
+    font-size: 3rem;
+    color: #18B6C9;
+    margin-bottom: 20px;
+}
+
+.track-search .card h3 {
+    color: #0B2E59;
+    margin-bottom: 12px;
+}
+
+.track-search .card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   REPAIR ID INPUT
+========================================== */
+
+.track-search form {
+    width: 100%;
+}
+
+.track-search input {
+    width: 100%;
+    padding: 15px 18px;
+    border: 2px solid #e0e5eb;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.track-search input:focus {
+    border-color: #18B6C9;
+    box-shadow: 0 0 0 3px rgba(24, 182, 201, 0.12);
+}
+
+.track-search input::placeholder {
+    color: #999;
+}
+
+
+/* ==========================================
+   SEARCH BUTTON
+========================================== */
+
+.track-search button {
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.track-search button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   REPAIR STATUS
+========================================== */
+
+.repair-status {
+    width: 90%;
+    max-width: 1000px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.repair-status h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 40px;
+}
+
+.repair-status .cards {
+    display: flex;
+    justify-content: center;
+}
+
+.repair-status .card {
+    width: 100%;
+    max-width: 750px;
+    padding: 40px;
+    text-align: left;
+}
+
+.repair-status .card > i {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: #18B6C9;
+    margin-bottom: 20px;
+}
+
+.repair-status .card h3 {
+    text-align: center;
+    color: #0B2E59;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.repair-status .card p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.repair-status .card strong {
+    color: #0B2E59;
+}
+
+.repair-status hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 25px 0 0;
+}
+
+
+/* ==========================================
+   STATUS GUIDE
+========================================== */
+
+.status-guide {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.status-guide h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 45px;
+}
+
+.status-guide .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.status-guide .card {
+    padding: 30px 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.status-guide .card:hover {
+    transform: translateY(-8px);
+}
+
+.status-guide .card i {
+    font-size: 2.7rem;
+    color: #18B6C9;
+    margin-bottom: 20px;
+}
+
+.status-guide .card h3 {
+    color: #0B2E59;
+    margin-bottom: 15px;
+}
+
+.status-guide .card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+
+/* ==========================================
+   STATUS INDICATOR
+========================================== */
+
+.repair-status .card p:nth-of-type(3) strong::after {
+    content: " ●";
+    color: #18B6C9;
+}
+
+
+/* ==========================================
+   TRACK PAGE CTA
+========================================== */
+
+.track-search + .repair-status {
+    margin-top: 100px;
+}
+
+
+/* ==========================================
+   CONTACT PAGE
+========================================== */
+
+
+/* ==========================================
+   ABOUT SECTION
+========================================== */
+
+.about-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 45px;
+}
+
+.about-section .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.about-section .card {
+    padding: 40px;
+    text-align: center;
+}
+
+.about-section .card i {
+    font-size: 3rem;
+    color: #18B6C9;
+    margin-bottom: 20px;
+}
+
+.about-section .card h3 {
+    color: #0B2E59;
+    margin-bottom: 15px;
+}
+
+.about-section .card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   CONTACT INFORMATION
+========================================== */
+
+.contact-info {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 45px;
+}
+
+.contact-info .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-info .card {
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.contact-info .card i {
+    font-size: 2.8rem;
+    color: #18B6C9;
+    margin-bottom: 20px;
+}
+
+.contact-info .card h3 {
+    color: #0B2E59;
+    margin-bottom: 15px;
+}
+
+.contact-info .card p {
+    color: #666;
+    line-height: 1.6;
+    margin: 4px 0;
+}
+
+
+/* ==========================================
+   BUSINESS HOURS
+========================================== */
+
+.business-hours {
+    width: 90%;
+    max-width: 700px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.business-hours h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 40px;
+}
+
+.business-hours .cards {
+    display: flex;
+    justify-content: center;
+}
+
+.business-hours .card {
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+}
+
+.business-hours .card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.business-hours .card strong {
+    color: #0B2E59;
+    font-size: 1.05rem;
+}
+
+.business-hours hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 20px 0;
+}
+
+
+/* ==========================================
+   LOCATION
+========================================== */
+
+.location-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.location-section h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+
+/* ==========================================
+   CONTACT FORM
+========================================== */
+
+.contact-form-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 40px;
+}
+
+.contact-form-section .cards {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form-section .card {
+    width: 100%;
+    padding: 45px;
+    text-align: left;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-section label {
+    color: #0B2E59;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 2px solid #e1e6eb;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form-section input:focus,
+.contact-form-section textarea:focus {
+    border-color: #18B6C9;
+    box-shadow: 0 0 0 3px rgba(24, 182, 201, 0.12);
+}
+
+.contact-form-section textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form-section input::placeholder,
+.contact-form-section textarea::placeholder {
+    color: #999;
+}
+
+.contact-form-section button {
+    align-self: flex-start;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact-form-section button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 45px;
+}
+
+.faq-section .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.faq-section .card {
+    padding: 35px 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.faq-section .card:hover {
+    transform: translateY(-7px);
+}
+
+.faq-section .card i {
+    font-size: 2.5rem;
+    color: #18B6C9;
+    margin-bottom: 20px;
+}
+
+.faq-section .card h3 {
+    color: #0B2E59;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.faq-section .card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   CONTACT PAGE CTA
+========================================== */
+
+.contact-form-section + .faq-section {
+    margin-top: 100px;
+}
+
+.faq-section + .cta {
+    margin-top: 100px;
+}
+
+/* ==========================================
+   SERVICES PAGE
+========================================== */
+
+
+/* ==========================================
+   SERVICES HERO
+========================================== */
+
+.services-hero {
+    min-height: 520px;
+}
+
+
+/* ==========================================
+   SERVICES SECTION
+========================================== */
+
+.services-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 90px auto;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   SERVICE CARDS
+========================================== */
+
+.services-section .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    padding: 35px 30px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card > i {
+    font-size: 3rem;
+    color: #18B6C9;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #0B2E59;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   SERVICE LIST
+========================================== */
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: left;
+}
+
+.service-card ul li {
+    position: relative;
+    padding: 8px 0 8px 25px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.service-card ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: #18B6C9;
+}
+
+
+/* ==========================================
+   SERVICES BENEFITS
+========================================== */
+
+.services-benefits {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.services-benefits h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 45px;
+}
+
+.services-benefits .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.services-benefits .card {
+    padding: 35px 25px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.services-benefits .card:hover {
+    transform: translateY(-7px);
+}
+
+.services-benefits .card i {
+    font-size: 2.7rem;
+    color: #18B6C9;
+    margin-bottom: 20px;
+}
+
+.services-benefits .card h3 {
+    color: #0B2E59;
+    margin-bottom: 15px;
+    font-size: 1.15rem;
+}
+
+.services-benefits .card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   SERVICE PROCESS
+========================================== */
+
+.service-process {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.service-process h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 50px;
+}
+
+.service-process .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.service-process .step {
+    position: relative;
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.service-process .step span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    margin: 0 auto 20px;
+
+    background: #18B6C9;
+    color: white;
+
+    border-radius: 50%;
+
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.service-process .step i {
+    display: block;
+    font-size: 2.5rem;
+    color: #0B2E59;
+    margin-bottom: 20px;
+}
+
+.service-process .step h3 {
+    color: #0B2E59;
+    margin-bottom: 12px;
+}
+
+.service-process .step p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+
+/* ==========================================
+   PROCESS CONNECTOR
+========================================== */
+
+.service-process .step:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    top: 57px;
+    right: -15px;
+
+    width: 30px;
+    height: 2px;
+
+    background: #18B6C9;
+}
+
+
+/* ==========================================
+   SERVICES CTA
+========================================== */
+
+.services-section + .services-benefits {
+    margin-top: 110px;
+}
+
+.service-process + .cta {
+    margin-top: 100px;
+}
+
+
+/* ==========================================
+   BOOK REPAIR PAGE
+========================================== */
+
+
+/* ==========================================
+   BOOKING HERO
+========================================== */
+
+.booking-hero {
+    min-height: 520px;
+}
+
+
+/* ==========================================
+   BOOKING SECTION
+========================================== */
+
+.booking-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 90px auto;
+}
+
+.booking-section > h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 15px;
+}
+
+.booking-section .section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   BOOKING CONTAINER
+========================================== */
+
+.booking-container {
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(11, 46, 89, 0.08);
+}
+
+
+/* ==========================================
+   FORM SECTIONS
+========================================== */
+
+.form-section {
+    margin-bottom: 45px;
+}
+
+.form-section:last-of-type {
+    margin-bottom: 30px;
+}
+
+.form-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #0B2E59;
+    font-size: 1.3rem;
+
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+
+    border-bottom: 2px solid #e8f4f7;
+}
+
+.form-section h3 i {
+    color: #18B6C9;
+}
+
+
+/* ==========================================
+   FORM ROW
+========================================== */
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #0B2E59;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 1px solid #d7e1e8;
+    border-radius: 10px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+
+    color: #333;
+    background: #ffffff;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* ==========================================
+   INPUT FOCUS
+========================================== */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #18B6C9;
+
+    box-shadow: 0 0 0 3px rgba(24, 182, 201, 0.12);
+}
+
+
+/* ==========================================
+   PLACEHOLDER
+========================================== */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa5ad;
+}
+
+
+/* ==========================================
+   CHECKBOX
+========================================== */
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin: 20px 0 30px;
+
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.form-checkbox input {
+    width: 18px;
+    height: 18px;
+
+    margin-top: 3px;
+
+    accent-color: #18B6C9;
+
+    cursor: pointer;
+}
+
+.form-checkbox label {
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
+
+.booking-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+
+    border: none;
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.booking-submit:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   BOOKING PROCESS
+========================================== */
+
+.booking-process {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+
+    text-align: center;
+}
+
+.booking-process h2 {
+    font-size: 2.3rem;
+    color: #0B2E59;
+    margin-bottom: 50px;
+}
+
+.booking-process .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.booking-process .step {
+    position: relative;
+
+    padding: 30px 20px;
+
+    text-align: center;
+}
+
+.booking-process .step span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    margin: 0 auto 20px;
+
+    background: #18B6C9;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-weight: 600;
+}
+
+.booking-process .step i {
+    display: block;
+
+    font-size: 2.5rem;
+
+    color: #0B2E59;
+
+    margin-bottom: 18px;
+}
+
+.booking-process .step h3 {
+    color: #0B2E59;
+    margin-bottom: 12px;
+}
+
+.booking-process .step p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+
+
+/* ==========================================
+   PROCESS CONNECTOR
+========================================== */
+
+.booking-process .step:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    top: 52px;
+    right: -15px;
+
+    width: 30px;
+    height: 2px;
+
+    background: #18B6C9;
+}
+
+
+/* ==========================================
+   BOOKING CTA
+========================================== */
+
+.booking-process + .cta {
+    margin-top: 100px;
+}
+
+
