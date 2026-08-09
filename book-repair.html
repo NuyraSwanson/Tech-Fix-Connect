@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFix Connect | Book Repair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="TechFix Connect Logo">
+                <h2>TechFix Connect</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="book-repair.html" class="active">Book Repair</a></li>
+                <li><a href="track-repair.html">Track Repair</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="design.html">Design</a></li>
+            </ul>
+            <a href="track-repair.html" class="btn-secondary">Track Repair</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <div class="hero-badge">Book a Repair</div>
+            <h1>Submit Your Device Repair Request</h1>
+            <p>Provide your details and device information, then let our technicians take care of the rest.</p>
+            <div class="hero-buttons">
+                <a href="track-repair.html" class="btn-secondary">Track Repair</a>
+                <a href="services.html" class="btn-primary">View Services</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/book-hero.png" alt="Book Repair">
+        </div>
+    </section>
+
+    <section>
+        <h2>Repair Request Form</h2>
+        <div class="cards">
+            <div class="card contact-form">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="student-number">Student Number</label>
+                    <input type="text" id="student-number" name="student-number" placeholder="e.g. 202610123" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@student.edu" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +27 21 555 1234" required>
+
+                    <label for="device-type">Device Type</label>
+                    <select id="device-type" name="device-type" required>
+                        <option value="">Select device type</option>
+                        <option>Laptop</option>
+                        <option>Smartphone</option>
+                        <option>Tablet</option>
+                        <option>Desktop</option>
+                        <option>Other</option>
+                    </select>
+
+                    <label for="brand">Device Brand</label>
+                    <input type="text" id="brand" name="brand" placeholder="e.g. Dell, Apple, Samsung" required>
+
+                    <label for="problem">Problem Description</label>
+                    <textarea id="problem" name="problem" placeholder="Describe the issue in detail" required></textarea>
+
+                    <label for="image">Upload Image (optional)</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+
+                    <label for="preferred-date">Preferred Date</label>
+                    <input type="date" id="preferred-date" name="preferred-date" required>
+
+                    <button type="submit">Submit Repair Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why Book With Us?</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Fast Turnaround</h3>
+                <p>We prioritise student repairs and work to return your device quickly.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-shield-check"></i>
+                <h3>Trusted Service</h3>
+                <p>Experienced technicians provide reliable repairs and clear updates.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Clear Pricing</h3>
+                <p>Transparent repair quotes with affordable student-friendly rates.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>TechFix Connect</h3>
+                <p>Fast, affordable and reliable repair services for university students.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="book-repair.html">Book Repair</a></li>
+                    <li><a href="track-repair.html">Track Repair</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: support@techfixconnect.co.za</p>
+                <p>Phone: +27 21 555 1234</p>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; 2026 TechFix Connect. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
