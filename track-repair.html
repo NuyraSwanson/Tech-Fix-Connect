@@ -18,7 +18,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
@@ -43,15 +43,21 @@
         <ul class="nav-links">
 
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.html">
+                    Home
+                </a>
             </li>
 
             <li>
-                <a href="services.html">Services</a>
+                <a href="services.html">
+                    Services
+                </a>
             </li>
 
             <li>
-                <a href="book-repair.html">Book Repair</a>
+                <a href="book-repair.html">
+                    Book Repair
+                </a>
             </li>
 
             <li>
@@ -61,14 +67,23 @@
             </li>
 
             <li>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html">
+                    Contact
+                </a>
             </li>
 
             <li>
-                <a href="design.html">Design</a>
+                <a href="design.html">
+                    Design
+                </a>
             </li>
 
         </ul>
+
+
+        <a href="book-repair.html" class="btn-primary">
+            Book Now
+        </a>
 
     </nav>
 
@@ -77,7 +92,7 @@
 
 <!-- ================= HERO ================= -->
 
-<section class="hero">
+<section class="hero tracking-hero">
 
     <div class="hero-text">
 
@@ -90,8 +105,8 @@
         </h1>
 
         <p>
-            Enter your Repair ID to view the current status of your repair,
-            estimated completion date, and technician updates.
+            Enter your Repair ID to check the latest status
+            of your device repair and receive technician updates.
         </p>
 
     </div>
@@ -100,8 +115,8 @@
     <div class="hero-image">
 
         <img
-            src="images/stats-time.jpg"
-            alt="Tracking a device repair"
+            src="images/track-repairhero.png"
+            alt="Track device repair"
         >
 
     </div>
@@ -109,46 +124,68 @@
 </section>
 
 
-<!-- ================= TRACKING SEARCH ================= -->
+<!-- ================= TRACKING FORM ================= -->
 
-<section class="track-search">
+<section class="tracking-section">
 
-    <h2>Track Your Repair</h2>
+    <h2>
+        Track Your Repair
+    </h2>
 
-    <div class="cards">
+    <p class="section-intro">
+        Enter the Repair ID you received when you booked your repair.
+    </p>
 
-        <div class="card">
+
+    <div class="tracking-container">
+
+        <div class="tracking-icon">
 
             <i class="fa-solid fa-magnifying-glass"></i>
 
-            <h3>Enter Your Repair ID</h3>
-
-            <p>
-                Use the Repair ID provided when you booked your repair
-                to view its current status.
-            </p>
+        </div>
 
 
-            <form action="#" method="post">
+        <form
+            class="tracking-form"
+            action="#"
+            method="post"
+        >
+
+            <div class="form-group">
+
+                <label for="repairId">
+                    Repair ID
+                </label>
 
                 <input
                     type="text"
                     id="repairId"
                     name="repairId"
-                    placeholder="Enter Repair ID"
+                    placeholder="e.g. TFC00125"
                     required
                 >
 
-                <br><br>
+            </div>
 
-                <button type="submit" class="btn-primary">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    Search
-                </button>
 
-            </form>
+            <button
+                type="submit"
+                class="btn-primary"
+            >
 
-        </div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                Track Repair
+
+            </button>
+
+        </form>
+
+
+        <p class="tracking-help">
+            Your Repair ID can be found in your repair confirmation.
+        </p>
 
     </div>
 
@@ -157,48 +194,162 @@
 
 <!-- ================= REPAIR STATUS ================= -->
 
-<section class="repair-status">
+<!--
+    This section will remain hidden until JavaScript
+    is added and the user enters a valid Repair ID.
+-->
 
-    <h2>Repair Status</h2>
+<section
+    class="repair-status-section"
+    id="repairStatus"
+    style="display: none;"
+>
 
-    <div class="cards">
+    <h2>
+        Repair Status
+    </h2>
 
-        <div class="card">
 
-            <i class="fa-solid fa-screwdriver-wrench"></i>
+    <div class="repair-status-card">
 
-            <h3>Repair Details</h3>
 
-            <p>
-                <strong>Repair ID:</strong>
-                TFC00125
-            </p>
+        <!-- Device Information -->
 
-            <p>
-                <strong>Device:</strong>
-                Dell Inspiron 15 Laptop
-            </p>
+        <div class="repair-header">
 
-            <p>
-                <strong>Status:</strong>
+            <div class="repair-device-icon">
+
+                <i class="fa-solid fa-laptop"></i>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Dell Inspiron 15 Laptop
+                </h3>
+
+                <p>
+                    Repair ID: <strong>TFC00125</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Current Status -->
+
+        <div class="current-status">
+
+            <span>
+                Current Status
+            </span>
+
+            <h3>
                 Repairing
-            </p>
+            </h3>
 
-            <p>
-                <strong>Estimated Completion:</strong>
-                08 August 2026
-            </p>
+        </div>
 
-            <hr>
 
-            <br>
+        <!-- Progress -->
 
-            <p>
-                <strong>Technician Notes:</strong>
-                <br>
-                Replacement keyboard has been installed.
-                Final testing is currently in progress.
-            </p>
+        <div class="repair-progress">
+
+            <div class="progress-step completed">
+
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                </span>
+
+                <p>
+                    Received
+                </p>
+
+            </div>
+
+
+            <div class="progress-line completed-line"></div>
+
+
+            <div class="progress-step completed">
+
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                </span>
+
+                <p>
+                    Diagnosing
+                </p>
+
+            </div>
+
+
+            <div class="progress-line active-line"></div>
+
+
+            <div class="progress-step active">
+
+                <span>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </span>
+
+                <p>
+                    Repairing
+                </p>
+
+            </div>
+
+
+            <div class="progress-line"></div>
+
+
+            <div class="progress-step">
+
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+
+                <p>
+                    Ready
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Repair Information -->
+
+        <div class="repair-information">
+
+            <div>
+
+                <h4>
+                    Estimated Completion
+                </h4>
+
+                <p>
+                    08 August 2026
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Technician Update
+                </h4>
+
+                <p>
+                    Replacement keyboard has been installed.
+                    Final testing is currently in progress.
+                </p>
+
+            </div>
 
         </div>
 
@@ -207,74 +358,80 @@
 </section>
 
 
-<!-- ================= STATUS GUIDE ================= -->
+<!-- ================= HOW TRACKING WORKS ================= -->
 
-<section class="status-guide">
+<section class="tracking-process">
 
-    <h2>Repair Status Guide</h2>
+    <h2>
+        How Repair Tracking Works
+    </h2>
 
-    <div class="cards">
+    <div class="steps">
 
 
-        <!-- Received -->
+        <div class="step">
 
-        <div class="card">
+            <span>1</span>
 
-            <i class="fa-solid fa-box-open"></i>
+            <i class="fa-solid fa-calendar-check"></i>
 
-            <h3>Received</h3>
+            <h3>
+                Book Your Repair
+            </h3>
 
             <p>
-                Your device has been received and logged
-                into our system.
+                Submit your repair request through our website.
             </p>
 
         </div>
 
 
-        <!-- Diagnosing -->
+        <div class="step">
 
-        <div class="card">
+            <span>2</span>
 
-            <i class="fa-solid fa-stethoscope"></i>
+            <i class="fa-solid fa-hashtag"></i>
 
-            <h3>Diagnosing</h3>
+            <h3>
+                Receive Your Repair ID
+            </h3>
 
             <p>
-                Our technician is identifying the fault
-                and required repairs.
+                You'll receive a unique Repair ID for your device.
             </p>
 
         </div>
 
 
-        <!-- Repairing -->
+        <div class="step">
 
-        <div class="card">
+            <span>3</span>
 
-            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
 
-            <h3>Repairing</h3>
+            <h3>
+                Track Your Repair
+            </h3>
 
             <p>
-                Your device is currently being repaired
-                by our technician.
+                Enter your Repair ID to view your repair status.
             </p>
 
         </div>
 
 
-        <!-- Completed -->
+        <div class="step">
 
-        <div class="card">
+            <span>4</span>
 
             <i class="fa-solid fa-circle-check"></i>
 
-            <h3>Ready for Collection</h3>
+            <h3>
+                Collect Your Device
+            </h3>
 
             <p>
-                Your repair has been completed and your
-                device is ready for collection.
+                Receive an update when your device is ready.
             </p>
 
         </div>
@@ -284,7 +441,7 @@
 </section>
 
 
-<!-- ================= CALL TO ACTION ================= -->
+<!-- ================= HELP CTA ================= -->
 
 <section class="cta">
 
@@ -295,11 +452,14 @@
         </h2>
 
         <p>
-            If you have questions about your repair or need
-            assistance, our team is here to help.
+            If you're having trouble tracking your device,
+            our team is here to help.
         </p>
 
-        <a href="contact.html" class="btn-primary">
+        <a
+            href="contact.html"
+            class="btn-primary"
+        >
             Contact Us
         </a>
 
@@ -315,11 +475,11 @@
     <div class="footer-content">
 
 
-        <!-- About -->
-
         <div>
 
-            <h3>TechFix Connect</h3>
+            <h3>
+                TechFix Connect
+            </h3>
 
             <p>
                 Fast, affordable and reliable device repair services
@@ -329,35 +489,66 @@
         </div>
 
 
-        <!-- Quick Links -->
-
         <div>
 
-            <h3>Quick Links</h3>
+            <h3>
+                Quick Links
+            </h3>
 
             <ul>
 
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">
+                        Home
+                    </a>
                 </li>
 
                 <li>
-                    <a href="services.html">Services</a>
+                    <a href="services.html">
+                        Services
+                    </a>
                 </li>
 
                 <li>
-                    <a href="book-repair.html">Book Repair</a>
+                    <a href="book-repair.html">
+                        Book Repair
+                    </a>
                 </li>
 
                 <li>
-                    <a href="track-repair.html">Track Repair</a>
+                    <a href="track-repair.html">
+                        Track Repair
+                    </a>
                 </li>
 
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">
+                        Contact
+                    </a>
                 </li>
 
             </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                Email: support@techfixconnect.co.za
+            </p>
+
+            <p>
+                Phone: +27 21 555 1234
+            </p>
+
+            <p>
+                Cape Town, South Africa
+            </p>
 
         </div>
 

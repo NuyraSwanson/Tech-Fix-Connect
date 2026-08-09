@@ -639,3 +639,147 @@
     }
 
 }
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .tracking-section,
+    .repair-status-section,
+    .tracking-process {
+        width: 85%;
+    }
+
+    .tracking-process .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tracking-process .step::after {
+        display: none;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .tracking-hero {
+        min-height: auto;
+    }
+
+    .tracking-section,
+    .repair-status-section,
+    .tracking-process {
+        width: 90%;
+
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .tracking-section h2,
+    .repair-status-section h2,
+    .tracking-process h2 {
+        font-size: 2rem;
+    }
+
+    .tracking-container {
+        padding: 30px 25px;
+    }
+
+    .repair-status-card {
+        padding: 25px 20px;
+    }
+
+    .repair-header {
+        align-items: flex-start;
+    }
+
+    .repair-progress {
+        overflow-x: auto;
+
+        padding-bottom: 15px;
+    }
+
+    .repair-information {
+        grid-template-columns: 1fr;
+    }
+
+    .tracking-process .steps {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .tracking-process .step::after {
+        display: none;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .tracking-section h2,
+    .repair-status-section h2,
+    .tracking-process h2 {
+        font-size: 1.7rem;
+    }
+
+    .tracking-container {
+        padding: 25px 18px;
+    }
+
+    .tracking-form input {
+        padding: 13px;
+    }
+
+    .repair-status-card {
+        padding: 20px 15px;
+    }
+
+    .repair-header {
+        gap: 12px;
+    }
+
+    .repair-device-icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 1.4rem;
+    }
+
+    .repair-header h3 {
+        font-size: 1rem;
+    }
+
+    .repair-header p {
+        font-size: 0.8rem;
+    }
+
+    .current-status {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .repair-progress {
+        min-width: 420px;
+    }
+
+    .repair-information > div {
+        padding: 20px;
+    }
+
+}
