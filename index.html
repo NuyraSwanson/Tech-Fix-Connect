@@ -4,29 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFix Connect | Home</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-
-<!-- ================= NAVIGATION ================= -->
-
 <header>
     <nav class="navbar">
-
-        <div class="logo">
+        <a href="index.html" class="logo">
             <img src="images/logo.png" alt="TechFix Connect Logo">
             <h2>TechFix Connect</h2>
-        </div>
-
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="services.html">Services</a></li>
@@ -35,398 +27,87 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="design.html">Design</a></li>
         </ul>
-
         <a href="book-repair.html" class="btn-primary">Book Now</a>
-
     </nav>
 </header>
 
-<!-- ================= HERO ================= -->
-
-<section class="hero">
-
+<section class="hero" data-animate="fade-up">
     <div class="hero-text">
-
-        <div class="hero-badge">
-    Trusted by University Students
-</div>
-
-        <h1>Fast & Affordable Device Repairs for Students</h1>
-
-        <p>
-            We repair laptops, smartphones and tablets quickly so you can
-            get back to studying without unnecessary delays.
-        </p>
-
+        <div class="hero-badge">Trusted by University Students</div>
+        <h1>Fast, stylish repairs that keep your studies moving.</h1>
+        <p>We help students restore laptops, phones and tablets quickly with premium care, transparent pricing and dependable updates.</p>
         <div class="hero-buttons">
-
-            <a href="book-repair.html" class="btn-primary">
-                Book a Repair
-            </a>
-
-            <a href="services.html" class="btn-secondary">
-                Learn More
-            </a>
-
+            <a href="book-repair.html" class="btn-primary">Book a Repair</a>
+            <a href="services.html" class="btn-secondary">Explore Services</a>
         </div>
-
     </div>
-
     <div class="hero-image">
-
         <img src="images/hero.png" alt="Device Repair">
-
     </div>
-
 </section>
 
-<!-- ================= STATS ================= -->
-
-<section class="stats">
-
-    <div class="stat-card">
-
-        <img src="images/stats-technician.jpg" alt="Device Repair">
-
-        <div class="stat-info">
-            <h2>500+</h2>
-            <p>Devices Repaired</p>
-        </div>
-
-    </div>
-
-    <div class="stat-card">
-
-        <img src="images/stats-customers.jpg" alt="Happy Students">
-
-        <div class="stat-info">
-            <h2>98%</h2>
-            <p>Customer Satisfaction</p>
-        </div>
-
-    </div>
-
-    <div class="stat-card">
-
-        <img src="images/stats-time.jpg" alt="Fast Service">
-
-        <div class="stat-info">
-            <h2>24 Hrs</h2>
-            <p>Average Turnaround</p>
-        </div>
-
-    </div>
-
-    <div class="stat-card">
-
-        <img src="images/stats-certified.webp" alt="Technician">
-
-        <div class="stat-info">
-            <h2>5+</h2>
-            <p>Certified Technicians</p>
-        </div>
-
-    </div>
-
+<section class="stats" data-animate="fade-up">
+    <div class="stat-card"><img src="images/stats-technician.jpg" alt="Technician"><div class="stat-info"><h2>500+</h2><p>Devices Repaired</p></div></div>
+    <div class="stat-card"><img src="images/stats-customers.jpg" alt="Happy Students"><div class="stat-info"><h2>98%</h2><p>Customer Satisfaction</p></div></div>
+    <div class="stat-card"><img src="images/stats-time.jpg" alt="Fast Service"><div class="stat-info"><h2>24 Hrs</h2><p>Average Turnaround</p></div></div>
+    <div class="stat-card"><img src="images/stats-certified.webp" alt="Technician"><div class="stat-info"><h2>5+</h2><p>Certified Technicians</p></div></div>
 </section>
 
-<!-- ================= WHY CHOOSE US ================= -->
-
-<section class="why-us">
-
+<section class="why-us" data-animate="fade-up">
     <h2>Why Choose TechFix Connect?</h2>
-
     <div class="cards">
-
-        <div class="card">
-
-            <i class="fa-solid fa-bolt"></i>
-
-            <h3>Fast Repairs</h3>
-
-            <p>
-                We understand students can't wait days for repairs,
-                so we aim for quick turnaround times.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <i class="fa-solid fa-wallet"></i>
-
-            <h3>Affordable Pricing</h3>
-
-            <p>
-                Student-friendly prices without compromising quality.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-
-            <h3>Trusted Technicians</h3>
-
-            <p>
-                Experienced technicians providing reliable hardware
-                and software repairs.
-            </p>
-
-        </div>
-
+        <div class="card"><i class="fa-solid fa-bolt"></i><h3>Fast Repairs</h3><p>Same-day diagnostics and fast turnarounds for student essentials.</p></div>
+        <div class="card"><i class="fa-solid fa-wallet"></i><h3>Affordable Pricing</h3><p>Student-friendly rates with no surprise costs.</p></div>
+        <div class="card"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Trusted Technicians</h3><p>Experienced specialists handling hardware and software issues with care.</p></div>
     </div>
-
 </section>
 
-<!-- ================= HOW IT WORKS ================= -->
-
-<section class="how-it-works">
-
+<section class="how-it-works" data-animate="fade-up">
     <h2>How It Works</h2>
-
     <div class="steps">
-
-        <div class="step">
-
-            <span>1</span>
-
-            <h3>Book Online</h3>
-
-            <p>Submit your repair request through our website.</p>
-
-        </div>
-
-        <div class="step">
-
-            <span>2</span>
-
-            <h3>Drop Off Device</h3>
-
-            <p>Bring your device to our repair centre.</p>
-
-        </div>
-
-        <div class="step">
-
-            <span>3</span>
-
-            <h3>Repair Process</h3>
-
-            <p>Our technicians diagnose and repair your device.</p>
-
-        </div>
-
-        <div class="step">
-
-            <span>4</span>
-
-            <h3>Collect Device</h3>
-
-            <p>Receive a notification when your repair is complete.</p>
-
-        </div>
-
+        <div class="step"><span>1</span><h3>Book Online</h3><p>Submit your repair request in minutes.</p></div>
+        <div class="step"><span>2</span><h3>Drop Off Device</h3><p>Bring your device to our repair centre.</p></div>
+        <div class="step"><span>3</span><h3>Repair Process</h3><p>Our team diagnoses, repairs and tests it carefully.</p></div>
+        <div class="step"><span>4</span><h3>Collect Device</h3><p>Get a notification when your device is ready.</p></div>
     </div>
-
 </section>
 
-<!-- ================= SERVICES ================= -->
-
-<section class="services-preview">
-
+<section class="services-preview" data-animate="fade-up">
     <h2>Our Services</h2>
-
     <div class="cards">
-
-        <div class="card">
-
-            <i class="fa-solid fa-laptop"></i>
-
-            <h3>Laptop Repairs</h3>
-
-            <p>Hardware diagnostics and repairs.</p>
-
-        </div>
-
-        <div class="card">
-
-            <i class="fa-solid fa-mobile-screen-button"></i>
-
-            <h3>Phone Repairs</h3>
-
-            <p>Screen, battery and charging port replacements.</p>
-
-        </div>
-
-        <div class="card">
-
-            <i class="fa-solid fa-shield-virus"></i>
-
-            <h3>Virus Removal</h3>
-
-            <p>Protect your device from malware and threats.</p>
-
-        </div>
-
-        <div class="card">
-
-            <i class="fa-solid fa-download"></i>
-
-            <h3>Software Installation</h3>
-
-            <p>Operating system installations and updates.</p>
-
-        </div>
-
+        <div class="card"><i class="fa-solid fa-laptop"></i><h3>Laptop Repairs</h3><p>Screen, keyboard and hardware support.</p></div>
+        <div class="card"><i class="fa-solid fa-mobile-screen-button"></i><h3>Phone Repairs</h3><p>Battery, screen and charging port repairs.</p></div>
+        <div class="card"><i class="fa-solid fa-shield-virus"></i><h3>Virus Removal</h3><p>Security checks and malware cleanup.</p></div>
+        <div class="card"><i class="fa-solid fa-download"></i><h3>Software Installation</h3><p>Operating system setup and updates.</p></div>
     </div>
-
 </section>
 
-
-<!-- ================= TESTIMONIALS ================= -->
-
-<section class="testimonials">
-
+<section class="testimonials" data-animate="fade-up">
     <h2>What Students Say</h2>
-
     <div class="cards">
-
-        <div class="card">
-
-            <img src="images/student1.png" alt="Sarah M.">
-
-            <div class="stars">
-                ★★★★★
-            </div>
-
-            <p>
-                "TechFix Connect repaired my laptop in less than two days.
-                I didn't miss my assignment deadline, and the service was
-                professional from start to finish."
-            </p>
-
-            <h4>Sarah M.</h4>
-            <span>CPUT Student</span>
-
-        </div>
-
-        <div class="card">
-
-            <img src="images/student2.png" alt="James P.">
-
-            <div class="stars">
-                ★★★★★
-            </div>
-
-            <p>
-                "The online booking system was simple to use and the repair
-                was affordable. I'll definitely recommend TechFix Connect
-                to other students."
-            </p>
-
-            <h4>James P.</h4>
-            <span>CPUT Student</span>
-
-        </div>
-
-        <div class="card">
-
-            <img src="images/student3.png" alt="Amanda L.">
-
-            <div class="stars">
-                ★★★★★
-            </div>
-
-            <p>
-                "Being able to track my repair online gave me peace of mind.
-                My phone was fixed quickly and the staff were really helpful."
-            </p>
-
-            <h4>Amanda L.</h4>
-            <span>CPUT Student</span>
-
-        </div>
-
+        <div class="card"><img src="images/student1.png" alt="Sarah M."><div class="stars">★★★★★</div><p>“TechFix Connect repaired my laptop in under two days and kept me on track with my assignments.”</p><h4>Sarah M.</h4><span>CPUT Student</span></div>
+        <div class="card"><img src="images/student2.png" alt="James P."><div class="stars">★★★★★</div><p>“The booking flow was effortless and the service felt premium from start to finish.”</p><h4>James P.</h4><span>CPUT Student</span></div>
+        <div class="card"><img src="images/student3.png" alt="Amanda L."><div class="stars">★★★★★</div><p>“I loved being able to track the repair online while I waited for an update.”</p><h4>Amanda L.</h4><span>CPUT Student</span></div>
     </div>
-
 </section>
 
-<!-- ================= CALL TO ACTION ================= -->
-
-<section class="cta">
-
+<section class="cta" data-animate="fade-up">
     <div class="cta-content">
-
-        <h2>Ready to Get Your Device Fixed?</h2>
-
-        <p>
-            Fast, affordable repairs for laptops, smartphones and tablets.
-            Book your repair today and get back to studying with confidence.
-        </p>
-
-        <a href="book-repair.html" class="btn-primary">
-            Book Your Repair
-        </a>
-
+        <h2>Ready to get your device fixed?</h2>
+        <p>Fast, affordable repairs for laptops, smartphones and tablets. Book your repair today and get back to studying with confidence.</p>
+        <a href="book-repair.html" class="btn-primary">Book Your Repair</a>
     </div>
-
-
 </section>
-
-<!-- ================= FOOTER ================= -->
 
 <footer>
-
     <div class="footer-content">
-
-        <div>
-
-            <h3>TechFix Connect</h3>
-
-            <p>
-                Fast, affordable and reliable device repairs
-                for university students.
-            </p>
-
-        </div>
-
-        <div>
-
-            <h3>Quick Links</h3>
-
-            <ul>
-
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="book-repair.html">Book Repair</a></li>
-                <li><a href="track-repair.html">Track Repair</a></li>
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </div>
-
-        <div>
-
-            <h3>Contact</h3>
-
-            <p>Email: support@techfixconnect.co.za</p>
-            <p>Phone: +27 21 555 1234</p>
-            <p>Cape Town, South Africa</p>
-
-        </div>
-
+        <div><h3>TechFix Connect</h3><p>Fast, affordable and reliable device repairs for university students.</p></div>
+        <div><h3>Quick Links</h3><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="book-repair.html">Book Repair</a></li><li><a href="track-repair.html">Track Repair</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h3>Contact</h3><p>Email: support@techfixconnect.co.za</p><p>Phone: +27 21 555 1234</p><p>Cape Town, South Africa</p></div>
     </div>
-
     <hr>
-
-    <p class="copyright">
-        © 2026 TechFix Connect. All Rights Reserved.
-    </p>
-
+    <p class="copyright">© 2026 TechFix Connect. All Rights Reserved.</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
