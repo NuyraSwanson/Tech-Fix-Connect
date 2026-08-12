@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>TechFix Connect | Register</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <img
+                src="images/logo.png"
+                alt="TechFix Connect Logo">
+
+            <h2>TechFix Connect</h2>
+
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="book-repair.html">Book Repair</a>
+            </li>
+
+            <li>
+                <a href="track-repair.html">Track Repair</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+        <a
+            href="login.html"
+            class="btn-primary">
+            Login
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="auth-section">
+
+    <div class="auth-container">
+
+        <div class="auth-icon">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+        </div>
+
+        <h1>Create Account</h1>
+
+        <p class="auth-intro">
+            Create your TechFix Connect student account.
+        </p>
+
+
+        <form id="registerForm">
+
+            <div class="form-group">
+
+                <label for="fullName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="studentNumber">
+                    Student Number
+                </label>
+
+                <input
+                    type="text"
+                    id="studentNumber"
+                    name="studentNumber"
+                    placeholder="Enter your student number"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a password"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm your password"
+                    required>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn-primary auth-button">
+
+                <i class="fa-solid fa-user-plus"></i>
+
+                Create Account
+
+            </button>
+
+
+            <div
+                id="registerMessage"
+                class="form-message">
+            </div>
+
+        </form>
+
+
+        <p class="auth-register">
+
+            Already have an account?
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>TechFix Connect</h3>
+
+            <p>
+                Fast, affordable and reliable device
+                repairs for university students.
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 TechFix Connect. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/register.js"></script>
+
+</body>
+
+</html>

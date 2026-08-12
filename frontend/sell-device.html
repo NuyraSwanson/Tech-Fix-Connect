@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TechFix Connect | Sell Your Device</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <img src="images/logo.png"
+                 alt="TechFix Connect Logo">
+
+            <h2>TechFix Connect</h2>
+
+        </a>
+
+        <button class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="book-repair.html">Book Repair</a>
+            </li>
+
+            <li>
+                <a href="track-repair.html">Track Repair</a>
+            </li>
+
+            <li>
+                <a href="sell-device.html" class="active">
+                    Sell Device
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+        <a href="book-repair.html"
+           class="btn-primary">
+
+            Book Now
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <div class="hero-badge">
+            Sell Your Device
+        </div>
+
+        <h1>
+            Turn your old device into value.
+        </h1>
+
+        <p>
+            Tell us about your laptop or phone and
+            our system will provide an estimated value.
+        </p>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="images/sell-device-hero.png"
+             alt="Sell your device">
+
+    </div>
+
+</section>
+
+
+<section class="sell-section">
+
+    <h2>Device Information</h2>
+
+    <p class="section-intro">
+        Enter accurate information about your device.
+    </p>
+
+
+    <form id="sellDeviceForm">
+
+        <div class="form-group">
+
+            <label for="deviceType">
+                Device Type
+            </label>
+
+            <select id="deviceType"
+                    required>
+
+                <option value="">
+                    Select device
+                </option>
+
+                <option value="laptop">
+                    Laptop
+                </option>
+
+                <option value="phone">
+                    Smartphone
+                </option>
+
+                <option value="tablet">
+                    Tablet
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="brand">
+                Brand
+            </label>
+
+            <input type="text"
+                   id="brand"
+                   placeholder="e.g. Dell"
+                   required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="model">
+                Model
+            </label>
+
+            <input type="text"
+                   id="model"
+                   placeholder="e.g. Inspiron 15"
+                   required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="age">
+                Device Age
+            </label>
+
+            <select id="age">
+
+                <option value="0">
+                    Less than 1 year
+                </option>
+
+                <option value="1">
+                    1–2 years
+                </option>
+
+                <option value="2">
+                    2–3 years
+                </option>
+
+                <option value="3">
+                    More than 3 years
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="condition">
+                Overall Condition
+            </label>
+
+            <select id="condition">
+
+                <option value="excellent">
+                    Excellent
+                </option>
+
+                <option value="good">
+                    Good
+                </option>
+
+                <option value="fair">
+                    Fair
+                </option>
+
+                <option value="poor">
+                    Poor
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="battery">
+                Battery Condition
+            </label>
+
+            <select id="battery">
+
+                <option value="excellent">
+                    Excellent
+                </option>
+
+                <option value="good">
+                    Good
+                </option>
+
+                <option value="fair">
+                    Fair
+                </option>
+
+                <option value="poor">
+                    Poor
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Does the device power on?
+            </label>
+
+            <select id="power">
+
+                <option value="yes">
+                    Yes
+                </option>
+
+                <option value="no">
+                    No
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button type="submit"
+                class="btn-primary">
+
+            <i class="fa-solid fa-calculator"></i>
+
+            Calculate Estimated Value
+
+        </button>
+
+    </form>
+
+
+    <div id="valuationResult"
+         class="valuation-result">
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>TechFix Connect</h3>
+
+            <p>
+                Affordable technology solutions
+                for university students.
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 TechFix Connect.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/selling.js"></script>
+
+</body>
+
+</html>

@@ -1659,3 +1659,645 @@ footer p{text-align:center;}
 }
 
 
+/* ==========================================
+   PROFILE
+========================================== */
+
+.profile-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.profile-section > h1 {
+    text-align: center;
+    color: #0B2E59;
+    font-size: 2.5rem;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.profile-card,
+.profile-details {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.profile-card {
+    text-align: center;
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #18B6C9;
+    color: #ffffff;
+
+    font-size: 2.5rem;
+}
+
+.profile-card h2 {
+    color: #0B2E59;
+}
+
+.profile-details h2 {
+    color: #0B2E59;
+    margin-bottom: 25px;
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile-row strong {
+    color: #0B2E59;
+}
+
+.profile-row span {
+    color: #666;
+}
+
+.profile-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.profile-actions .card {
+    text-align: center;
+}
+
+.profile-actions i {
+    font-size: 2rem;
+    color: #18B6C9;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   SELL DEVICE
+========================================== */
+
+.sell-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto;
+}
+
+.sell-section h2 {
+    text-align: center;
+    color: #0B2E59;
+    font-size: 2.3rem;
+}
+
+#sellDeviceForm {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.08);
+
+    margin-top: 40px;
+}
+
+#sellDeviceForm .form-group {
+    margin-bottom: 25px;
+}
+
+#sellDeviceForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #0B2E59;
+    font-weight: 500;
+}
+
+#sellDeviceForm input,
+#sellDeviceForm select {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-family: "Poppins", sans-serif;
+}
+
+#sellDeviceForm input:focus,
+#sellDeviceForm select:focus {
+    outline: none;
+    border-color: #18B6C9;
+}
+
+.valuation-result {
+    display: none;
+
+    margin-top: 40px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.valuation-result h2 {
+    color: #0B2E59;
+}
+
+.valuation-price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #18B6C9;
+    margin: 20px 0;
+}
+
+/* ===========================
+   AUTHENTICATION
+=========================== */
+
+.auth-section {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+}
+
+.auth-container h1 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.auth-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.auth-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #DFF7FB;
+    color: var(--secondary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+
+    outline: none;
+    transition: .3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--secondary);
+
+    box-shadow:
+        0 0 0 3px rgba(24,182,201,.12);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-size: .9rem;
+}
+
+.form-options a {
+    color: var(--secondary);
+}
+
+.remember-me {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.auth-button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-register {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.auth-register a {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.form-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-message.success {
+    background: #e8f8ef;
+    color: #176b3a;
+}
+
+.form-message.error {
+    background: #fdecec;
+    color: #9b2226;
+}
+
+/* ===========================
+   PROFILE
+=========================== */
+
+.profile-section {
+    padding: 80px 20px;
+}
+
+.profile-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.profile-header {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    margin-bottom: 30px;
+
+    box-shadow: var(--shadow);
+}
+
+.profile-header h1 {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.profile-header p {
+    color: #666;
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: #DFF7FB;
+    color: var(--secondary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+}
+
+.profile-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+
+    margin-bottom: 30px;
+
+    box-shadow: var(--shadow);
+}
+
+.profile-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.profile-card-header h2 {
+    margin: 0;
+    text-align: left;
+    font-size: 1.7rem;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.profile-grid div {
+    padding: 20px;
+    background: #F5F7FA;
+    border-radius: 12px;
+}
+
+.profile-grid span {
+    display: block;
+    color: #777;
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+
+.profile-grid strong {
+    color: var(--primary);
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.profile-stat {
+    background: white;
+    padding: 25px;
+
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    box-shadow: var(--shadow);
+}
+
+.profile-stat i {
+    font-size: 35px;
+    color: var(--secondary);
+}
+
+.profile-stat h3 {
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.profile-stat p {
+    color: #666;
+}
+
+.empty-state {
+    text-align: center;
+    color: #777;
+    padding: 30px;
+}
+
+/* =========================================
+   MY REPAIRS
+========================================= */
+
+.repair-card {
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.repair-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.repair-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #18B6C9;
+    color: white;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.repair-card-header h3 {
+    margin: 0 0 5px;
+}
+
+.repair-card-header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.repair-card-body {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.repair-detail {
+    margin-bottom: 18px;
+}
+
+.repair-detail span {
+    display: block;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.repair-detail p {
+    margin: 5px 0 0;
+    line-height: 1.6;
+}
+
+.repair-card-actions {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.status-received,
+.status-diagnosing,
+.status-repairing,
+.status-completed,
+.status-default {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.status-received {
+    background: #e8f4ff;
+    color: #1769aa;
+}
+
+.status-diagnosing {
+    background: #fff4d6;
+    color: #946200;
+}
+
+.status-repairing {
+    background: #e8f8f0;
+    color: #16804b;
+}
+
+.status-completed {
+    background: #e7f8ed;
+    color: #137a3f;
+}
+
+.status-default {
+    background: #eeeeee;
+    color: #555;
+}
+
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile-section {
+    padding: 80px 8%;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.profile-card,
+.profile-details {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.profile-card {
+    text-align: center;
+}
+
+.profile-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0B2E59;
+    color: white;
+    font-size: 35px;
+}
+
+.profile-details h2 {
+    margin-bottom: 20px;
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-row span {
+    color: #666;
+}
+
+.profile-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.profile-actions .card {
+    text-align: center;
+}
+
+
+/* =========================================
+   NO REPAIRS
+========================================= */
+
+#noRepairs {
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+#noRepairs i {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #18B6C9;
+}

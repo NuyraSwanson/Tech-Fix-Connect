@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechFix Connect | My Repairs</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <img src="images/logo.png" alt="TechFix Connect Logo">
+
+            <h2>TechFix Connect</h2>
+
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="book-repair.html">Book Repair</a>
+            </li>
+
+            <li>
+                <a href="track-repair.html">Track Repair</a>
+            </li>
+
+            <li>
+                <a href="sell-device.html">Sell Device</a>
+            </li>
+
+            <li>
+                <a href="profile.html" class="active">Profile</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+        <a href="book-repair.html" class="btn-primary">
+            Book Now
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" data-animate="fade-up">
+
+    <div class="hero-text">
+
+        <div class="hero-badge">
+            My Repairs
+        </div>
+
+        <h1>
+            Keep track of all your device repairs.
+        </h1>
+
+        <p>
+            View your current repairs, previous repairs, repair status,
+            estimated completion dates and technician updates in one place.
+        </p>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img
+            src="images/track-repairhero.png"
+            alt="Track device repairs">
+
+    </div>
+
+</section>
+
+
+<!-- ================= REPAIR SUMMARY ================= -->
+
+<section class="stats" data-animate="fade-up">
+
+    <div class="stat-card">
+
+        <div class="stat-info">
+
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            <h2 id="activeRepairs">
+                0
+            </h2>
+
+            <p>
+                Active Repairs
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-info">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h2 id="completedRepairs">
+                0
+            </h2>
+
+            <p>
+                Completed Repairs
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-info">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h2 id="pendingRepairs">
+                0
+            </h2>
+
+            <p>
+                Pending Repairs
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-info">
+
+            <i class="fa-solid fa-laptop"></i>
+
+            <h2 id="totalRepairs">
+                0
+            </h2>
+
+            <p>
+                Total Repairs
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MY REPAIRS ================= -->
+
+<section class="services-section" data-animate="fade-up">
+
+    <h2>
+        My Repair Requests
+    </h2>
+
+    <p class="section-intro">
+
+        Below are your current and previous repair requests.
+
+    </p>
+
+
+    <!-- Repair cards will be inserted here -->
+
+    <div id="repairsContainer" class="cards">
+
+    </div>
+
+
+    <!-- No repairs message -->
+
+    <div id="noRepairs" class="card">
+
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+
+        <h3>
+            No Repairs Found
+        </h3>
+
+        <p>
+            You have not booked a repair yet.
+        </p>
+
+        <a
+            href="book-repair.html"
+            class="btn-primary">
+
+            Book Your First Repair
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REPAIR INFORMATION ================= -->
+
+<section class="services-benefits" data-animate="fade-up">
+
+    <h2>
+        Understanding Your Repair Status
+    </h2>
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-inbox"></i>
+
+            <h3>
+                Received
+            </h3>
+
+            <p>
+                Your device has been received and is waiting
+                for a technician to inspect it.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <h3>
+                Diagnosing
+            </h3>
+
+            <p>
+                A technician is checking your device to identify
+                the problem.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            <h3>
+                Repairing
+            </h3>
+
+            <p>
+                Your device is currently being repaired.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h3>
+                Ready
+            </h3>
+
+            <p>
+                Your repair has been completed and your device
+                is ready for collection.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACTIONS ================= -->
+
+<section class="cta" data-animate="fade-up">
+
+    <div class="cta-content">
+
+        <h2>
+            Need another repair?
+        </h2>
+
+        <p>
+            Book another repair and let TechFix Connect
+            take care of your device.
+        </p>
+
+        <a
+            href="book-repair.html"
+            class="btn-primary">
+
+            Book a Repair
+
+        </a>
+
+        <a
+            href="track-repair.html"
+            class="btn-secondary">
+
+            Track a Repair
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+
+        <div>
+
+            <h3>
+                TechFix Connect
+            </h3>
+
+            <p>
+                Fast, affordable and reliable device repairs
+                for university students.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="book-repair.html">
+                        Book Repair
+                    </a>
+                </li>
+
+                <li>
+                    <a href="track-repair.html">
+                        Track Repair
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sell-device.html">
+                        Sell Device
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        Profile
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                Email: support@techfixconnect.co.za
+            </p>
+
+            <p>
+                Phone: +27 21 555 1234
+            </p>
+
+            <p>
+                Cape Town, South Africa
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 TechFix Connect.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="js/script.js"></script>
+
+
+<!-- My Repairs JavaScript -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const repairsContainer =
+        document.getElementById("repairsContainer");
+
+    const noRepairs =
+        document.getElementById("noRepairs");
+
+    const activeRepairs =
+        document.getElementById("activeRepairs");
+
+    const completedRepairs =
+        document.getElementById("completedRepairs");
+
+    const pendingRepairs =
+        document.getElementById("pendingRepairs");
+
+    const totalRepairs =
+        document.getElementById("totalRepairs");
+
+
+    /*
+    =====================================================
+    GET REPAIRS FROM LOCAL STORAGE
+    =====================================================
+    */
+
+    let repairs = [];
+
+    try {
+
+        repairs =
+            JSON.parse(
+                localStorage.getItem("techfixRepairs")
+            ) || [];
+
+    } catch (error) {
+
+        repairs = [];
+
+    }
+
+
+    /*
+    =====================================================
+    UPDATE SUMMARY
+    =====================================================
+    */
+
+    const total = repairs.length;
+
+    const completed =
+        repairs.filter(
+            repair =>
+                repair.status &&
+                repair.status.toLowerCase() === "completed"
+        ).length;
+
+    const pending =
+        repairs.filter(
+            repair =>
+                repair.status &&
+                (
+                    repair.status.toLowerCase() === "received" ||
+                    repair.status.toLowerCase() === "pending"
+                )
+        ).length;
+
+    const active =
+        repairs.filter(
+            repair =>
+                repair.status &&
+                (
+                    repair.status.toLowerCase() === "diagnosing" ||
+                    repair.status.toLowerCase() === "repairing"
+                )
+        ).length;
+
+
+    totalRepairs.textContent = total;
+
+    completedRepairs.textContent = completed;
+
+    pendingRepairs.textContent = pending;
+
+    activeRepairs.textContent = active;
+
+
+    /*
+    =====================================================
+    NO REPAIRS
+    =====================================================
+    */
+
+    if (repairs.length === 0) {
+
+        noRepairs.style.display = "block";
+
+        return;
+
+    }
+
+
+    noRepairs.style.display = "none";
+
+
+    /*
+    =====================================================
+    DISPLAY REPAIRS
+    =====================================================
+    */
+
+    repairs.forEach(function (repair) {
+
+        const repairCard =
+            document.createElement("div");
+
+        repairCard.className =
+            "card repair-card";
+
+
+        /*
+        STATUS CLASS
+        */
+
+        let statusClass = "status-default";
+
+        if (repair.status) {
+
+            const status =
+                repair.status.toLowerCase();
+
+            if (status === "received") {
+
+                statusClass = "status-received";
+
+            } else if (status === "diagnosing") {
+
+                statusClass = "status-diagnosing";
+
+            } else if (status === "repairing") {
+
+                statusClass = "status-repairing";
+
+            } else if (status === "completed" ||
+                       status === "ready") {
+
+                statusClass = "status-completed";
+
+            }
+
+        }
+
+
+        repairCard.innerHTML = `
+
+            <div class="repair-card-header">
+
+                <div class="repair-icon">
+
+                    <i class="fa-solid fa-laptop"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        ${repair.brand || "Unknown Brand"}
+                        ${repair.device || "Device"}
+                    </h3>
+
+                    <p>
+                        Repair ID:
+                        <strong>
+                            ${repair.id || "N/A"}
+                        </strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="repair-card-body">
+
+                <div class="repair-detail">
+
+                    <span>
+                        Status
+                    </span>
+
+                    <strong class="${statusClass}">
+
+                        ${repair.status || "Pending"}
+
+                    </strong>
+
+                </div>
+
+
+                <div class="repair-detail">
+
+                    <span>
+                        Estimated Completion
+                    </span>
+
+                    <strong>
+
+                        ${repair.estimated || "To be confirmed"}
+
+                    </strong>
+
+                </div>
+
+
+                <div class="repair-detail">
+
+                    <span>
+                        Technician Update
+                    </span>
+
+                    <p>
+
+                        ${
+                            repair.notes ||
+                            "No technician update available yet."
+                        }
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="repair-card-actions">
+
+                <a
+                    href="my-repairs.html"
+                    class="btn-secondary">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    View My Repairs
+
+                </a>
+
+            </div>
+
+        `;
+
+
+        repairsContainer.appendChild(repairCard);
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
