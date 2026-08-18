@@ -15,56 +15,173 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img src="../images/logo.png" alt="TechFix Connect Logo">
-                <h2>TechFix Connect</h2>
+    <!-- ================= NAVIGATION ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+
+            <img src="../images/logo.png" alt="TechFix Connect Logo">
+
+            <h2>TechFix Connect</h2>
+
+        </div>
+
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html" class="active">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+
+            <!-- Repairs Dropdown -->
+            <li class="dropdown">
+
+                <a href="#">
+                    Repairs
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="book-repair.html">
+                            Book a Repair
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="track-repair.html">
+                            Track Repair
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <!-- Marketplace Dropdown -->
+            <li class="dropdown">
+
+                <a href="#">
+                    Marketplace
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="buy-device.html">
+                            Buy a Device
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sell-device.html">
+                            Sell Your Device
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+
+            <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- Main Call To Action -->
+        <a href="book-repair.html" class="btn-primary">
+            Book a Repair
+        </a>
+
+    </nav>
+
+</header>
+
+    <!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <div class="hero-badge">
+            Built for University Students
+        </div>
+
+        <h1>
+            Repair, Buy & Sell Your Tech With Confidence
+        </h1>
+
+        <p>
+            TechFix Connect makes it easier for students to keep their
+            devices working, find affordable tech and sell their old
+            devices for a fair price.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="book-repair.html" class="btn-primary">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Book a Repair
             </a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="book-repair.html">Book Repair</a></li>
-                <li><a href="track-repair.html">Track Repair</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="design.html">Design</a></li>
 
-                <li>
-                    <a href="sell-device.html">
-                        Sell Device
-                    </a>
-                </li>
+            <a href="buy-device.html" class="btn-secondary">
+                <i class="fa-solid fa-laptop"></i>
+                Browse Devices
+            </a>
 
-                <li>
-                    <a href="profile.html">
-                        Profile
-                    </a>
-                </li>
-
-
-            </ul>
-            <a href="book-repair.html" class="btn-primary">Book Now</a>
-        </nav>
-    </header>
-
-    <section class="hero" data-animate="fade-up">
-        <div class="hero-text">
-            <div class="hero-badge">Trusted by University Students</div>
-            <h1>Fast, stylish repairs that keep your studies moving.</h1>
-            <p>We help students restore laptops, phones and tablets quickly with premium care, transparent pricing and
-                dependable updates.</p>
-            <div class="hero-buttons">
-                <a href="book-repair.html" class="btn-primary">Book a Repair</a>
-                <a href="services.html" class="btn-secondary">Explore Services</a>
-            </div>
         </div>
-        <div class="hero-image">
-            <img src="../images/hero.png" alt="Device Repair">
+
+        <div class="hero-secondary-action">
+
+            <a href="sell-device.html">
+                Want to sell your device?
+                <strong>Sell Your Tech →</strong>
+            </a>
+
         </div>
-    </section>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+            src="../images/hero.png"
+            alt="TechFix Connect device repair and marketplace"
+        >
+
+    </div>
+
+</section>
 
     <section class="stats" data-animate="fade-up">
         <div class="stat-card"><img src="../images/stats-technician.jpg" alt="Technician">
@@ -155,6 +272,86 @@
         </div>
     </section>
 
+    <!-- ================= MARKETPLACE ================= -->
+
+<section class="marketplace-preview" data-animate="fade-up">
+
+    <div class="marketplace-heading">
+
+        <div class="hero-badge">
+            Student Tech Marketplace
+        </div>
+
+        <h2>Buy & Sell Your Tech</h2>
+
+        <p>
+            Looking for affordable technology or want to sell a device
+            you no longer need? TechFix Connect makes it simple for
+            students to buy and sell assessed devices.
+        </p>
+
+    </div>
+
+
+    <div class="marketplace-cards">
+
+        <!-- Buy Device -->
+
+        <div class="marketplace-card">
+
+            <div class="marketplace-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="marketplace-content">
+
+                <h3>Buy a Device</h3>
+
+                <p>
+                    Browse affordable laptops, smartphones, tablets
+                    and other technology assessed by TechFix Connect.
+                </p>
+
+                <a href="buy-device.html" class="btn-primary">
+                    Browse Devices
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Sell Device -->
+
+        <div class="marketplace-card">
+
+            <div class="marketplace-icon">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+
+            <div class="marketplace-content">
+
+                <h3>Sell Your Device</h3>
+
+                <p>
+                    Have an old device you no longer need? Submit it
+                    for assessment and receive a fair selling price.
+                </p>
+
+                <a href="sell-device.html" class="btn-secondary">
+                    Sell Your Tech
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
     <section class="testimonials" data-animate="fade-up">
         <h2>What Students Say</h2>
         <div class="cards">
@@ -163,7 +360,7 @@
                 <p>“TechFix Connect repaired my laptop in under two days and kept me on track with my assignments.”</p>
                 <h4>Sarah M.</h4><span>CPUT Student</span>
             </div>
-            <div class="card"><img src="images/student2.png" alt="James P.">
+            <div class="card"><img src="../images/student2.png" alt="James P.">
                 <div class="stars">★★★★★</div>
                 <p>“The booking flow was effortless and the service felt premium from start to finish.”</p>
                 <h4>James P.</h4><span>CPUT Student</span>
@@ -199,6 +396,7 @@
                     <li><a href="book-repair.html">Book Repair</a></li>
                     <li><a href="track-repair.html">Track Repair</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="design.html">Design</a></li>
                 </ul>
             </div>
             <div>

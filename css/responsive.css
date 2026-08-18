@@ -1,21 +1,106 @@
+
+/* =========================================================
+   RESPONSIVE NAVBAR
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        padding: 18px 25px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .logo h2 {
+        font-size: 21px;
+    }
+
+    .navbar > .btn-primary {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo h2 {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 8px 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .navbar > .btn-primary {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .dropdown-menu {
+        left: 0;
+        transform: translateY(10px);
+    }
+
+    .dropdown:hover .dropdown-menu {
+        transform: translateY(0);
+    }
+}
+
 /* ==========================================
    TABLETS (992px and below)
 ========================================== */
 
 @media screen and (max-width: 992px) {
 
-    .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .nav-links {
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
     .hero {
         flex-direction: column-reverse;
@@ -67,19 +152,6 @@
 
 @media screen and (max-width: 768px) {
 
-    .navbar {
-        flex-direction: column;
-    }
-
-    .logo {
-        justify-content: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
 
     .hero {
         margin: 40px auto;
@@ -171,6 +243,57 @@
 }
 
 
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .how-it-works {
+        padding: 70px 30px;
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 25px;
+    }
+
+    .steps::before {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .how-it-works {
+        padding: 60px 20px;
+    }
+
+    .how-it-works h2 {
+        font-size: 30px;
+
+        margin-bottom: 35px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .step {
+        padding: 30px 20px;
+    }
+
+}
+
 /* ==========================================
    SMALL PHONES (480px and below)
 ========================================== */
@@ -224,6 +347,8 @@
     }
 
 }
+
+
 
 /* ==========================================
    RESPONSIVE DESIGN
