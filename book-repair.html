@@ -16,39 +16,116 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img src="../images/logo.png" alt="TechFix Connect Logo">
-                <h2>TechFix Connect</h2>
-            </a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="book-repair.html" class="active">Book Repair</a></li>
-                <li><a href="track-repair.html">Track Repair</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="design.html">Design</a></li>
+    <!-- ================= NAVIGATION ================= -->
 
-                <li>
-                    <a href="sell-device.html">
-                        Sell Device
-                    </a>
-                </li>
+<header>
 
-                <li>
-                    <a href="profile.html">
-                        Profile
-                    </a>
-                </li>
+    <nav class="navbar">
 
-            </ul>
-            <a href="track-repair.html" class="btn-secondary">Track Repair</a>
-        </nav>
-    </header>
+        <!-- Logo -->
+        <div class="logo">
+
+            <img src="images/logo.png" alt="TechFix Connect Logo">
+
+            <h2>TechFix Connect</h2>
+
+        </div>
+
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+
+            <!-- Repairs Dropdown -->
+            <li class="dropdown">
+
+                <a href="#">
+                    Repairs
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="book-repair.html" class="active">
+                            Book a Repair
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="track-repair.html">
+                            Track Repair
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <!-- Marketplace Dropdown -->
+            <li class="dropdown">
+
+                <a href="#">
+                    Marketplace
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="buy-device.html">
+                            Buy a Device
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sell-device.html">
+                            Sell Your Device
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- Main Call To Action -->
+        <a href="book-repair.html" class="btn-primary">
+            Book a Repair
+        </a>
+
+    </nav>
+
+</header>
 
     <section class="hero booking-hero" data-animate="fade-up">
         <div class="hero-text">
