@@ -1871,6 +1871,565 @@ footer p{text-align:center;}
     .current-status h3{font-size:1.25rem;} 
 }
 
+/* =========================================================
+   SERVICES PAGE
+========================================================= */
+
+.services-section {
+    padding: 90px 6%;
+    background: #f7faff;
+}
+
+
+/* -------------------------
+   Header
+------------------------- */
+
+.services-header {
+    width: min(90%, 720px);
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.services-header h2 {
+    margin-bottom: 15px;
+
+    color: var(--primary);
+    font-size: 2.4rem;
+}
+
+.services-header p {
+    margin: 0;
+
+    color: #5a6780;
+
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* -------------------------
+   Service List
+------------------------- */
+
+.service-list {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* -------------------------
+   Service Row
+------------------------- */
+
+.service-row {
+    display: grid;
+
+    grid-template-columns:
+        65px
+        45px
+        1fr
+        130px
+        125px;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 28px 30px;
+
+    border-bottom: 1px solid #e8edf3;
+
+    transition:
+        background 0.3s ease,
+        padding 0.3s ease;
+}
+
+.service-row:last-child {
+    border-bottom: none;
+}
+
+.service-row:hover {
+    background: #f8fbff;
+
+    padding-left: 38px;
+}
+
+
+/* -------------------------
+   Icon
+------------------------- */
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf2ff;
+
+    color: var(--secondary);
+
+    border-radius: 14px;
+
+    font-size: 1.25rem;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.service-row:hover .service-icon {
+    background: var(--secondary);
+    color: #ffffff;
+}
+
+
+/* -------------------------
+   Number
+------------------------- */
+
+.service-number {
+    color: #c3ccd8;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+/* -------------------------
+   Details
+------------------------- */
+
+.service-details h3 {
+    margin: 0 0 7px;
+
+    color: var(--primary);
+
+    font-size: 1.15rem;
+}
+
+.service-details p {
+    margin: 0;
+
+    max-width: 550px;
+
+    color: #667085;
+
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+
+/* -------------------------
+   Price
+------------------------- */
+
+.service-price {
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.service-price span {
+    margin-bottom: 4px;
+
+    color: #8a96a8;
+
+    font-size: 0.72rem;
+}
+
+.service-price strong {
+    color: var(--primary);
+
+    font-size: 1.05rem;
+}
+
+
+/* -------------------------
+   Action
+------------------------- */
+
+.service-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 10px 14px;
+
+    background: var(--secondary);
+
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.service-action:hover {
+    background: var(--primary);
+
+    transform: translateX(3px);
+}
+
+.service-action i {
+    font-size: 0.7rem;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .service-row {
+        grid-template-columns:
+            60px
+            40px
+            1fr
+            110px;
+
+        gap: 16px;
+    }
+
+    .service-action {
+        grid-column: 3 / 5;
+        justify-self: start;
+        margin-top: 10px;
+    }
+
+    .service-price {
+        text-align: right;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .services-section {
+        padding: 70px 5%;
+    }
+
+    .services-header h2 {
+        font-size: 2rem;
+    }
+
+    .service-list {
+        width: 100%;
+    }
+
+    .service-row {
+        grid-template-columns: 55px 1fr;
+
+        gap: 15px;
+
+        padding: 25px 20px;
+    }
+
+    .service-row:hover {
+        padding-left: 20px;
+    }
+
+    .service-number {
+        display: none;
+    }
+
+    .service-details {
+        grid-column: 2;
+    }
+
+    .service-price {
+        grid-column: 2;
+
+        text-align: left;
+    }
+
+    .service-action {
+        grid-column: 2;
+
+        justify-self: start;
+    }
+
+    .service-icon {
+        grid-row: 1 / span 2;
+
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+/* =========================================================
+   WHY CHOOSE TECHFIX CONNECT
+========================================================= */
+
+.services-benefits {
+    padding: 100px 6%;
+    background: var(--primary);
+}
+
+
+/* -------------------------
+   Heading
+------------------------- */
+
+.benefits-label {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.15;
+}
+
+.benefits-heading h2 {
+    margin: 0 0 20px;
+
+    color: #ffffff;
+
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.benefits-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #c8d5e5;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* -------------------------
+   Benefits List
+------------------------- */
+
+.benefits-list {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/* -------------------------
+   Benefit Item
+------------------------- */
+
+.benefit-item {
+    display: grid;
+    grid-template-columns: 60px 35px 1fr;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 32px 25px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+    transition: background 0.3s ease;
+}
+
+.benefit-item:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.benefit-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* -------------------------
+   Icon
+------------------------- */
+
+.benefit-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    color: #8fc4ff;
+
+    border-radius: 14px;
+
+    font-size: 1.2rem;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.benefit-item:hover .benefit-icon {
+    background: #ffffff;
+    color: var(--primary);
+}
+
+
+/* -------------------------
+   Number
+------------------------- */
+
+.benefit-number {
+    color: rgba(255, 255, 255, 0.35);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+
+/* -------------------------
+   Content
+------------------------- */
+
+.benefit-content h3 {
+    margin: 0 0 7px;
+
+    color: #ffffff;
+
+    font-size: 1.05rem;
+}
+
+.benefit-content p {
+    margin: 0;
+
+    color: #c8d5e5;
+
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .services-benefits {
+        padding: 75px 5%;
+    }
+
+    .benefits-heading h2 {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 750px) {
+
+    .benefits-heading h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .benefits-heading h2 {
+        font-size: 2.1rem;
+    }
+
+}
+
+    .benefits-list {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-item:nth-child(odd) {
+        border-right: none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .services-benefits {
+        padding: 65px 5%;
+    }
+
+    .benefits-heading {
+        margin-bottom: 45px;
+    }
+
+    .benefits-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .benefits-list {
+        width: 100%;
+    }
+
+    .benefit-item {
+        grid-template-columns: 55px 1fr;
+
+        gap: 15px;
+
+        padding: 25px 10px;
+    }
+
+    .benefit-number {
+        display: none;
+    }
+
+    .benefit-content {
+        grid-column: 2;
+    }
+
+    .benefit-icon {
+        grid-row: 1 / span 2;
+    }
+
+}
+
 /* ===========================================
    DESIGN PAGE
 =========================================== */
