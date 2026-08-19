@@ -11,8 +11,21 @@
 
     <title>TechFix Connect | Register</title>
 
-   <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- Google Font -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+
+    <!-- Font Awesome -->
 
     <link
         rel="stylesheet"
@@ -20,217 +33,973 @@
 
 </head>
 
+
 <body>
 
-<header>
 
-    <nav class="navbar">
 
-        <a href="index.html" class="logo">
-
-            <img
-                src="../images/logo.png"
-                alt="TechFix Connect Logo">
-
-            <h2>TechFix Connect</h2>
-
-        </a>
-
-        <ul class="nav-links">
-
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-
-            <li>
-                <a href="services.html">Services</a>
-            </li>
-
-            <li>
-                <a href="book-repair.html">Book Repair</a>
-            </li>
-
-            <li>
-                <a href="track-repair.html">Track Repair</a>
-            </li>
-
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-
-        </ul>
-
-        <a
-            href="login.html"
-            class="btn-primary">
-            Login
-        </a>
-
-    </nav>
-
-</header>
-
+<!-- =========================================================
+     REGISTER SECTION
+     ========================================================= -->
 
 <section class="auth-section">
 
     <div class="auth-container">
 
-        <div class="auth-icon">
 
-            <i class="fa-solid fa-user-plus"></i>
+        <!-- REGISTER CARD -->
 
-        </div>
-
-        <h1>Create Account</h1>
-
-        <p class="auth-intro">
-            Create your TechFix Connect student account.
-        </p>
+        <div class="auth-card">
 
 
-        <form id="registerForm">
+            <!-- ICON -->
 
-            <div class="form-group">
-
-                <label for="fullName">
-                    Full Name
-                </label>
-
-                <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter your full name"
-                    required>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="email">
-                    Email Address
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="studentNumber">
-                    Student Number
-                </label>
-
-                <input
-                    type="text"
-                    id="studentNumber"
-                    name="studentNumber"
-                    placeholder="Enter your student number"
-                    required>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="password">
-                    Password
-                </label>
-
-                <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Create a password"
-                    required>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="confirmPassword">
-                    Confirm Password
-                </label>
-
-                <input
-                    type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="Confirm your password"
-                    required>
-
-            </div>
-
-
-            <button
-                type="submit"
-                class="btn-primary auth-button">
+            <div class="auth-icon">
 
                 <i class="fa-solid fa-user-plus"></i>
 
-                Create Account
-
-            </button>
-
-
-            <div
-                id="registerMessage"
-                class="form-message">
             </div>
 
-        </form>
 
 
-        <p class="auth-register">
+            <!-- TITLE -->
 
-            Already have an account?
+            <h1>
+                Create Account
+            </h1>
 
-            <a href="login.html">
-                Login
-            </a>
 
-        </p>
+            <p>
+                Create your TechFix Connect student account.
+            </p>
+
+
+            <form id="registerForm">
+
+
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="studentNumber">
+                        Student Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentNumber"
+                        name="studentNumber"
+                        placeholder="Enter your student number"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        required>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn-primary">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                 
+                     <a href="login.html">
+                          Create Account
+                    </a>
+
+                </button>
+
+
+                <p
+                    id="registerMessage"
+                    class="form-message">
+                </p>
+
+            </form>
+
+
+            <div class="auth-footer">
+
+                <p>
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
 
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
 
 <footer>
 
-    <div class="footer-content">
-
-        <div>
-
-            <h3>TechFix Connect</h3>
-
-            <p>
-                Fast, affordable and reliable device
-                repairs for university students.
-            </p>
-
-        </div>
-
-    </div>
-
-    <hr>
-
     <p class="copyright">
-        © 2026 TechFix Connect. All Rights Reserved.
+
+        © 2026 TechFix Connect.
+        All Rights Reserved.
+
     </p>
 
 </footer>
 
 
-<script src="../js/register.js"></script>
+<style>
+/* =========================================================
+   GENERAL PAGE
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f8fc;
+    color: #222;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 6%;
+
+    background: #ffffff;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+    position: relative;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    margin-right: 50px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+}
+
+.logo h2 {
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    color: #1266f1;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+   ========================================================= */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 28px;
+
+    list-style: none;
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-links > li {
+    position: relative;
+}
+
+.nav-links a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 28px 0;
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1266f1;
+}
+
+
+/* Active page */
+
+.nav-links a.active {
+    color: #1266f1;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DROPDOWN MENUS
+   ========================================================= */
+
+.dropdown-menu {
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    min-width: 190px;
+
+    background: #ffffff;
+
+    padding: 10px 0;
+
+    margin: 0;
+
+    list-style: none;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    border-radius: 8px;
+
+    display: none;
+
+    z-index: 1001;
+}
+
+.dropdown-menu li a {
+    padding: 12px 18px;
+
+    width: 100%;
+
+    white-space: nowrap;
+
+    color: #333;
+}
+
+.dropdown-menu li a:hover {
+    background: #f0f6ff;
+    color: #1266f1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* =========================================================
+   BOOK REPAIR BUTTON
+   ========================================================= */
+
+.nav-button {
+    margin-left: 35px;
+
+    padding: 12px 20px !important;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+
+    background: #1266f1;
+
+    color: #ffffff !important;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background: #0d4fbf;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(18, 102, 241, 0.25);
+}
+
+
+/* =========================================================
+   LOGIN SECTION
+   ========================================================= */
+
+.auth-section {
+    min-height: calc(100vh - 145px);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+
+/* =========================================================
+   LOGIN CONTAINER
+   ========================================================= */
+
+.auth-container {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   LOGIN CARD
+   ========================================================= */
+
+.auth-card {
+    width: 100%;
+
+    max-width: 450px;
+
+    background: #25bfd5;
+
+    padding: 40px 42px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(18, 102, 241, 0.10),
+        0 4px 12px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid #e5eefb;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Blue top line */
+
+.auth-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #1266f1;
+}
+
+
+/* =========================================================
+   LOGIN ICON
+   ========================================================= */
+
+.auth-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaf2ff;
+
+    color: #1266f1;
+
+    font-size: 28px;
+}
+
+
+/* =========================================================
+   LOGIN HEADING
+   ========================================================= */
+
+.auth-card h1 {
+    margin-bottom: 8px;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    color: #1d2b3a;
+}
+
+.auth-card > p {
+    margin-bottom: 30px;
+
+    color: #718096;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.form-group {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #344054;
+}
+
+.form-group input {
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d6deea;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+
+    background: #fbfdff;
+}
+
+.form-group input:focus {
+    border-color: #1266f1;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 0 3px rgba(18, 102, 241, 0.10);
+}
+
+.form-group input::placeholder {
+    color: #9aa6b2;
+}
+
+
+/* =========================================================
+   FORM OPTIONS
+   ========================================================= */
+
+.form-options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 5px 0 25px;
+
+    font-size: 13px;
+}
+
+.form-options label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #667085;
+
+    cursor: pointer;
+}
+
+.form-options input[type="checkbox"] {
+    accent-color: #1266f1;
+}
+
+.form-options a {
+    color: #1266f1;
+
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+.auth-card .btn-primary {
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #1266f1;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    transition: all 0.3s ease;
+}
+
+.auth-card .btn-primary:hover {
+    background: #0d4fbf;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(18, 102, 241, 0.25);
+}
+
+
+/* =========================================================
+   LOGIN MESSAGE
+   ========================================================= */
+
+.form-message {
+    margin-top: 15px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   AUTH FOOTER
+   ========================================================= */
+
+.auth-footer {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #edf1f7;
+}
+
+.auth-footer p {
+    font-size: 14px;
+
+    color: #667085;
+}
+
+.auth-footer a {
+    color: #1266f1;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e9eef5;
+}
+
+.copyright {
+    color: #667085;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding: 0 3%;
+    }
+
+    .logo {
+        margin-right: 25px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-button {
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        padding: 15px 3%;
+    }
+
+    .logo {
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        margin-top: 10px;
+
+        gap: 20px;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+    }
+
+    .nav-button {
+        margin-left: 20px;
+    }
+
+    .auth-section {
+        min-height: calc(100vh - 180px);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo h2 {
+        font-size: 17px;
+    }
+
+    .logo img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .auth-section {
+        padding: 40px 15px;
+    }
+
+    .auth-card {
+        padding: 35px 25px;
+    }
+
+    .auth-card h1 {
+        font-size: 24px;
+    }
+
+    .form-options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+}
+
+
+</style>
+
+<!-- JAVASCRIPT -->
+
+<script src="../js/script.js"></script>
+
+<script src="../js/register.js">
+    document.addEventListener("DOMContentLoaded", function () {
+
+    const registerForm = document.getElementById("registerForm");
+    const registerMessage = document.getElementById("registerMessage");
+
+
+    registerForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+
+        // Get form values
+
+        const fullName =
+            document.getElementById("fullName").value.trim();
+
+        const email =
+            document.getElementById("email").value.trim();
+
+        const studentNumber =
+            document.getElementById("studentNumber").value.trim();
+
+        const password =
+            document.getElementById("password").value;
+
+        const confirmPassword =
+            document.getElementById("confirmPassword").value;
+
+
+
+        // Check passwords
+
+        if (password !== confirmPassword) {
+
+            registerMessage.textContent =
+                "Passwords do not match.";
+
+            registerMessage.style.color = "red";
+
+            return;
+        }
+
+
+
+        // Check password length
+
+        if (password.length < 6) {
+
+            registerMessage.textContent =
+                "Password must be at least 6 characters.";
+
+            registerMessage.style.color = "red";
+
+            return;
+        }
+
+
+
+        // Create user object
+
+        const user = {
+
+            fullName: fullName,
+
+            email: email,
+
+            studentNumber: studentNumber,
+
+            password: password
+
+        };
+
+
+
+        // Save user
+
+        localStorage.setItem(
+            "techfixUser",
+            JSON.stringify(user)
+        );
+        
+
+        // Show success message
+
+        registerMessage.textContent =
+            "Account created successfully! Redirecting to Login...";
+
+        registerMessage.style.color = "#1266f1";
+
+
+
+        // Go to Login page
+
+        setTimeout(function () {
+
+            window.location.href = "login.html";
+
+        }, 1500);
+
+    });
+
+});
+</script>
+
 
 </body>
 
