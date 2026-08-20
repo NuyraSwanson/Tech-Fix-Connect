@@ -2934,89 +2934,884 @@ footer p{text-align:center;}
 .contact-info {
     width: 90%;
     max-width: 1200px;
-    margin: 80px auto;
+
+    margin: 100px auto;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.contact-info-header {
     text-align: center;
+
+    margin-bottom: 50px;
 }
 
-.contact-info h2 {
-    font-size: 2.3rem;
-    color: #0B2E59;
-    margin-bottom: 45px;
-}
+.contact-info-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 
-.contact-info .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
+    margin-bottom: 12px;
 
-.contact-info .card {
-    padding: 35px 25px;
-    text-align: center;
-}
-
-.contact-info .card i {
-    font-size: 2.8rem;
     color: #18B6C9;
-    margin-bottom: 20px;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
 }
 
-.contact-info .card h3 {
+.contact-info-header h2 {
+    margin: 0 0 12px;
+
     color: #0B2E59;
-    margin-bottom: 15px;
+
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
-.contact-info .card p {
+.contact-info-header p {
+    max-width: 600px;
+
+    margin: 0 auto;
+
     color: #666;
-    line-height: 1.6;
-    margin: 4px 0;
+
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 
+/* ==========================================
+   CONTACT GRID
+========================================== */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 1.35fr 1fr 1fr;
+
+    gap: 22px;
+}
+
+
+/* ==========================================
+   CONTACT CARD
+========================================== */
+
+.contact-card {
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(11, 46, 89, 0.15);
+}
+
+
+/* ==========================================
+   LOCATION CARD
+========================================== */
+
+.contact-location {
+    background: #0B2E59;
+
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   PHONE CARD
+========================================== */
+
+.contact-phone {
+    background: #18B6C9;
+
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   EMAIL CARD
+========================================== */
+
+.contact-email {
+    background: #EAF8FB;
+
+    color: #0B2E59;
+}
+
+
+/* ==========================================
+   DECORATIVE CIRCLES
+========================================== */
+
+.contact-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    right: -75px;
+    bottom: -75px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    top: -30px;
+    right: 35px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.06);
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.contact-icon {
+    position: relative;
+    z-index: 1;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    border-radius: 16px;
+
+    font-size: 1.35rem;
+}
+
+
+/* Location icon */
+
+.contact-location .contact-icon {
+    background: #18B6C9;
+
+    color: #ffffff;
+
+    box-shadow: 0 8px 20px rgba(24, 182, 201, 0.25);
+}
+
+
+/* Phone icon */
+
+.contact-phone .contact-icon {
+    background: #ffffff;
+
+    color: #18B6C9;
+}
+
+
+/* Email icon */
+
+.contact-email .contact-icon {
+    background: #0B2E59;
+
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   CARD CONTENT
+========================================== */
+
+.contact-card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    opacity: 0.7;
+}
+
+.contact-card h3 {
+    margin: 0 0 18px;
+
+    font-size: 1.45rem;
+}
+
+
+/* ==========================================
+   LOCATION TEXT
+========================================== */
+
+.contact-location p {
+    margin: 4px 0;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+
+/* ==========================================
+   PHONE / EMAIL LINKS
+========================================== */
+
+.contact-card a {
+    display: inline-block;
+
+    color: inherit;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    text-decoration: none;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.contact-card a:hover {
+    opacity: 0.75;
+
+    transform: translateX(4px);
+}
+
+
+/* ==========================================
+   CARD NUMBERS
+========================================== */
+
+.contact-number {
+    position: absolute;
+
+    right: 25px;
+    bottom: 18px;
+
+    z-index: 1;
+
+    font-size: 4rem;
+    font-weight: 800;
+
+    line-height: 1;
+
+    opacity: 0.08;
+}
+
+
+/* ==========================================
+   PHONE NUMBER
+========================================== */
+
+.contact-phone a {
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   EMAIL
+========================================== */
+
+.contact-email a {
+    color: #0B2E59;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .contact-info {
+        width: 92%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-location {
+        grid-column: span 2;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .contact-info {
+        width: 94%;
+
+        margin: 75px auto;
+    }
+
+    .contact-info-header {
+        margin-bottom: 35px;
+    }
+
+    .contact-info-header h2 {
+        font-size: 1.9rem;
+    }
+
+    .contact-info-header p {
+        font-size: 0.9rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .contact-location {
+        grid-column: auto;
+    }
+
+    .contact-card {
+        min-height: 260px;
+
+        padding: 28px;
+    }
+
+    .contact-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-location p {
+        font-size: 0.85rem;
+    }
+
+}
 /* ==========================================
    BUSINESS HOURS
 ========================================== */
 
 .business-hours {
     width: 90%;
-    max-width: 700px;
-    margin: 80px auto;
+    max-width: 1050px;
+    margin: 100px auto;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.business-hours-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.business-hours-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    color: #18B6C9;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.business-hours-header h2 {
+    margin: 0 0 12px;
+
+    color: #0B2E59;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.business-hours-header p {
+    max-width: 550px;
+
+    margin: 0 auto;
+
+    color: #666;
+
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   MAIN CARD
+========================================== */
+
+.hours-card {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background: #EAF8FB;
+
+    box-shadow: 0 15px 45px rgba(11, 46, 89, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.hours-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 20px 55px rgba(11, 46, 89, 0.16);
+}
+
+
+/* ==========================================
+   INTRO PANEL
+========================================== */
+
+.hours-intro {
+    position: relative;
+
+    padding: 45px;
+
+    background: #0B2E59;
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* Decorative circle */
+
+.hours-intro::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -70px;
+    right: -70px;
+
+    border-radius: 50%;
+
+    background: rgba(24, 182, 201, 0.18);
+}
+
+
+/* Decorative circle */
+
+.hours-intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    bottom: -45px;
+    left: -35px;
+
+    border-radius: 50%;
+
+    background: rgba(24, 182, 201, 0.12);
+}
+
+
+/* ==========================================
+   CLOCK ICON
+========================================== */
+
+.hours-icon {
+    position: relative;
+    z-index: 1;
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    border-radius: 18px;
+
+    background: #18B6C9;
+
+    color: #ffffff;
+
+    font-size: 1.5rem;
+
+    box-shadow: 0 8px 20px rgba(24, 182, 201, 0.3);
+}
+
+
+/* ==========================================
+   INTRO TEXT
+========================================== */
+
+.hours-intro h3 {
+    position: relative;
+    z-index: 1;
+
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-size: 1.8rem;
+    line-height: 1.25;
+}
+
+.hours-intro p {
+    position: relative;
+    z-index: 1;
+
+    max-width: 350px;
+
+    margin: 0 0 28px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   STUDENT BADGE
+========================================== */
+
+.hours-badge {
+    position: relative;
+    z-index: 1;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 9px 14px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    color: #ffffff;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.hours-badge i {
+    color: #18B6C9;
+}
+
+
+/* ==========================================
+   HOURS LIST
+========================================== */
+
+.hours-list {
+    padding: 45px;
+
+    background: #EAF8FB;
+}
+
+
+/* ==========================================
+   HOURS ROW
+========================================== */
+
+.hours-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 20px 18px;
+
+    border-radius: 14px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.hours-row:hover {
+    background: #ffffff;
+
+    transform: translateX(5px);
+}
+
+
+/* ==========================================
+   DAY
+========================================== */
+
+.day {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.day strong {
+    color: #0B2E59;
+
+    font-size: 1rem;
+}
+
+.day span {
+    color: #6D879B;
+
+    font-size: 0.75rem;
+}
+
+
+/* ==========================================
+   TIME
+========================================== */
+
+.time {
+    padding: 8px 13px;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #0B2E59;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================
+   CLOSED
+========================================== */
+
+.hours-row.closed .time {
+    background: #DCE5EB;
+
+    color: #71808C;
+}
+
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.hours-divider {
+    height: 1px;
+
+    margin: 0 18px;
+
+    background: rgba(11, 46, 89, 0.1);
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.hours-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-top: 25px;
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(11, 46, 89, 0.1);
+
+    color: #60798A;
+
+    font-size: 0.75rem;
+
     text-align: center;
 }
 
-.business-hours h2 {
-    font-size: 2.3rem;
-    color: #0B2E59;
-    margin-bottom: 40px;
+.status-dot {
+    width: 9px;
+    height: 9px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #18B6C9;
+
+    box-shadow: 0 0 0 4px rgba(24, 182, 201, 0.15);
 }
 
-.business-hours .cards {
-    display: flex;
-    justify-content: center;
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 768px) {
+
+    .business-hours {
+        width: 92%;
+        margin: 80px auto;
+    }
+
+    .business-hours-header h2 {
+        font-size: 2.1rem;
+    }
+
+    .hours-card {
+        grid-template-columns: 1fr;
+    }
+
+    .hours-intro {
+        padding: 35px;
+    }
+
+    .hours-intro h3 {
+        font-size: 1.6rem;
+    }
+
+    .hours-list {
+        padding: 30px;
+    }
+
 }
 
-.business-hours .card {
-    width: 100%;
-    max-width: 500px;
-    padding: 35px;
-}
 
-.business-hours .card p {
-    color: #555;
-    line-height: 1.6;
-}
+/* ==========================================
+   MOBILE
+========================================== */
 
-.business-hours .card strong {
-    color: #0B2E59;
-    font-size: 1.05rem;
-}
+@media (max-width: 480px) {
 
-.business-hours hr {
-    border: none;
-    border-top: 1px solid #e5e5e5;
-    margin: 20px 0;
-}
+    .business-hours {
+        width: 94%;
+        margin: 65px auto;
+    }
 
+    .business-hours-header {
+        margin-bottom: 35px;
+    }
+
+    .business-hours-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .business-hours-header p {
+        font-size: 0.9rem;
+    }
+
+    .hours-intro {
+        padding: 30px 25px;
+    }
+
+    .hours-intro h3 {
+        font-size: 1.45rem;
+    }
+
+    .hours-intro p {
+        font-size: 0.88rem;
+    }
+
+    .hours-icon {
+        width: 55px;
+        height: 55px;
+
+        margin-bottom: 22px;
+    }
+
+    .hours-list {
+        padding: 20px 15px;
+    }
+
+    .hours-row {
+        padding: 16px 12px;
+
+        gap: 15px;
+    }
+
+    .day strong {
+        font-size: 0.88rem;
+    }
+
+    .day span {
+        font-size: 0.7rem;
+    }
+
+    .time {
+        padding: 7px 10px;
+
+        font-size: 0.78rem;
+    }
+
+    .hours-divider {
+        margin: 0 12px;
+    }
+
+    .hours-status {
+        font-size: 0.68rem;
+    }
+
+}
 
 /* ==========================================
    LOCATION
@@ -3050,139 +3845,953 @@ footer p{text-align:center;}
 
 
 /* ==========================================
-   CONTACT FORM
+   CONTACT FORM SECTION
 ========================================== */
 
 .contact-form-section {
     width: 90%;
-    max-width: 900px;
-    margin: 80px auto;
-    text-align: center;
-}
+    max-width: 1150px;
 
-.contact-form-section h2 {
-    font-size: 2.3rem;
-    color: #0B2E59;
-    margin-bottom: 40px;
-}
-
-.contact-form-section .cards {
-    display: flex;
-    justify-content: center;
-}
-
-.contact-form-section .card {
-    width: 100%;
-    padding: 45px;
-    text-align: left;
-}
-
-.contact-form-section form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form-section label {
-    color: #0B2E59;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.contact-form-section input,
-.contact-form-section textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 14px 16px;
-    margin-bottom: 20px;
-    border: 2px solid #e1e6eb;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.95rem;
-    outline: none;
-    transition: 0.3s;
-}
-
-.contact-form-section input:focus,
-.contact-form-section textarea:focus {
-    border-color: #18B6C9;
-    box-shadow: 0 0 0 3px rgba(24, 182, 201, 0.12);
-}
-
-.contact-form-section textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
-.contact-form-section input::placeholder,
-.contact-form-section textarea::placeholder {
-    color: #999;
-}
-
-.contact-form-section button {
-    align-self: flex-start;
-    border: none;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    transition: 0.3s;
-}
-
-.contact-form-section button:hover {
-    transform: translateY(-2px);
+    margin: 110px auto;
 }
 
 
 /* ==========================================
-   FAQ
+   HEADER
 ========================================== */
 
-.faq-section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 80px auto;
+.contact-form-header {
     text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
 }
 
-.faq-section h2 {
-    font-size: 2.3rem;
-    color: #0B2E59;
-    margin-bottom: 45px;
-}
+.contact-form-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 
-.faq-section .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
+    margin-bottom: 12px;
 
-.faq-section .card {
-    padding: 35px 25px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.faq-section .card:hover {
-    transform: translateY(-7px);
-}
-
-.faq-section .card i {
-    font-size: 2.5rem;
     color: #18B6C9;
-    margin-bottom: 20px;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
 }
 
-.faq-section .card h3 {
+.contact-form-header h2 {
+    margin: 0 0 12px;
+
     color: #0B2E59;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
+
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
-.faq-section .card p {
+.contact-form-header p {
+    margin: 0;
+
     color: #666;
+
+    font-size: 1rem;
     line-height: 1.7;
 }
 
 
+/* ==========================================
+   MAIN WRAPPER
+========================================== */
+
+.contact-form-wrapper {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background: #EAF8FB;
+
+    box-shadow: 0 18px 50px rgba(11, 46, 89, 0.12);
+}
+
+
+/* ==========================================
+   LEFT INTRO PANEL
+========================================== */
+
+.contact-form-intro {
+    position: relative;
+
+    padding: 50px 45px;
+
+    overflow: hidden;
+
+    background: #0B2E59;
+
+    color: #ffffff;
+}
+
+
+/* Decorative circles */
+
+.contact-form-intro::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: -90px;
+    right: -90px;
+
+    border-radius: 50%;
+
+    background: rgba(24, 182, 201, 0.18);
+}
+
+.contact-form-intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    bottom: -70px;
+    left: -50px;
+
+    border-radius: 50%;
+
+    background: rgba(24, 182, 201, 0.12);
+}
+
+
+/* ==========================================
+   INTRO ICON
+========================================== */
+
+.form-intro-icon {
+    position: relative;
+    z-index: 1;
+
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    border-radius: 18px;
+
+    background: #18B6C9;
+
+    color: #ffffff;
+
+    font-size: 1.4rem;
+
+    box-shadow: 0 8px 25px rgba(24, 182, 201, 0.3);
+}
+
+
+/* ==========================================
+   INTRO HEADING
+========================================== */
+
+.contact-form-intro h3 {
+    position: relative;
+    z-index: 1;
+
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.contact-form-intro p {
+    position: relative;
+    z-index: 1;
+
+    max-width: 360px;
+
+    margin: 0 0 30px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   CONTACT POINTS
+========================================== */
+
+.form-contact-points {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.form-contact-point {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 0.82rem;
+}
+
+.form-contact-point i {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(24, 182, 201, 0.2);
+
+    color: #18B6C9;
+
+    font-size: 0.65rem;
+}
+
+
+/* ==========================================
+   DECORATIVE DEVICES
+========================================== */
+
+.form-decoration {
+    position: absolute;
+
+    z-index: 1;
+
+    right: 30px;
+    bottom: 25px;
+
+    display: flex;
+
+    gap: 10px;
+
+    color: rgba(255, 255, 255, 0.12);
+
+    font-size: 1.8rem;
+}
+
+.form-decoration i:nth-child(2) {
+    transform: translateY(-12px);
+}
+
+
+/* ==========================================
+   FORM CARD
+========================================== */
+
+.contact-form-card {
+    padding: 50px 45px;
+
+    background: #ffffff;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.contact-form-card form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* ==========================================
+   TWO COLUMN FORM ROW
+========================================== */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    align-items: start;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+
+    width: 100%;
+    height: 20px;
+
+    margin-bottom: 8px;
+
+    color: #0B2E59;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    line-height: 20px;
+}
+
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+.contact-form-card input {
+    width: 100%;
+    height: 50px;
+
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 2px solid transparent;
+
+    border-radius: 12px;
+
+    background: #F2FAFC;
+
+    color: #0B2E59;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-form-card textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 2px solid transparent;
+
+    border-radius: 12px;
+
+    background: #F2FAFC;
+
+    color: #0B2E59;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 0.9rem;
+
+    outline: none;
+
+    resize: vertical;
+
+    min-height: 150px;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* ==========================================
+   FOCUS
+========================================== */
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+    border-color: #18B6C9;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 0 4px rgba(24, 182, 201, 0.12);
+}
+
+
+/* ==========================================
+   PLACEHOLDERS
+========================================== */
+
+.contact-form-card input::placeholder,
+.contact-form-card textarea::placeholder {
+    color: #9BAAB4;
+}
+
+
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
+
+.contact-submit-btn {
+    align-self: flex-start;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 5px;
+
+    padding: 14px 24px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #18B6C9;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(24, 182, 201, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+    transform: translateY(-3px);
+
+    background: #0B2E59;
+
+    box-shadow: 0 12px 25px rgba(11, 46, 89, 0.2);
+}
+
+.contact-submit-btn i {
+    transition: transform 0.3s ease;
+}
+
+.contact-submit-btn:hover i {
+    transform: translateX(4px) rotate(-5deg);
+}
+
+
+/* ==========================================
+   FORM MESSAGE
+========================================== */
+
+.form-message {
+    margin-top: 5px;
+
+    font-size: 0.85rem;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 850px) {
+
+    .contact-form-section {
+        width: 92%;
+
+        margin: 85px auto;
+    }
+
+    .contact-form-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-intro {
+        padding: 40px;
+    }
+
+    .contact-form-intro h3 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form-card {
+        padding: 40px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .contact-form-section {
+        width: 94%;
+
+        margin: 70px auto;
+    }
+
+    .contact-form-header {
+        margin-bottom: 35px;
+    }
+
+    .contact-form-header h2 {
+        font-size: 1.9rem;
+    }
+
+    .contact-form-header p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form-intro {
+        padding: 32px 25px;
+    }
+
+    .contact-form-intro h3 {
+        font-size: 1.55rem;
+    }
+
+    .contact-form-intro p {
+        font-size: 0.85rem;
+    }
+
+    .form-decoration {
+        display: none;
+    }
+
+    .contact-form-card {
+        padding: 30px 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-submit-btn {
+        width: 100%;
+    }
+
+}
+
+/* ==========================================
+   FAQ SECTION
+========================================== */
+
+.faq-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+
+/* ==========================================
+   FAQ HEADER
+========================================== */
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.faq-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #18B6C9;
+
+    margin-bottom: 12px;
+}
+
+.faq-eyebrow i {
+    font-size: 0.85rem;
+}
+
+.faq-header h2 {
+    margin: 0 0 12px;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    color: #0B2E59;
+}
+
+.faq-header p {
+    margin: 0 auto;
+
+    max-width: 600px;
+
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   FAQ CHAT
+========================================== */
+
+.faq-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+/* ==========================================
+   FAQ ITEM
+========================================== */
+
+.faq-item {
+    width: 100%;
+}
+
+
+/* ==========================================
+   CUSTOMER QUESTION
+========================================== */
+
+.faq-question-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    max-width: 80%;
+}
+
+
+/* ==========================================
+   AVATARS
+========================================== */
+
+.faq-avatar {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 0.95rem;
+}
+
+.faq-avatar.customer {
+    background: #eef3f8;
+    color: #0B2E59;
+}
+
+.faq-avatar.support {
+    background: #18B6C9;
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   QUESTION BUBBLE
+========================================== */
+
+.faq-question {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 18px 22px;
+
+    border: 1px solid #e4e9ee;
+    border-radius: 18px 18px 18px 5px;
+
+    background: #ffffff;
+
+    color: #0B2E59;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 20px rgba(11, 46, 89, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.faq-question:hover {
+    transform: translateX(5px);
+
+    border-color: #18B6C9;
+
+    box-shadow: 0 8px 25px rgba(11, 46, 89, 0.1);
+}
+
+
+/* ==========================================
+   PLUS ICON
+========================================== */
+
+.faq-question i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #eef9fb;
+    color: #18B6C9;
+
+    font-size: 0.75rem;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* ==========================================
+   ACTIVE QUESTION
+========================================== */
+
+.faq-item.active .faq-question {
+    border-color: #18B6C9;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(45deg);
+
+    background: #18B6C9;
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   SUPPORT ANSWER
+========================================== */
+
+.faq-answer-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    max-width: 75%;
+
+    margin-top: 15px;
+    margin-left: 55px;
+
+    opacity: 0;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        transform 0.4s ease;
+}
+
+
+/* ==========================================
+   ACTIVE ANSWER
+========================================== */
+
+.faq-item.active .faq-answer-row {
+    max-height: 300px;
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* ==========================================
+   ANSWER BUBBLE
+========================================== */
+
+.faq-answer {
+    padding: 18px 22px;
+
+    background: #0B2E59;
+
+    border-radius: 5px 18px 18px 18px;
+
+    box-shadow: 0 6px 20px rgba(11, 46, 89, 0.12);
+}
+
+.faq-answer p {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .faq-section {
+        width: 92%;
+        margin: 75px auto;
+    }
+
+    .faq-header {
+        margin-bottom: 40px;
+    }
+
+    .faq-header h2 {
+        font-size: 2rem;
+    }
+
+    .faq-chat {
+        gap: 28px;
+    }
+
+    .faq-question-row {
+        max-width: 95%;
+    }
+
+    .faq-answer-row {
+        max-width: 90%;
+
+        margin-left: 15px;
+    }
+
+    .faq-question {
+        padding: 16px 18px;
+
+        font-size: 0.95rem;
+    }
+
+    .faq-answer {
+        padding: 16px 18px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .faq-section {
+        width: 94%;
+    }
+
+    .faq-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .faq-header p {
+        font-size: 0.9rem;
+    }
+
+    .faq-avatar {
+        width: 36px;
+        height: 36px;
+
+        font-size: 0.8rem;
+    }
+
+    .faq-question-row {
+        gap: 10px;
+    }
+
+    .faq-question {
+        padding: 14px 15px;
+
+        gap: 10px;
+
+        font-size: 0.88rem;
+    }
+
+    .faq-question i {
+        width: 26px;
+        height: 26px;
+
+        font-size: 0.65rem;
+    }
+
+    .faq-answer-row {
+        gap: 10px;
+
+        margin-left: 5px;
+    }
+
+    .faq-answer {
+        padding: 14px 16px;
+    }
+
+    .faq-answer p {
+        font-size: 0.85rem;
+    }
+
+}
 /* ==========================================
    CONTACT PAGE CTA
 ========================================== */
