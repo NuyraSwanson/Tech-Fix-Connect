@@ -127,240 +127,624 @@
 
 </header>
 
-    <section class="hero booking-hero" data-animate="fade-up">
-        <div class="hero-text">
-            <div class="hero-badge">Book a Repair</div>
-            <h1>Get your device back in working order.</h1>
-            <p>Share your details and let our technicians start your repair journey with a clear, student-friendly
-                process.</p>
-        </div>
-        <div class="hero-image"><img src="images/book-repair-hero.png" alt="Booking a device repair"></div>
-    </section>
+    <!-- =========================================================
+     BOOK REPAIR HERO
+========================================================= -->
 
-    <section class="booking-section" data-animate="fade-up">
-        <h2>Book Your Repair</h2>
-        <p class="section-intro">Please provide the details below so our technicians can better understand your repair
-            request.</p>
-        <div class="booking-container">
-            <form class="booking-form" data-form="booking" action="#" method="post">
-                <div class="form-section">
-                    <h3><i class="fa-solid fa-user"></i> Your Details</h3>
-                    <div class="form-row">
-                        <div class="form-group"><label for="fullName">Full Name</label><input type="text" id="fullName"
-                                name="fullName" placeholder="Enter your full name" required></div>
-                        <div class="form-group"><label for="studentNumber">Student Number</label><input type="text"
-                                id="studentNumber" name="studentNumber" placeholder="Enter your student number"
-                                required></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email"
-                                name="email" placeholder="example@email.com" required></div>
-                        <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone"
-                                name="phone" placeholder="+27 XX XXX XXXX" required></div>
-                    </div>
-                </div>
-                <div class="form-section">
-                    <h3><i class="fa-solid fa-laptop"></i> Device Details</h3>
-                    <div class="form-row">
-                        <div class="form-group"><label for="deviceType">Device Type</label><select id="deviceType"
-                                name="deviceType" required>
-                                <option value="">Select device</option>
-                                <option value="Laptop">Laptop</option>
-                                <option value="Smartphone">Smartphone</option>
-                                <option value="Tablet">Tablet</option>
-                                <option value="Desktop">Desktop</option>
-                                <option value="Other">Other</option>
-                            </select></div>
-                        <div class="form-group"><label for="brand">Brand</label><input type="text" id="brand"
-                                name="brand" placeholder="e.g. Dell, Apple, Samsung" required></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group"><label for="model">Device Model</label><input type="text" id="model"
-                                name="model" placeholder="Enter device model"></div>
-                        <div class="form-group"><label for="service">Required Service</label><select id="service"
-                                name="service" required>
-                                <option value="">Select service</option>
-                                <option value="Laptop Repair">Laptop Repair</option>
-                                <option value="Smartphone Repair">Smartphone Repair</option>
-                                <option value="Tablet Repair">Tablet Repair</option>
-                                <option value="Software Support">Software Support</option>
-                                <option value="Virus Removal">Virus Removal</option>
-                                <option value="Data Support">Data Support</option>
-                                <option value="Other">Other</option>
-                            </select></div>
-                    </div>
-                </div>
-                <div class="form-section">
-                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Repair Details</h3>
-                    <div class="form-group"><label for="problem">Describe the Problem</label><textarea id="problem"
-                            name="problem" rows="6" placeholder="Please describe what is wrong with your device..."
-                            required></textarea></div>
-                    <div class="form-group"><label for="additional">Additional Information</label><textarea
-                            id="additional" name="additional" rows="4"
-                            placeholder="Anything else our technician should know?"></textarea></div>
-                </div>
-                <div class="form-section">
-                    <h3><i class="fa-solid fa-calendar"></i> Preferred Booking</h3>
-                    <div class="form-row">
-                        <div class="form-group"><label for="date">Preferred Date</label><input type="date" id="date"
-                                name="date" required></div>
-                        <div class="form-group"><label for="time">Preferred Time</label><select id="time" name="time"
-                                required>
-                                <option value="">Select time</option>
-                                <option value="08:00">08:00</option>
-                                <option value="09:00">09:00</option>
-                                <option value="10:00">10:00</option>
-                                <option value="11:00">11:00</option>
-                                <option value="12:00">12:00</option>
-                                <option value="13:00">13:00</option>
-                                <option value="14:00">14:00</option>
-                                <option value="15:00">15:00</option>
-                                <option value="16:00">16:00</option>
-                            </select></div>
-                    </div>
-                </div>
-                <div class="form-checkbox"><input type="checkbox" id="agreement" name="agreement" required><label
-                        for="agreement">I confirm that the information provided is accurate and I agree to the repair
-                        assessment process.</label></div>
-                <button type="submit" class="btn-primary booking-submit"><i class="fa-solid fa-calendar-check"></i>
-                    Submit Repair Request</button>
-                <div id="bookingMessage" class="form-message" aria-live="polite"></div>
-            </form>
-        </div>
-    </section>
+<div class="booking-page">
+<section class="booking-hero">
 
-    <section class="booking-process" data-animate="fade-up">
-        <h2>What Happens Next?</h2>
-        <div class="cards">
-            <div class="card"><i class="fa-solid fa-envelope"></i>
-                <h3>Confirmation</h3>
-                <p>You will receive a Repair ID and confirmation by email.</p>
-            </div>
-            <div class="card"><i class="fa-solid fa-microscope"></i>
-                <h3>Diagnosis</h3>
-                <p>Our technician reviews the device and identifies the issue.</p>
-            </div>
-            <div class="card"><i class="fa-solid fa-circle-check"></i>
-                <h3>Ready for Collection</h3>
-                <p>Once repaired, we will notify you when it is ready.</p>
-            </div>
-        </div>
-    </section>
+    <div class="booking-hero-content">
 
-    <footer>
-        <div class="footer-content">
+        <span class="booking-eyebrow">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            BOOK A REPAIR
+        </span>
+
+        <h1>
+            Let's get your<br>
+            <span>tech back on track.</span>
+        </h1>
+
+        <p>
+            Tell us what's wrong with your device and choose a
+            preferred booking time. We'll take care of the rest.
+        </p>
+
+        <div class="booking-hero-points">
+
             <div>
-                <h3>TechFix Connect</h3>
-                <p>Fast, affordable and reliable device repairs for university students.</p>
+                <i class="fa-solid fa-circle-check"></i>
+                Student-friendly service
             </div>
+
             <div>
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="book-repair.html">Book Repair</a></li>
-                    <li><a href="track-repair.html">Track Repair</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <i class="fa-solid fa-circle-check"></i>
+                Clear repair process
             </div>
+
             <div>
-                <h3>Contact</h3>
-                <p>Email: support@techfixconnect.co.za</p>
-                <p>Phone: +27 21 555 1234</p>
-                <p>Cape Town, South Africa</p>
+                <i class="fa-solid fa-circle-check"></i>
+                Repair updates provided
             </div>
+
         </div>
-        <hr>
-        <p class="copyright">© 2026 TechFix Connect. All Rights Reserved.</p>
-    </footer>
-    <script src="../script.js"></script>
-</body>
-
-</html>
-<h2>
-    What Happens Next?
-</h2>
-
-
-<div class="steps">
-
-
-    <div class="step">
-
-        <span>1</span>
-
-        <i class="fa-solid fa-file-circle-check"></i>
-
-        <h3>
-            Request Received
-        </h3>
-
-        <p>
-            We'll receive your repair request
-            and review the information provided.
-        </p>
 
     </div>
 
 
-    <div class="step">
+    <div class="booking-hero-image">
 
-        <span>2</span>
-
-        <i class="fa-solid fa-phone"></i>
-
-        <h3>
-            Confirmation
-        </h3>
-
-        <p>
-            We'll confirm your booking and
-            provide further instructions.
-        </p>
+        <img
+            src="images/book-repair-hero.png"
+            alt="Student booking a device repair"
+        >
 
     </div>
-
-
-    <div class="step">
-
-        <span>3</span>
-
-        <i class="fa-solid fa-screwdriver-wrench"></i>
-
-        <h3>
-            Device Repair
-        </h3>
-
-        <p>
-            Our technician diagnoses and
-            repairs your device.
-        </p>
-
-    </div>
-
-
-    <div class="step">
-
-        <span>4</span>
-
-        <i class="fa-solid fa-circle-check"></i>
-
-        <h3>
-            Ready for Collection
-        </h3>
-
-        <p>
-            You'll receive an update when
-            your device is ready.
-        </p>
-
-    </div>
-
-</div>
 
 </section>
 
 
+<!-- =========================================================
+     BOOKING FORM
+========================================================= -->
+
+<section class="booking-section">
+
+    <div class="booking-heading">
+
+        <span class="booking-label">
+            REPAIR REQUEST
+        </span>
+
+        <h2>Book Your Repair</h2>
+
+        <p>
+            Complete the form below so our technicians can
+            understand your device and prepare for your repair.
+        </p>
+
+    </div>
+
+
+    <div class="booking-layout">
+
+        <!-- FORM -->
+
+        <form
+            class="booking-form"
+            data-form="booking"
+            action="#"
+            method="post"
+        >
+
+            <!-- =============================================
+                 STEP 01
+            ============================================== -->
+
+            <div class="booking-step">
+
+                <div class="step-heading">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div>
+                        <h3>Your Details</h3>
+                        <p>Tell us who we're helping.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="studentNumber">
+                            Student Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentNumber"
+                            name="studentNumber"
+                            placeholder="Enter your student number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+27 XX XXX XXXX"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =============================================
+                 STEP 02
+            ============================================== -->
+
+            <div class="booking-step">
+
+                <div class="step-heading">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div>
+                        <h3>Your Device</h3>
+                        <p>Give us some basic information about it.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="deviceType">
+                            Device Type
+                        </label>
+
+                        <select
+                            id="deviceType"
+                            name="deviceType"
+                            required
+                        >
+
+                            <option value="">
+                                Select device
+                            </option>
+
+                            <option value="Laptop">
+                                Laptop
+                            </option>
+
+                            <option value="Smartphone">
+                                Smartphone
+                            </option>
+
+                            <option value="Tablet">
+                                Tablet
+                            </option>
+
+                            <option value="Desktop">
+                                Desktop
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="brand">
+                            Brand
+                        </label>
+
+                        <input
+                            type="text"
+                            id="brand"
+                            name="brand"
+                            placeholder="e.g. Dell, Apple, Samsung"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="model">
+                            Device Model
+                        </label>
+
+                        <input
+                            type="text"
+                            id="model"
+                            name="model"
+                            placeholder="Enter device model"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            Required Service
+                        </label>
+
+                        <select
+                            id="service"
+                            name="service"
+                            required
+                        >
+
+                            <option value="">
+                                Select service
+                            </option>
+
+                            <option value="Screen Replacement">
+                                Screen Replacement
+                            </option>
+
+                            <option value="Battery Replacement">
+                                Battery Replacement
+                            </option>
+
+                            <option value="Keyboard Repair">
+                                Keyboard Repair
+                            </option>
+
+                            <option value="Software Installation">
+                                Software Installation
+                            </option>
+
+                            <option value="Virus Removal">
+                                Virus Removal
+                            </option>
+
+                            <option value="Device Cleaning">
+                                Device Cleaning
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =============================================
+                 STEP 03
+            ============================================== -->
+
+            <div class="booking-step">
+
+                <div class="step-heading">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div>
+                        <h3>What's Wrong?</h3>
+                        <p>Help our technician understand the problem.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="problem">
+                        Describe the Problem
+                    </label>
+
+                    <textarea
+                        id="problem"
+                        name="problem"
+                        rows="5"
+                        placeholder="Tell us what is happening with your device..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="additional">
+                        Additional Information
+                        <span>(Optional)</span>
+                    </label>
+
+                    <textarea
+                        id="additional"
+                        name="additional"
+                        rows="4"
+                        placeholder="Anything else our technician should know?"
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <!-- =============================================
+                 STEP 04
+            ============================================== -->
+
+            <div class="booking-step">
+
+                <div class="step-heading">
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <div>
+                        <h3>Choose a Time</h3>
+                        <p>Tell us when you'd prefer to bring your device in.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Preferred Time
+                        </label>
+
+                        <select
+                            id="time"
+                            name="time"
+                            required
+                        >
+
+                            <option value="">
+                                Select time
+                            </option>
+
+                            <option value="08:00">
+                                08:00
+                            </option>
+
+                            <option value="09:00">
+                                09:00
+                            </option>
+
+                            <option value="10:00">
+                                10:00
+                            </option>
+
+                            <option value="11:00">
+                                11:00
+                            </option>
+
+                            <option value="12:00">
+                                12:00
+                            </option>
+
+                            <option value="13:00">
+                                13:00
+                            </option>
+
+                            <option value="14:00">
+                                14:00
+                            </option>
+
+                            <option value="15:00">
+                                15:00
+                            </option>
+
+                            <option value="16:00">
+                                16:00
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =============================================
+                 AGREEMENT
+            ============================================== -->
+
+            <div class="booking-agreement">
+
+                <input
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                    required
+                >
+
+                <label for="agreement">
+
+                    I confirm that the information provided is
+                    accurate and I agree to the repair assessment
+                    process.
+
+                </label>
+
+            </div>
+
+
+            <!-- =============================================
+                 SUBMIT
+            ============================================== -->
+
+            <button
+                type="submit"
+                class="booking-submit"
+            >
+
+                <span>
+                    Submit Repair Request
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+            <div
+                id="bookingMessage"
+                class="form-message"
+                aria-live="polite"
+            ></div>
+
+        </form>
+
+
+        <!-- SIDE INFORMATION -->
+
+        <aside class="booking-sidebar">
+
+            <div class="booking-sidebar-inner">
+
+                <span class="sidebar-label">
+                    HOW IT WORKS
+                </span>
+
+                <h3>
+                    From booking<br>
+                    to repair.
+                </h3>
+
+                <p>
+                    We keep the process simple so you can spend
+                    less time worrying about your device and more
+                    time focusing on your studies.
+                </p>
+
+
+                <div class="sidebar-steps">
+
+                    <div>
+
+                        <span>01</span>
+
+                        <p>
+                            Submit your repair request.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>02</span>
+
+                        <p>
+                            Receive your confirmation and Repair ID.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>03</span>
+
+                        <p>
+                            Bring in your device for diagnosis.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>04</span>
+
+                        <p>
+                            Get notified when your device is ready.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+   
 <!-- ================= CTA ================= -->
 
 <section class="cta">
