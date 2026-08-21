@@ -22,48 +22,105 @@
 
 <body>
 
+<!-- ================= NAVIGATION ================= -->
+
 <header>
 
     <nav class="navbar">
 
-        <a href="index.html" class="logo">
+        <!-- Logo -->
+        <div class="logo">
 
-            <img
-                src="../images/logo.png"
-                alt="TechFix Connect Logo">
+            <img src="images/logo.png" alt="TechFix Connect Logo">
 
             <h2>TechFix Connect</h2>
 
-        </a>
+        </div>
 
+
+        <!-- Navigation Links -->
         <ul class="nav-links">
 
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.html">
+                    Home
+                </a>
             </li>
 
             <li>
-                <a href="services.html">Services</a>
+                <a href="services.html">
+                    Services
+                </a>
             </li>
 
-            <li>
-                <a href="book-repair.html">Book Repair</a>
+
+            <!-- Repairs Dropdown -->
+            <li class="dropdown">
+
+                <a href="#">
+                    Repairs
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="book-repair.html">
+                            Book a Repair
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="track-repair.html">
+                            Track Repair
+                        </a>
+                    </li>
+
+                </ul>
+
             </li>
 
-            <li>
-                <a href="track-repair.html">Track Repair</a>
+
+            <!-- Marketplace Dropdown -->
+            <li class="dropdown">
+
+                <a href="#">
+                    Marketplace
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="buy-device.html">
+                            Buy a Device
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sell-device.html">
+                            Sell Your Device
+                        </a>
+                    </li>
+
+                </ul>
+
             </li>
 
+
             <li>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html">
+                    Contact
+                </a>
             </li>
+
 
         </ul>
 
-        <a
-            href="login.html"
-            class="btn-primary">
-            Login
+
+        <!-- Main Call To Action -->
+        <a href="book-repair.html" class="btn-primary">
+            Book a Repair
         </a>
 
     </nav>
@@ -71,163 +128,236 @@
 </header>
 
 
+<!-- =========================================================
+     REGISTER / SELLER ACCOUNT
+========================================================= -->
+
 <section class="auth-section">
 
     <div class="auth-container">
 
-        <div class="auth-icon">
+        <div class="auth-card">
 
-            <i class="fa-solid fa-user-plus"></i>
+            <div class="auth-icon">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+
+
+            <h1>Create Your Seller Account</h1>
+
+            <p class="auth-intro">
+                Create an account to sell and manage your devices
+                on the TechFix Connect marketplace.
+            </p>
+
+
+            <form id="registerForm">
+
+
+                <!-- FULL NAME -->
+
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Student Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your student email"
+                        required>
+
+                    <small class="field-hint">
+                        Use your CPUT student email address.
+                    </small>
+
+                </div>
+
+
+                <!-- STUDENT NUMBER -->
+
+                <div class="form-group">
+
+                    <label for="studentNumber">
+                        Student Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentNumber"
+                        name="studentNumber"
+                        placeholder="Enter your student number"
+                        required>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="e.g. 082 123 4567"
+                        required>
+
+                    <small class="field-hint">
+                        Used to contact you about your marketplace listings.
+                    </small>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required>
+
+                </div>
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        required>
+
+                </div>
+
+
+                <!-- TERMS -->
+
+                <div class="terms-group">
+
+                    <label class="terms-label">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required>
+
+                        <span>
+                            I agree to the
+                            <a href="#">Terms & Conditions</a>
+                            and understand that my account is used
+                            for selling devices on the marketplace.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="btn-primary auth-button">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Create Seller Account
+
+                </button>
+
+
+                <div
+                    id="registerMessage"
+                    class="form-message"
+                    aria-live="polite">
+                </div>
+
+
+            </form>
+
+
+            <!-- LOGIN -->
+
+            <div class="auth-register">
+
+                <p>
+                    Already have a seller account?
+
+                    <a href="login.html">
+                        Login
+                    </a>
+                </p>
+
+            </div>
 
         </div>
-
-        <h1>Create Account</h1>
-
-        <p class="auth-intro">
-            Create your TechFix Connect student account.
-        </p>
-
-
-        <form id="registerForm">
-
-            <div class="form-group">
-
-                <label for="fullName">
-                    Full Name
-                </label>
-
-                <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter your full name"
-                    required>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="email">
-                    Email Address
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="studentNumber">
-                    Student Number
-                </label>
-
-                <input
-                    type="text"
-                    id="studentNumber"
-                    name="studentNumber"
-                    placeholder="Enter your student number"
-                    required>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="password">
-                    Password
-                </label>
-
-                <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Create a password"
-                    required>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="confirmPassword">
-                    Confirm Password
-                </label>
-
-                <input
-                    type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="Confirm your password"
-                    required>
-
-            </div>
-
-
-            <button
-                type="submit"
-                class="btn-primary auth-button">
-
-                <i class="fa-solid fa-user-plus"></i>
-
-                Create Account
-
-            </button>
-
-
-            <div
-                id="registerMessage"
-                class="form-message">
-            </div>
-
-        </form>
-
-
-        <p class="auth-register">
-
-            Already have an account?
-
-            <a href="login.html">
-                Login
-            </a>
-
-        </p>
 
     </div>
 
 </section>
 
-
 <footer>
-
-    <div class="footer-content">
-
-        <div>
-
-            <h3>TechFix Connect</h3>
-
-            <p>
-                Fast, affordable and reliable device
-                repairs for university students.
-            </p>
-
+        <div class="footer-content">
+            <div>
+                <h3>TechFix Connect</h3>
+                <p>Fast, affordable and reliable device repair services designed specifically for university students.
+                </p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="book-repair.html">Book Repair</a></li>
+                    <li><a href="track-repair.html">Track Repair</a></li>
+                    <li><a href="design.html">Design</a></li>
+                </ul>
+            </div>
         </div>
-
-    </div>
-
-    <hr>
-
-    <p class="copyright">
-        © 2026 TechFix Connect. All Rights Reserved.
-    </p>
-
-</footer>
+        <hr>
+        <p class="copyright">© 2026 TechFix Connect. All Rights Reserved.</p>
+    </footer>
 
 
 <script src="../js/register.js"></script>
