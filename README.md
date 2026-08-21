@@ -120,3 +120,25 @@ TechFixConnect/
 ├── images/
 │
 └── README.md
+
+                    MARKETPLACE
+                         │
+                         ▼
+                 Browse Devices
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+         Just browsing         Want to sell?
+              │                     │
+              ▼                     ▼
+       View listings          Is user logged in?
+                                    │
+                              ┌─────┴─────┐
+                              │           │
+                             NO          YES
+                              │           │
+                              ▼           ▼
+                     Register / Login   Sell Device
+                              │           │
+                              ▼           ▼
+                         Sell Device   Create Listing
