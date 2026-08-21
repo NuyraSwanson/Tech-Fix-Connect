@@ -121,6 +121,18 @@ TechFixConnect/
 │
 └── README.md
 
+                      REPAIRS
+                         │
+             ┌───────────┼───────────┐
+             │           │           │
+          Book Repair  Track Repair  Repair Info
+             │           │           │
+             ▼           ▼           ▼
+          No account  Repair ID    No account
+          required    required     required
+
+
+
                     MARKETPLACE
                          │
                          ▼
