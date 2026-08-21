@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TechFix Connect | Sell Your Device</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+
+            <img src="images/logo.png" alt="TechFix Connect Logo">
+
+            <h2>TechFix Connect</h2>
+
+        </div>
+
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html" >
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+
+            <!-- Repairs Dropdown -->
+            <li class="dropdown">
+
+                <a href="#">
+                    Repairs
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="book-repair.html">
+                            Book a Repair
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="track-repair.html">
+                            Track Repair
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <!-- Marketplace Dropdown -->
+            <li class="dropdown">
+
+                <a href="#">
+                    Marketplace
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="buy-device.html" class="active">
+                            Buy a Device
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sell-device.html" >
+                            Sell Your Device
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- Main Call To Action -->
+        <a href="book-repair.html" class="btn-primary">
+            Book a Repair
+        </a>
+
+    </nav>
+
+</header>
+
+<!-- =========================================================
+     BUY DEVICE PAGE
+========================================================= -->
+
+<section class="marketplace-hero">
+
+    <div class="marketplace-hero-content">
+
+        <span class="marketplace-eyebrow">
+            <i class="fa-solid fa-store"></i>
+            STUDENT MARKETPLACE
+        </span>
+
+        <h1>
+            Find Your<br>
+            <span>Next Device</span>
+        </h1>
+
+        <p>
+            Discover affordable laptops, smartphones, tablets
+            and more, listed by fellow students.
+        </p>
+
+    </div>
+
+    <!-- Decorative shapes -->
+
+    <div class="marketplace-shape marketplace-shape-one"></div>
+    <div class="marketplace-shape marketplace-shape-two"></div>
+    <div class="marketplace-shape marketplace-shape-three"></div>
+
+</section>
+
+
+<!-- =========================================================
+     MARKETPLACE SEARCH
+========================================================= -->
+
+<section class="marketplace-search">
+
+    <div class="marketplace-search-container">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="deviceSearch"
+                placeholder="Search for laptops, phones, tablets..."
+                aria-label="Search devices">
+
+            <button type="button" id="searchButton">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- CATEGORY BUTTONS -->
+
+        <div class="category-filters">
+
+            <button
+                type="button"
+                class="category-btn active"
+                data-category="all">
+
+                <i class="fa-solid fa-border-all"></i>
+                All Devices
+
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="laptop">
+
+                <i class="fa-solid fa-laptop"></i>
+                Laptops
+
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="smartphone">
+
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                Smartphones
+
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="tablet">
+
+                <i class="fa-solid fa-tablet-screen-button"></i>
+                Tablets
+
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="desktop">
+
+                <i class="fa-solid fa-desktop"></i>
+                Desktops
+
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="accessories">
+
+                <i class="fa-solid fa-headphones"></i>
+                Accessories
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MARKETPLACE CONTENT
+========================================================= -->
+
+<section class="marketplace-section">
+
+    <div class="marketplace-layout">
+
+
+        <!-- =================================================
+             FILTER SIDEBAR
+        ================================================== -->
+
+        <aside class="marketplace-filters">
+
+            <div class="filter-header">
+
+                <div>
+                    <span class="filter-eyebrow">
+                        REFINE
+                    </span>
+
+                    <h2>Filters</h2>
+                </div>
+
+                <button
+                    type="button"
+                    id="clearFilters"
+                    class="clear-filters">
+
+                    Clear All
+
+                </button>
+
+            </div>
+
+
+            <!-- CATEGORY -->
+
+            <div class="filter-group">
+
+                <h3>Category</h3>
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="all"
+                        checked>
+
+                    <span>All Devices</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="laptop">
+
+                    <span>Laptops</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="smartphone">
+
+                    <span>Smartphones</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="tablet">
+
+                    <span>Tablets</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="desktop">
+
+                    <span>Desktops</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="radio"
+                        name="category"
+                        value="accessories">
+
+                    <span>Accessories</span>
+
+                </label>
+
+            </div>
+
+
+            <!-- CONDITION -->
+
+            <div class="filter-group">
+
+                <h3>Condition</h3>
+
+                <label class="filter-option">
+
+                    <input
+                        type="checkbox"
+                        name="condition"
+                        value="new">
+
+                    <span>New</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="checkbox"
+                        name="condition"
+                        value="like-new">
+
+                    <span>Like New</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="checkbox"
+                        name="condition"
+                        value="good">
+
+                    <span>Good</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="checkbox"
+                        name="condition"
+                        value="fair">
+
+                    <span>Fair</span>
+
+                </label>
+
+            </div>
+
+
+            <!-- PRICE -->
+
+            <div class="filter-group">
+
+                <h3>Price Range</h3>
+
+                <div class="price-inputs">
+
+                    <div class="price-field">
+
+                        <label for="minPrice">
+                            Min
+                        </label>
+
+                        <input
+                            type="number"
+                            id="minPrice"
+                            name="minPrice"
+                            placeholder="R0"
+                            min="0">
+
+                    </div>
+
+
+                    <div class="price-field">
+
+                        <label for="maxPrice">
+                            Max
+                        </label>
+
+                        <input
+                            type="number"
+                            id="maxPrice"
+                            name="maxPrice"
+                            placeholder="R20 000"
+                            min="0">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BRAND -->
+
+            <div class="filter-group">
+
+                <h3>Brand</h3>
+
+                <label class="filter-option">
+
+                    <input
+                        type="checkbox"
+                        name="brand"
+                        value="apple">
+
+                    <span>Apple</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="checkbox"
+                        name="brand"
+                        value="samsung">
+
+                    <span>Samsung</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="checkbox"
+                        name="brand"
+                        value="hp">
+
+                    <span>HP</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="checkbox"
+                        name="brand"
+                        value="lenovo">
+
+                    <span>Lenovo</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="checkbox"
+                        name="brand"
+                        value="dell">
+
+                    <span>Dell</span>
+
+                </label>
+
+                <label class="filter-option">
+
+                    <input
+                        type="checkbox"
+                        name="brand"
+                        value="huawei">
+
+                    <span>Huawei</span>
+
+                </label>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="apply-filters"
+                id="applyFilters">
+
+                Apply Filters
+                <i class="fa-solid fa-filter"></i>
+
+            </button>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             LISTINGS
+        ================================================== -->
+
+        <div class="marketplace-listings">
+
+
+            <!-- LISTINGS HEADER -->
+
+            <div class="listings-header">
+
+                <div>
+
+                    <span class="listings-eyebrow">
+                        AVAILABLE NOW
+                    </span>
+
+                    <h2>
+                        Browse Devices
+                    </h2>
+
+                    <p id="listingCount">
+                        Showing available devices
+                    </p>
+
+                </div>
+
+
+                <div class="sort-container">
+
+                    <label for="sortDevices">
+                        Sort by
+                    </label>
+
+                    <select id="sortDevices">
+
+                        <option value="newest">
+                            Newest
+                        </option>
+
+                        <option value="price-low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="price-high">
+                            Price: High to Low
+                        </option>
+
+                        <option value="condition">
+                            Condition
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 DEVICE GRID
+            ================================================== -->
+
+            <div class="device-grid" id="deviceGrid">
+
+
+                <!-- DEVICE CARD 1 -->
+
+                <article
+                    class="device-card"
+                    data-category="laptop"
+                    data-condition="like-new"
+                    data-brand="hp"
+                    data-price="4500">
+
+                    <div class="device-image">
+
+                        <span class="condition-badge like-new">
+                            Like New
+                        </span>
+
+                        <div class="device-placeholder">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="device-card-content">
+
+                        <span class="device-category">
+                            Laptop
+                        </span>
+
+                        <h3>
+                            HP Pavilion 15
+                        </h3>
+
+                        <p class="device-specs">
+                            Intel Core i5 · 8GB RAM · 512GB SSD
+                        </p>
+
+                        <div class="device-price">
+                            R4,500
+                        </div>
+
+                        <div class="device-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            CPUT District Six
+
+                        </div>
+
+                        <a
+                            href="device-details.html"
+                            class="view-device">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DEVICE CARD 2 -->
+
+                <article
+                    class="device-card"
+                    data-category="smartphone"
+                    data-condition="good"
+                    data-brand="samsung"
+                    data-price="3200">
+
+                    <div class="device-image">
+
+                        <span class="condition-badge good">
+                            Good
+                        </span>
+
+                        <div class="device-placeholder">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="device-card-content">
+
+                        <span class="device-category">
+                            Smartphone
+                        </span>
+
+                        <h3>
+                            Samsung Galaxy A54
+                        </h3>
+
+                        <p class="device-specs">
+                            128GB · 8GB RAM · Unlocked
+                        </p>
+
+                        <div class="device-price">
+                            R3,200
+                        </div>
+
+                        <div class="device-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            CPUT District Six
+
+                        </div>
+
+                        <a
+                            href="device-details.html"
+                            class="view-device">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DEVICE CARD 3 -->
+
+                <article
+                    class="device-card"
+                    data-category="tablet"
+                    data-condition="like-new"
+                    data-brand="apple"
+                    data-price="2800">
+
+                    <div class="device-image">
+
+                        <span class="condition-badge like-new">
+                            Like New
+                        </span>
+
+                        <div class="device-placeholder">
+                            <i class="fa-solid fa-tablet-screen-button"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="device-card-content">
+
+                        <span class="device-category">
+                            Tablet
+                        </span>
+
+                        <h3>
+                            iPad 9th Generation
+                        </h3>
+
+                        <p class="device-specs">
+                            64GB · Wi-Fi · Space Grey
+                        </p>
+
+                        <div class="device-price">
+                            R2,800
+                        </div>
+
+                        <div class="device-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            CPUT District Six
+
+                        </div>
+
+                        <a
+                            href="device-details.html"
+                            class="view-device">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DEVICE CARD 4 -->
+
+                <article
+                    class="device-card"
+                    data-category="laptop"
+                    data-condition="good"
+                    data-brand="lenovo"
+                    data-price="5200">
+
+                    <div class="device-image">
+
+                        <span class="condition-badge good">
+                            Good
+                        </span>
+
+                        <div class="device-placeholder">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="device-card-content">
+
+                        <span class="device-category">
+                            Laptop
+                        </span>
+
+                        <h3>
+                            Lenovo IdeaPad 3
+                        </h3>
+
+                        <p class="device-specs">
+                            Ryzen 5 · 8GB RAM · 256GB SSD
+                        </p>
+
+                        <div class="device-price">
+                            R5,200
+                        </div>
+
+                        <div class="device-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            CPUT Bellville
+
+                        </div>
+
+                        <a
+                            href="device-details.html"
+                            class="view-device">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DEVICE CARD 5 -->
+
+                <article
+                    class="device-card"
+                    data-category="smartphone"
+                    data-condition="fair"
+                    data-brand="apple"
+                    data-price="4200">
+
+                    <div class="device-image">
+
+                        <span class="condition-badge fair">
+                            Fair
+                        </span>
+
+                        <div class="device-placeholder">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="device-card-content">
+
+                        <span class="device-category">
+                            Smartphone
+                        </span>
+
+                        <h3>
+                            iPhone 11
+                        </h3>
+
+                        <p class="device-specs">
+                            64GB · Unlocked · Battery 82%
+                        </p>
+
+                        <div class="device-price">
+                            R4,200
+                        </div>
+
+                        <div class="device-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            CPUT District Six
+
+                        </div>
+
+                        <a
+                            href="device-details.html"
+                            class="view-device">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DEVICE CARD 6 -->
+
+                <article
+                    class="device-card"
+                    data-category="accessories"
+                    data-condition="new"
+                    data-brand="samsung"
+                    data-price="850">
+
+                    <div class="device-image">
+
+                        <span class="condition-badge new">
+                            New
+                        </span>
+
+                        <div class="device-placeholder">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="device-card-content">
+
+                        <span class="device-category">
+                            Accessories
+                        </span>
+
+                        <h3>
+                            Samsung Galaxy Buds
+                        </h3>
+
+                        <p class="device-specs">
+                            Wireless · Bluetooth · Charging Case
+                        </p>
+
+                        <div class="device-price">
+                            R850
+                        </div>
+
+                        <div class="device-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            CPUT Bellville
+
+                        </div>
+
+                        <a
+                            href="device-details.html"
+                            class="view-device">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- NO RESULTS -->
+
+            <div
+                id="noResults"
+                class="no-results"
+                hidden>
+
+                <div class="no-results-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <h3>
+                    No devices found
+                </h3>
+
+                <p>
+                    Try adjusting your search or filters to
+                    find available devices.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     NO ACCOUNT REQUIRED
+========================================================= -->
+
+<section class="browse-notice">
+
+    <div class="browse-notice-content">
+
+        <div class="browse-notice-icon">
+            <i class="fa-solid fa-circle-info"></i>
+        </div>
+
+        <div>
+
+            <h3>
+                Just browsing?
+            </h3>
+
+            <p>
+                No account is required to browse the marketplace.
+                You only need an account if you want to sell a device.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW BUYING WORKS
+========================================================= -->
+
+<section class="buying-process">
+
+    <div class="buying-process-header">
+
+        <span class="section-eyebrow">
+            SIMPLE PROCESS
+        </span>
+
+        <h2>
+            How Buying Works
+        </h2>
+
+        <p>
+            Find a device, check the details and connect
+            with the seller.
+        </p>
+
+    </div>
+
+
+    <div class="buying-steps">
+
+
+        <!-- STEP 1 -->
+
+        <div class="buying-step">
+
+            <div class="buying-step-number">
+                01
+            </div>
+
+            <div class="buying-step-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <h3>
+                Find a Device
+            </h3>
+
+            <p>
+                Browse available devices and use filters to
+                find something within your budget.
+            </p>
+
+        </div>
+
+
+
+        <!-- STEP 2 -->
+
+        <div class="buying-step">
+
+            <div class="buying-step-number">
+                02
+            </div>
+
+            <div class="buying-step-icon">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+
+            <h3>
+                Check the Details
+            </h3>
+
+            <p>
+                Review the device specifications, condition,
+                price and seller information.
+            </p>
+
+        </div>
+
+
+
+        <!-- STEP 3 -->
+
+        <div class="buying-step">
+
+            <div class="buying-step-number">
+                03
+            </div>
+
+            <div class="buying-step-icon">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+
+            <h3>
+                Contact the Seller
+            </h3>
+
+            <p>
+                Send the seller an enquiry and arrange the
+                next steps for your purchase.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MARKETPLACE CTA
+========================================================= -->
+
+<section class="marketplace-cta">
+
+    <div class="marketplace-cta-content">
+
+        <div class="marketplace-cta-icon">
+            <i class="fa-solid fa-laptop"></i>
+        </div>
+
+        <div class="marketplace-cta-text">
+
+            <h2>
+                Can't find what you're looking for?
+            </h2>
+
+            <p>
+                Check back regularly as new student listings
+                are added to the marketplace.
+            </p>
+
+        </div>
+
+        <a
+            href="#deviceGrid"
+            class="btn-primary">
+
+            Browse Devices
+
+            <i class="fa-solid fa-arrow-up"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+        <div class="footer-content">
+            <div>
+                <h3>TechFix Connect</h3>
+                <p>Fast, affordable and reliable device repairs for university students.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="book-repair.html">Book Repair</a></li>
+                    <li><a href="track-repair.html">Track Repair</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="design.html">Design</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: support@techfixconnect.co.za</p>
+                <p>Phone: +27 21 555 1234</p>
+                <p>Cape Town, South Africa</p>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2026 TechFix Connect. All Rights Reserved.</p>
+    </footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
