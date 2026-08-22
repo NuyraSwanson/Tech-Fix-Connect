@@ -21,62 +21,111 @@
 
 <body>
 
-<!-- ================= HEADER ================= -->
+ <!-- ================= NAVIGATION ================= -->
 
 <header>
 
     <nav class="navbar">
 
-        <a href="index.html" class="logo">
+        <!-- Logo -->
+        <div class="logo">
 
-            <img src="../images/logo.png" alt="TechFix Connect Logo">
+            <img src="images/logo.png" alt="TechFix Connect Logo">
 
             <h2>TechFix Connect</h2>
 
-        </a>
+        </div>
 
-        <button class="nav-toggle" aria-label="Toggle navigation">
 
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </button>
-
+        <!-- Navigation Links -->
         <ul class="nav-links">
 
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.html">
+                    Home
+                </a>
             </li>
 
             <li>
-                <a href="services.html">Services</a>
+                <a href="services.html">
+                    Services
+                </a>
             </li>
 
-            <li>
-                <a href="book-repair.html">Book Repair</a>
+
+            <!-- Repairs Dropdown -->
+            <li class="dropdown">
+
+                <a href="#">
+                    Repairs
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="book-repair.html">
+                            Book a Repair
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="track-repair.html">
+                            Track Repair
+                        </a>
+                    </li>
+
+                </ul>
+
             </li>
 
-            <li>
-                <a href="track-repair.html">Track Repair</a>
+
+            <!-- Marketplace Dropdown -->
+            <li class="dropdown">
+
+                <a href="#">
+                    Marketplace
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="buy-device.html">
+                            Buy a Device
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sell-device.html">
+                            Sell Your Device
+                        </a>
+                    </li>
+
+                </ul>
+
             </li>
 
-            <li>
-                <a href="sell-device.html">Sell Device</a>
-            </li>
 
             <li>
-                <a href="profile.html" class="active">Profile</a>
+                <a href="contact.html">
+                    Contact
+                </a>
             </li>
 
+
             <li>
-                <a href="contact.html">Contact</a>
+                <a href="login.html">
+                    Login
+                </a>
             </li>
 
         </ul>
 
+
+        <!-- Main Call To Action -->
         <a href="book-repair.html" class="btn-primary">
-            Book Now
+            Book a Repair
         </a>
 
     </nav>
@@ -84,656 +133,823 @@
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- =========================================================
+     MY REPAIRS PAGE
+========================================================= -->
 
-<section class="hero" data-animate="fade-up">
+<section class="my-repairs-page">
 
-    <div class="hero-text">
 
-        <div class="hero-badge">
-            My Repairs
+    <!-- =====================================================
+         REPAIR HERO
+    ====================================================== -->
+
+    <section class="repairs-hero">
+
+        <div class="repairs-hero-content">
+
+            <span class="repairs-eyebrow">
+
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                MY REPAIR
+
+            </span>
+
+
+            <h1>
+                Your Repair
+            </h1>
+
+
+            <p>
+                Here's the latest update on your device repair.
+            </p>
+
         </div>
 
-        <h1>
-            Keep track of all your device repairs.
-        </h1>
+    </section>
 
-        <p>
-            View your current repairs, previous repairs, repair status,
-            estimated completion dates and technician updates in one place.
-        </p>
 
-    </div>
 
-    <div class="hero-image">
+    <!-- =====================================================
+         REPAIR CONTENT
+    ====================================================== -->
 
-        <img
-            src="../images/track-repairhero.png"
-            alt="Track device repairs">
+    <section class="repair-content">
 
-    </div>
+        <div class="repair-container">
+
+
+            <!-- =================================================
+                 REPAIR HEADER CARD
+            ================================================== -->
+
+            <div class="repair-header-card">
+
+                <div class="repair-header-left">
+
+                    <div class="repair-device-icon">
+
+                        <i class="fa-solid fa-laptop"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="repair-label">
+                            REPAIR ID
+                        </span>
+
+
+                        <h2 id="repairId">
+                            RF-2026-00125
+                        </h2>
+
+
+                        <p id="repairDeviceSummary">
+                            HP Pavilion 15
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="repair-status-wrapper">
+
+                    <span class="repair-label">
+                        CURRENT STATUS
+                    </span>
+
+
+                    <span
+                        class="repair-status-badge in-progress"
+                        id="repairStatus">
+
+                        <i class="fa-solid fa-circle"></i>
+
+                        Diagnosis in Progress
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CURRENT UPDATE
+            ================================================== -->
+
+            <div class="repair-update-card">
+
+                <div class="repair-update-icon">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+
+
+                <div class="repair-update-content">
+
+                    <span class="section-eyebrow">
+                        LATEST UPDATE
+                    </span>
+
+
+                    <h2 id="latestUpdateTitle">
+                        Diagnosis in Progress
+                    </h2>
+
+
+                    <p id="latestUpdateMessage">
+
+                        Our technician is currently checking your
+                        device to identify the issue.
+
+                    </p>
+
+
+                    <span
+                        class="update-date"
+                        id="latestUpdateDate">
+
+                        Updated 20 August 2026
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 REPAIR DETAILS
+            ================================================== -->
+
+            <section class="repair-details-section">
+
+                <div class="repair-section-heading">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            YOUR DEVICE
+                        </span>
+
+
+                        <h2>
+                            Repair Details
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="repair-details-grid">
+
+
+                    <!-- DEVICE -->
+
+                    <div class="repair-detail-card">
+
+                        <div class="repair-detail-icon blue">
+
+                            <i class="fa-solid fa-laptop"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Device
+                            </span>
+
+                            <strong id="deviceType">
+                                Laptop
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MODEL -->
+
+                    <div class="repair-detail-card">
+
+                        <div class="repair-detail-icon cyan">
+
+                            <i class="fa-solid fa-tag"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Model
+                            </span>
+
+                            <strong id="deviceModel">
+                                HP Pavilion 15
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DATE SUBMITTED -->
+
+                    <div class="repair-detail-card">
+
+                        <div class="repair-detail-icon yellow">
+
+                            <i class="fa-solid fa-calendar"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Date Submitted
+                            </span>
+
+                            <strong id="dateSubmitted">
+                                18 August 2026
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ESTIMATED COMPLETION -->
+
+                    <div class="repair-detail-card">
+
+                        <div class="repair-detail-icon green">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Estimated Completion
+                            </span>
+
+                            <strong id="estimatedCompletion">
+                                21 August 2026
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ESTIMATED COST -->
+
+                    <div class="repair-detail-card">
+
+                        <div class="repair-detail-icon orange">
+
+                            <i class="fa-solid fa-money-bill"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Estimated Cost
+                            </span>
+
+                            <strong id="estimatedCost">
+                                R850
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PAYMENT STATUS -->
+
+                    <div class="repair-detail-card">
+
+                        <div class="repair-detail-icon purple">
+
+                            <i class="fa-solid fa-credit-card"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Payment Status
+                            </span>
+
+                            <strong id="paymentStatus">
+                                Pending
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 REPORTED PROBLEM
+            ================================================== -->
+
+            <section class="reported-problem-section">
+
+                <div class="reported-problem-card">
+
+                    <div class="reported-problem-icon">
+
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            REPORTED ISSUE
+                        </span>
+
+
+                        <h2>
+                            What's wrong with the device?
+                        </h2>
+
+
+                        <p id="reportedProblem">
+
+                            Laptop turns on but displays a black
+                            screen after startup.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 REPAIR TIMELINE
+            ================================================== -->
+
+            <section class="repair-progress-section">
+
+                <div class="repair-section-heading">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            REPAIR JOURNEY
+                        </span>
+
+
+                        <h2>
+                            Repair Progress
+                        </h2>
+
+
+                        <p>
+                            Follow your device through each stage
+                            of the repair process.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="repair-timeline">
+
+
+                    <!-- =================================================
+                         STEP 1
+                    ================================================== -->
+
+                    <div
+                        class="timeline-item completed"
+                        data-status="received">
+
+                        <div class="timeline-marker">
+
+                            <i class="fa-solid fa-file-circle-check"></i>
+
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-top">
+
+                                <h3>
+                                    Repair Request Received
+                                </h3>
+
+
+                                <span>
+                                    18 Aug 2026
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Your repair request has been successfully
+                                submitted.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         STEP 2
+                    ================================================== -->
+
+                    <div
+                        class="timeline-item completed"
+                        data-status="received-device">
+
+                        <div class="timeline-marker">
+
+                            <i class="fa-solid fa-box-open"></i>
+
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-top">
+
+                                <h3>
+                                    Device Received
+                                </h3>
+
+
+                                <span>
+                                    19 Aug 2026
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Your device has been received by
+                                TechFix Connect.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         STEP 3
+                    ================================================== -->
+
+                    <div
+                        class="timeline-item current"
+                        data-status="diagnosis">
+
+                        <div class="timeline-marker">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-top">
+
+                                <h3>
+                                    Diagnosis
+                                </h3>
+
+
+                                <span>
+                                    In Progress
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Our technician is currently diagnosing
+                                your device.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         STEP 4
+                    ================================================== -->
+
+                    <div
+                        class="timeline-item"
+                        data-status="repair">
+
+                        <div class="timeline-marker">
+
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-top">
+
+                                <h3>
+                                    Repair
+                                </h3>
+
+
+                                <span>
+                                    Waiting
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                The repair will begin once the diagnosis
+                                has been completed.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         STEP 5
+                    ================================================== -->
+
+                    <div
+                        class="timeline-item"
+                        data-status="ready">
+
+                        <div class="timeline-marker">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-top">
+
+                                <h3>
+                                    Ready for Collection
+                                </h3>
+
+
+                                <span>
+                                    Waiting
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                You'll be notified when your device
+                                is ready to collect.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 TECHNICIAN NOTES
+            ================================================== -->
+
+            <section class="technician-notes-section">
+
+                <div class="technician-notes-card">
+
+                    <div class="technician-notes-icon">
+
+                        <i class="fa-solid fa-user-gear"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            TECHNICIAN NOTES
+                        </span>
+
+
+                        <h2>
+                            Repair Update
+                        </h2>
+
+
+                        <p id="technicianNotes">
+
+                            Technician is currently performing
+                            diagnostic tests to identify the cause
+                            of the display issue.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 COLLECTION INFORMATION
+            ================================================== -->
+
+            <section class="collection-section">
+
+                <div class="collection-card">
+
+                    <div class="collection-icon">
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            COLLECTION
+                        </span>
+
+
+                        <h2>
+                            Collect Your Device
+                        </h2>
+
+
+                        <p id="collectionMessage">
+
+                            Your device will be ready for collection
+                            once the repair has been completed.
+
+                        </p>
+
+
+                        <div class="collection-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>
+                                TechFix Connect
+                                <br>
+                                Cape Peninsula University of Technology
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 NEED HELP
+            ================================================== -->
+
+            <section class="repair-help-section">
+
+                <div class="repair-help-content">
+
+                    <div class="repair-help-icon">
+
+                        <i class="fa-solid fa-circle-question"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            NEED HELP?
+                        </span>
+
+
+                        <h2>
+                            Have a question about your repair?
+                        </h2>
+
+
+                        <p>
+                            Contact the TechFix Connect team if you
+                            have any questions about your repair.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="contact.html"
+                        class="repair-help-button">
+
+                        Contact Us
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </section>
 
 </section>
-
-
-<!-- ================= REPAIR SUMMARY ================= -->
-
-<section class="stats" data-animate="fade-up">
-
-    <div class="stat-card">
-
-        <div class="stat-info">
-
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-
-            <h2 id="activeRepairs">
-                0
-            </h2>
-
-            <p>
-                Active Repairs
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="stat-card">
-
-        <div class="stat-info">
-
-            <i class="fa-solid fa-circle-check"></i>
-
-            <h2 id="completedRepairs">
-                0
-            </h2>
-
-            <p>
-                Completed Repairs
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="stat-card">
-
-        <div class="stat-info">
-
-            <i class="fa-solid fa-clock"></i>
-
-            <h2 id="pendingRepairs">
-                0
-            </h2>
-
-            <p>
-                Pending Repairs
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="stat-card">
-
-        <div class="stat-info">
-
-            <i class="fa-solid fa-laptop"></i>
-
-            <h2 id="totalRepairs">
-                0
-            </h2>
-
-            <p>
-                Total Repairs
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= MY REPAIRS ================= -->
-
-<section class="services-section" data-animate="fade-up">
-
-    <h2>
-        My Repair Requests
-    </h2>
-
-    <p class="section-intro">
-
-        Below are your current and previous repair requests.
-
-    </p>
-
-
-    <!-- Repair cards will be inserted here -->
-
-    <div id="repairsContainer" class="cards">
-
-    </div>
-
-
-    <!-- No repairs message -->
-
-    <div id="noRepairs" class="card">
-
-        <i class="fa-solid fa-screwdriver-wrench"></i>
-
-        <h3>
-            No Repairs Found
-        </h3>
-
-        <p>
-            You have not booked a repair yet.
-        </p>
-
-        <a
-            href="book-repair.html"
-            class="btn-primary">
-
-            Book Your First Repair
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= REPAIR INFORMATION ================= -->
-
-<section class="services-benefits" data-animate="fade-up">
-
-    <h2>
-        Understanding Your Repair Status
-    </h2>
-
-    <div class="cards">
-
-
-        <div class="card">
-
-            <i class="fa-solid fa-inbox"></i>
-
-            <h3>
-                Received
-            </h3>
-
-            <p>
-                Your device has been received and is waiting
-                for a technician to inspect it.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <i class="fa-solid fa-magnifying-glass"></i>
-
-            <h3>
-                Diagnosing
-            </h3>
-
-            <p>
-                A technician is checking your device to identify
-                the problem.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-
-            <h3>
-                Repairing
-            </h3>
-
-            <p>
-                Your device is currently being repaired.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <i class="fa-solid fa-circle-check"></i>
-
-            <h3>
-                Ready
-            </h3>
-
-            <p>
-                Your repair has been completed and your device
-                is ready for collection.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ACTIONS ================= -->
-
-<section class="cta" data-animate="fade-up">
-
-    <div class="cta-content">
-
-        <h2>
-            Need another repair?
-        </h2>
-
-        <p>
-            Book another repair and let TechFix Connect
-            take care of your device.
-        </p>
-
-        <a
-            href="book-repair.html"
-            class="btn-primary">
-
-            Book a Repair
-
-        </a>
-
-        <a
-            href="track-repair.html"
-            class="btn-secondary">
-
-            Track a Repair
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
 
 <footer>
-
-    <div class="footer-content">
-
-
-        <div>
-
-            <h3>
-                TechFix Connect
-            </h3>
-
-            <p>
-                Fast, affordable and reliable device repairs
-                for university students.
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <h3>
-                Quick Links
-            </h3>
-
-            <ul>
-
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="services.html">
-                        Services
-                    </a>
-                </li>
-
-                <li>
-                    <a href="book-repair.html">
-                        Book Repair
-                    </a>
-                </li>
-
-                <li>
-                    <a href="track-repair.html">
-                        Track Repair
-                    </a>
-                </li>
-
-                <li>
-                    <a href="sell-device.html">
-                        Sell Device
-                    </a>
-                </li>
-
-                <li>
-                    <a href="profile.html">
-                        Profile
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-
-        <div>
-
-            <h3>
-                Contact
-            </h3>
-
-            <p>
-                Email: support@techfixconnect.co.za
-            </p>
-
-            <p>
-                Phone: +27 21 555 1234
-            </p>
-
-            <p>
-                Cape Town, South Africa
-            </p>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <p class="copyright">
-
-        © 2026 TechFix Connect.
-        All Rights Reserved.
-
-    </p>
-
-</footer>
-
-
-<!-- JavaScript -->
-
-<script src="../js/script.js"></script>
-
-
-<!-- My Repairs JavaScript -->
-
-<script>
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const repairsContainer =
-        document.getElementById("repairsContainer");
-
-    const noRepairs =
-        document.getElementById("noRepairs");
-
-    const activeRepairs =
-        document.getElementById("activeRepairs");
-
-    const completedRepairs =
-        document.getElementById("completedRepairs");
-
-    const pendingRepairs =
-        document.getElementById("pendingRepairs");
-
-    const totalRepairs =
-        document.getElementById("totalRepairs");
-
-
-    /*
-    =====================================================
-    GET REPAIRS FROM LOCAL STORAGE
-    =====================================================
-    */
-
-    let repairs = [];
-
-    try {
-
-        repairs =
-            JSON.parse(
-                localStorage.getItem("techfixRepairs")
-            ) || [];
-
-    } catch (error) {
-
-        repairs = [];
-
-    }
-
-
-    /*
-    =====================================================
-    UPDATE SUMMARY
-    =====================================================
-    */
-
-    const total = repairs.length;
-
-    const completed =
-        repairs.filter(
-            repair =>
-                repair.status &&
-                repair.status.toLowerCase() === "completed"
-        ).length;
-
-    const pending =
-        repairs.filter(
-            repair =>
-                repair.status &&
-                (
-                    repair.status.toLowerCase() === "received" ||
-                    repair.status.toLowerCase() === "pending"
-                )
-        ).length;
-
-    const active =
-        repairs.filter(
-            repair =>
-                repair.status &&
-                (
-                    repair.status.toLowerCase() === "diagnosing" ||
-                    repair.status.toLowerCase() === "repairing"
-                )
-        ).length;
-
-
-    totalRepairs.textContent = total;
-
-    completedRepairs.textContent = completed;
-
-    pendingRepairs.textContent = pending;
-
-    activeRepairs.textContent = active;
-
-
-    /*
-    =====================================================
-    NO REPAIRS
-    =====================================================
-    */
-
-    if (repairs.length === 0) {
-
-        noRepairs.style.display = "block";
-
-        return;
-
-    }
-
-
-    noRepairs.style.display = "none";
-
-
-    /*
-    =====================================================
-    DISPLAY REPAIRS
-    =====================================================
-    */
-
-    repairs.forEach(function (repair) {
-
-        const repairCard =
-            document.createElement("div");
-
-        repairCard.className =
-            "card repair-card";
-
-
-        /*
-        STATUS CLASS
-        */
-
-        let statusClass = "status-default";
-
-        if (repair.status) {
-
-            const status =
-                repair.status.toLowerCase();
-
-            if (status === "received") {
-
-                statusClass = "status-received";
-
-            } else if (status === "diagnosing") {
-
-                statusClass = "status-diagnosing";
-
-            } else if (status === "repairing") {
-
-                statusClass = "status-repairing";
-
-            } else if (status === "completed" ||
-                       status === "ready") {
-
-                statusClass = "status-completed";
-
-            }
-
-        }
-
-
-        repairCard.innerHTML = `
-
-            <div class="repair-card-header">
-
-                <div class="repair-icon">
-
-                    <i class="fa-solid fa-laptop"></i>
-
-                </div>
-
-                <div>
-
-                    <h3>
-                        ${repair.brand || "Unknown Brand"}
-                        ${repair.device || "Device"}
-                    </h3>
-
-                    <p>
-                        Repair ID:
-                        <strong>
-                            ${repair.id || "N/A"}
-                        </strong>
-                    </p>
-
-                </div>
-
+        <div class="footer-content">
+            <div>
+                <h3>TechFix Connect</h3>
+                <p>Fast, affordable and reliable device repairs for university students.</p>
             </div>
-
-
-            <div class="repair-card-body">
-
-                <div class="repair-detail">
-
-                    <span>
-                        Status
-                    </span>
-
-                    <strong class="${statusClass}">
-
-                        ${repair.status || "Pending"}
-
-                    </strong>
-
-                </div>
-
-
-                <div class="repair-detail">
-
-                    <span>
-                        Estimated Completion
-                    </span>
-
-                    <strong>
-
-                        ${repair.estimated || "To be confirmed"}
-
-                    </strong>
-
-                </div>
-
-
-                <div class="repair-detail">
-
-                    <span>
-                        Technician Update
-                    </span>
-
-                    <p>
-
-                        ${
-                            repair.notes ||
-                            "No technician update available yet."
-                        }
-
-                    </p>
-
-                </div>
-
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="book-repair.html">Book Repair</a></li>
+                    <li><a href="track-repair.html">Track Repair</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="design.html">Design</a></li>
+                </ul>
             </div>
-
-
-            <div class="repair-card-actions">
-
-                <a
-                    href="my-repairs.html"
-                    class="btn-secondary">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    View My Repairs
-
-                </a>
-
+            <div>
+                <h3>Contact</h3>
+                <p>Email: support@techfixconnect.co.za</p>
+                <p>Phone: +27 21 555 1234</p>
+                <p>Cape Town, South Africa</p>
             </div>
-
-        `;
-
-
-        repairsContainer.appendChild(repairCard);
-
-    });
-
-});
-
-</script>
-
+        </div>
+        <hr>
+        <p class="copyright">© 2026 TechFix Connect. All Rights Reserved.</p>
+    </footer>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

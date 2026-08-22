@@ -2336,38 +2336,1277 @@ footer p{text-align:center;}
 }
 
 
-
-/* ===========================================
+/* =========================================================
    DESIGN PAGE
-=========================================== */
+========================================================= */
 
-.design-hero{width:90%;max-width:1300px;margin:50px auto;display:flex;align-items:center;justify-content:space-between;gap:70px;}
-.design-text{flex:1;}
-.design-text h1{font-size:3.2rem;color:#0B2E59;margin-bottom:20px;}
-.design-text p{font-size:1.1rem;color:#555;line-height:1.8;}
-.design-image{flex:1;}
-.design-image img{width:100%;border-radius:25px;box-shadow:0 20px 45px rgba(0,0,0,.15);} 
-.design-section{width:90%;max-width:1200px;margin:80px auto;}
-.design-section h2{text-align:center;font-size:2.3rem;color:#0B2E59;margin-bottom:50px;}
-.design-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
-.design-card{background:white;padding:30px;border-radius:20px;text-align:center;box-shadow:0 12px 30px rgba(0,0,0,.08);transition:.3s;}
-.design-card:hover{transform:translateY(-8px);} 
-.design-card h3{color:#0B2E59;margin:20px 0 10px;} 
-.design-card p{color:#666;line-height:1.7;} 
-.colour-box{width:100%;height:120px;border-radius:15px;margin-bottom:20px;}
-.primary{background:#0B2E59;} 
-.accent{background:#18B6C9;} 
-.background{background:#f5f7fb;border:1px solid #ddd;} 
-.text{background:#243247;} 
-.font-preview{font-family:'Poppins',sans-serif;font-size:4rem;color:#0B2E59;} 
-.button-demo{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:20px;} 
-.design-card i{font-size:3rem;color:#18B6C9;margin-bottom:20px;} 
-.logo-showcase{text-align:center;} 
-.logo-showcase img{width:180px;margin-bottom:20px;} 
-.principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;} 
-.principle{background:white;border-radius:20px;padding:30px;box-shadow:0 10px 25px rgba(0,0,0,.08);} 
-.principle h3{color:#0B2E59;margin-bottom:15px;} 
-.principle p{color:#555;line-height:1.8;}
+.design-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #F7FBFC;
+
+    padding-bottom: 90px;
+}
+
+
+/* =========================================================
+   DESIGN INTRO
+========================================================= */
+
+.design-intro {
+    position: relative;
+
+    width: 100%;
+
+    padding: 85px 20px 75px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0B2E59 0%,
+            #14577C 55%,
+            #18B6C9 100%
+        );
+}
+
+
+.design-intro::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    top: -220px;
+    left: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.07);
+}
+
+
+.design-intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    right: -220px;
+    bottom: -300px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+.design-eyebrow {
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    padding: 8px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: #ffffff;
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.design-eyebrow i {
+    color: #7DE8F2;
+}
+
+
+.design-intro h1 {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+
+.design-intro h1 span {
+    display: block;
+
+    color: #7DE8F2;
+}
+
+
+.design-intro p {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+
+    margin: 22px auto 0;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 0.88rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   DESIGN SECTIONS
+========================================================= */
+
+.design-section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 80px auto 0;
+}
+
+
+.design-section > h2 {
+    position: relative;
+
+    margin: 0 0 15px;
+
+    color: #0B2E59;
+
+    font-size: 2.15rem;
+
+    font-weight: 800;
+
+    text-align: center;
+}
+
+
+.design-section > h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    margin: 13px auto 0;
+
+    border-radius: 20px;
+
+    background: #18B6C9;
+}
+
+
+.section-description {
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    color: #71838C;
+
+    font-size: 0.78rem;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   GENERAL CARDS
+========================================================= */
+
+.design-page .cards {
+    display: grid;
+
+    gap: 22px;
+}
+
+
+.design-page .card {
+    position: relative;
+
+    border: 1px solid #DFEBEF;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(11, 46, 89, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.design-page .card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(11, 46, 89, 0.09);
+}
+
+
+/* =========================================================
+   COLOUR PALETTE
+========================================================= */
+
+.design-section:nth-of-type(1) .cards {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.colour-card {
+    overflow: hidden;
+
+    padding-bottom: 25px;
+
+    text-align: center;
+}
+
+
+.colour-box {
+    width: 100%;
+    height: 125px;
+
+    margin-bottom: 20px;
+
+    border-radius: 19px 19px 0 0;
+}
+
+
+/* COLOUR SWATCHES */
+
+.colour-box.primary {
+    background: #0B2E59;
+}
+
+
+.colour-box.accent {
+    background: #18B6C9;
+}
+
+
+.colour-box.background {
+    background: #F5F7FA;
+
+    border-bottom: 1px solid #DFE7EB;
+}
+
+
+.colour-box.text {
+    background: #333333;
+}
+
+
+.colour-box.yellow {
+    background: #FFF2D1;
+
+    border-bottom: 1px solid #F0DEAB;
+}
+
+
+.colour-box.green {
+    background: #E2F7E9;
+
+    border-bottom: 1px solid #C7E9D1;
+}
+
+
+.colour-box.orange {
+    background: #FFF0DC;
+
+    border-bottom: 1px solid #F0D0A9;
+}
+
+
+.colour-box.purple {
+    background: #EEE7FA;
+
+    border-bottom: 1px solid #D8CCF0;
+}
+
+
+.colour-card h3 {
+    margin: 0 0 8px;
+
+    color: #0B2E59;
+
+    font-size: 0.95rem;
+}
+
+
+.colour-code {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    padding: 5px 10px;
+
+    border-radius: 6px;
+
+    background: #EAF8FA;
+
+    color: #1598A8;
+
+    font-family: monospace;
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+}
+
+
+.colour-card p {
+    margin: 0 auto;
+
+    width: 85%;
+
+    color: #71838C;
+
+    font-size: 0.7rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+.typography-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+
+    padding: 40px;
+
+    border: 1px solid #DFEBEF;
+
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(11, 46, 89, 0.05);
+}
+
+
+.font-preview {
+    width: 150px;
+    height: 150px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0B2E59,
+            #18B6C9
+        );
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 4.5rem;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 12px 25px rgba(24, 182, 201, 0.18);
+}
+
+
+.typography-content {
+    flex: 1;
+}
+
+
+.typography-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #18B6C9;
+
+    font-size: 0.62rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+}
+
+
+.typography-content h3 {
+    margin: 0 0 10px;
+
+    color: #0B2E59;
+
+    font-size: 1.7rem;
+}
+
+
+.typography-content > p {
+    max-width: 650px;
+
+    margin: 0 0 20px;
+
+    color: #71838C;
+
+    font-size: 0.76rem;
+
+    line-height: 1.7;
+}
+
+
+.font-weights {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.font-weights span {
+    padding: 7px 12px;
+
+    border-radius: 8px;
+
+    background: #F2F7F8;
+
+    color: #50636C;
+
+    font-size: 0.68rem;
+}
+
+
+.font-weights .light {
+    font-weight: 300;
+}
+
+
+.font-weights .regular {
+    font-weight: 400;
+}
+
+
+.font-weights .medium {
+    font-weight: 500;
+}
+
+
+.font-weights .semibold {
+    font-weight: 600;
+}
+
+
+.font-weights .bold {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BUTTON STYLES
+========================================================= */
+
+.button-cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.button-style-card {
+    overflow: hidden;
+
+    text-align: center;
+}
+
+
+.button-preview {
+    min-height: 150px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+
+.primary-preview {
+    background: #EAF9FB;
+}
+
+
+.secondary-preview {
+    background: #EAF0F7;
+}
+
+
+.outline-preview {
+    background: #F7F9FA;
+}
+
+
+.button-style-card h3 {
+    margin: 22px 20px 6px;
+
+    color: #0B2E59;
+
+    font-size: 1rem;
+}
+
+
+.button-label {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #18B6C9;
+
+    font-size: 0.58rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.1px;
+}
+
+
+.button-style-card p {
+    margin: 0 auto 25px;
+
+    width: 82%;
+
+    color: #71838C;
+
+    font-size: 0.7rem;
+
+    line-height: 1.65;
+}
+
+
+/* BUTTON PREVIEWS */
+
+.design-page .btn-primary,
+.design-page .btn-secondary,
+.design-page .btn-outline {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 0.72rem;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* PRIMARY */
+
+.design-page .btn-primary {
+    border: none;
+
+    background: #18B6C9;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 6px 15px rgba(24, 182, 201, 0.2);
+}
+
+
+.design-page .btn-primary:hover {
+    background: #0B2E59;
+
+    transform: translateY(-2px);
+}
+
+
+/* SECONDARY */
+
+.design-page .btn-secondary {
+    border: none;
+
+    background: #0B2E59;
+
+    color: #ffffff;
+}
+
+
+.design-page .btn-secondary:hover {
+    background: #18B6C9;
+
+    transform: translateY(-2px);
+}
+
+
+/* OUTLINE */
+
+.design-page .btn-outline {
+    border: 2px solid #18B6C9;
+
+    background: transparent;
+
+    color: #1598A8;
+}
+
+
+.design-page .btn-outline:hover {
+    background: #18B6C9;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   INTERFACE COMPONENTS
+========================================================= */
+
+.component-cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.component-card {
+    padding: 30px;
+
+    text-align: center;
+}
+
+
+.component-icon {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    border-radius: 17px;
+
+    font-size: 1.3rem;
+}
+
+
+.repair-icon {
+    background: #DDF7FA;
+
+    color: #1598A8;
+}
+
+
+.marketplace-icon {
+    background: #FFF2D1;
+
+    color: #C68B00;
+}
+
+
+.account-icon {
+    background: #EEE7FA;
+
+    color: #7650A5;
+}
+
+
+.component-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #18B6C9;
+
+    font-size: 0.58rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.1px;
+}
+
+
+.component-card h3 {
+    margin: 0 0 10px;
+
+    color: #0B2E59;
+
+    font-size: 1rem;
+}
+
+
+.component-card p {
+    margin: 0;
+
+    color: #71838C;
+
+    font-size: 0.7rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   DESIGN PRINCIPLES
+========================================================= */
+
+.principle-cards {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.principle-card {
+    padding: 30px 23px;
+
+    text-align: center;
+}
+
+
+.principle-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    border-radius: 16px;
+
+    font-size: 1.25rem;
+}
+
+
+/* PRINCIPLE COLOURS */
+
+.responsive-icon {
+    background: #E4F0FA;
+    color: #315F91;
+}
+
+
+.student-icon {
+    background: #FFF2D1;
+    color: #C68B00;
+}
+
+
+.accessibility-icon {
+    background: #E2F7E9;
+    color: #2E9854;
+}
+
+
+.consistency-icon {
+    background: #DDF7FA;
+    color: #1598A8;
+}
+
+
+.simplicity-icon {
+    background: #EEE7FA;
+    color: #7650A5;
+}
+
+
+.visual-icon {
+    background: #FFE9DF;
+    color: #D87820;
+}
+
+
+.trust-icon {
+    background: #E5EFF9;
+    color: #315F91;
+}
+
+
+.functional-icon {
+    background: #E2F7E9;
+    color: #2E9854;
+}
+
+
+.principle-card h3 {
+    margin: 0 0 10px;
+
+    color: #0B2E59;
+
+    font-size: 0.95rem;
+}
+
+
+.principle-card p {
+    margin: 0;
+
+    color: #71838C;
+
+    font-size: 0.69rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   USER EXPERIENCE
+========================================================= */
+
+.ux-cards {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.ux-card {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 35px;
+
+    text-align: left;
+}
+
+
+.ux-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+}
+
+
+.repair-ux::before {
+    background: #18B6C9;
+}
+
+
+.marketplace-ux::before {
+    background: #F0B429;
+}
+
+
+.ux-number {
+    position: absolute;
+
+    top: 22px;
+    right: 25px;
+
+    color: #E8EFF2;
+
+    font-size: 2.7rem;
+
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+.ux-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 16px;
+
+    font-size: 1.25rem;
+}
+
+
+.repair-ux .ux-icon {
+    background: #DDF7FA;
+
+    color: #1598A8;
+}
+
+
+.marketplace-ux .ux-icon {
+    background: #FFF2D1;
+
+    color: #C68B00;
+}
+
+
+.ux-card > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #18B6C9;
+
+    font-size: 0.6rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+
+.marketplace-ux > span {
+    color: #C68B00;
+}
+
+
+.ux-card h3 {
+    margin: 0 0 10px;
+
+    color: #0B2E59;
+
+    font-size: 1.2rem;
+}
+
+
+.ux-card > p {
+    max-width: 500px;
+
+    margin: 0 0 25px;
+
+    color: #71838C;
+
+    font-size: 0.74rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   USER EXPERIENCE FLOW
+========================================================= */
+
+.ux-flow {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #F5F9FA;
+}
+
+
+.ux-flow span {
+    padding: 7px 10px;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #40545D;
+
+    font-size: 0.6rem;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 2px 6px rgba(11, 46, 89, 0.04);
+}
+
+
+.ux-flow i {
+    color: #18B6C9;
+
+    font-size: 0.55rem;
+}
+
+
+.marketplace-ux .ux-flow i {
+    color: #D49A12;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .design-section:nth-of-type(1) .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .principle-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .button-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .component-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .ux-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .typography-card {
+        gap: 30px;
+
+        padding: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .design-intro {
+        padding: 60px 18px;
+    }
+
+
+    .design-intro h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .design-intro p {
+        font-size: 0.78rem;
+    }
+
+
+    .design-section {
+        width: 92%;
+
+        margin-top: 60px;
+    }
+
+
+    .design-section > h2 {
+        font-size: 1.8rem;
+    }
+
+
+    .section-description {
+        font-size: 0.72rem;
+    }
+
+
+    /* COLOURS */
+
+    .design-section:nth-of-type(1) .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* TYPOGRAPHY */
+
+    .typography-card {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 28px 20px;
+    }
+
+
+    .font-preview {
+        width: 120px;
+        height: 120px;
+
+        font-size: 3.7rem;
+    }
+
+
+    .font-weights {
+        justify-content: center;
+    }
+
+
+    /* BUTTONS */
+
+    .button-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* COMPONENTS */
+
+    .component-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PRINCIPLES */
+
+    .principle-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* UX */
+
+    .ux-card {
+        padding: 28px 22px;
+    }
+
+
+    .ux-number {
+        font-size: 2.2rem;
+    }
+
+
+    .ux-flow {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .ux-flow i {
+        transform: rotate(90deg);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .design-intro h1 {
+        font-size: 2.15rem;
+    }
+
+
+    .design-eyebrow {
+        font-size: 0.58rem;
+    }
+
+
+    .design-section > h2 {
+        font-size: 1.6rem;
+    }
+
+
+    .typography-card {
+        padding: 25px 17px;
+    }
+
+
+    .font-preview {
+        width: 100px;
+        height: 100px;
+
+        font-size: 3rem;
+
+        border-radius: 23px;
+    }
+
+
+    .ux-card {
+        padding: 25px 18px;
+    }
+
+}
 
 
 
@@ -11553,6 +12792,1386 @@ footer p{text-align:center;}
 
     .toggle-switch {
         margin-left: auto;
+    }
+
+}
+
+/* =========================================================
+   MY REPAIRS PAGE
+========================================================= */
+
+.my-repairs-page {
+    width: 100%;
+    background: #F7FBFC;
+}
+
+
+/* =========================================================
+   REPAIR HERO
+========================================================= */
+
+.repairs-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 20px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0B2E59 0%,
+            #12547E 52%,
+            #18B6C9 100%
+        );
+}
+
+
+.repairs-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 370px;
+    height: 370px;
+
+    top: -210px;
+    left: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.07);
+}
+
+
+.repairs-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    right: -220px;
+    bottom: -280px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+.repairs-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+    max-width: 850px;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+
+.repairs-eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    padding: 8px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: #ffffff;
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+
+.repairs-eyebrow i {
+    color: #7DE8F2;
+}
+
+
+.repairs-hero h1 {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+}
+
+
+.repairs-hero p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.repair-content {
+    width: 100%;
+
+    padding: 65px 5% 90px;
+
+    box-sizing: border-box;
+}
+
+
+.repair-container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SHARED LABELS
+========================================================= */
+
+.section-eyebrow {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #18B6C9;
+
+    font-size: 0.65rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+}
+
+
+.repair-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #7A8B95;
+
+    font-size: 0.6rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   REPAIR HEADER
+========================================================= */
+
+.repair-header-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 30px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0B2E59,
+            #14577C
+        );
+
+    box-shadow:
+        0 12px 30px rgba(11, 46, 89, 0.14);
+}
+
+
+.repair-header-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.repair-device-icon {
+    width: 65px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.13);
+
+    color: #7DE8F2;
+
+    font-size: 1.6rem;
+}
+
+
+.repair-header-card h2 {
+    margin: 0 0 3px;
+
+    color: #ffffff;
+
+    font-size: 1.4rem;
+
+    letter-spacing: 0.5px;
+}
+
+
+.repair-header-card p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 0.75rem;
+}
+
+
+.repair-status-wrapper {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 7px;
+}
+
+
+/* =========================================================
+   STATUS BADGE
+========================================================= */
+
+.repair-status-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 9px 14px;
+
+    border-radius: 50px;
+
+    font-size: 0.65rem;
+
+    font-weight: 700;
+}
+
+
+.repair-status-badge i {
+    font-size: 0.42rem;
+}
+
+
+.repair-status-badge.in-progress {
+    background: #FFF1C9;
+
+    color: #9A6A00;
+}
+
+
+.repair-status-badge.in-progress i {
+    color: #E2A500;
+}
+
+
+.repair-status-badge.completed {
+    background: #DDF6E6;
+
+    color: #287A49;
+}
+
+
+.repair-status-badge.completed i {
+    color: #39A964;
+}
+
+
+.repair-status-badge.waiting {
+    background: #E5F1FA;
+
+    color: #315F91;
+}
+
+
+/* =========================================================
+   LATEST UPDATE
+========================================================= */
+
+.repair-update-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border: 1px solid #BDE8ED;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #E8FAFC,
+            #F6FCFD
+        );
+}
+
+
+.repair-update-icon {
+    width: 58px;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 17px;
+
+    background: #18B6C9;
+
+    color: #ffffff;
+
+    font-size: 1.25rem;
+
+    box-shadow:
+        0 8px 18px rgba(24, 182, 201, 0.2);
+}
+
+
+.repair-update-content h2 {
+    margin: 0 0 6px;
+
+    color: #0B2E59;
+
+    font-size: 1.25rem;
+}
+
+
+.repair-update-content p {
+    margin: 0 0 8px;
+
+    color: #657985;
+
+    font-size: 0.75rem;
+
+    line-height: 1.6;
+}
+
+
+.update-date {
+    color: #8A9AA3;
+
+    font-size: 0.62rem;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.repair-section-heading {
+    margin-bottom: 25px;
+}
+
+
+.repair-section-heading h2 {
+    margin: 0 0 6px;
+
+    color: #0B2E59;
+
+    font-size: 1.55rem;
+}
+
+
+.repair-section-heading p {
+    margin: 0;
+
+    color: #7A8B95;
+
+    font-size: 0.72rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   REPAIR DETAILS
+========================================================= */
+
+.repair-details-section {
+    margin-top: 55px;
+}
+
+
+.repair-details-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.repair-detail-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 18px;
+
+    border: 1px solid #DFEBEF;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 6px 18px rgba(11, 46, 89, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.repair-detail-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 22px rgba(11, 46, 89, 0.08);
+}
+
+
+.repair-detail-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    font-size: 1rem;
+}
+
+
+/* DETAIL ICON COLOURS */
+
+.repair-detail-icon.blue {
+    background: #E5EFF9;
+
+    color: #315F91;
+}
+
+
+.repair-detail-icon.cyan {
+    background: #DDF7FA;
+
+    color: #18A6B6;
+}
+
+
+.repair-detail-icon.yellow {
+    background: #FFF2D1;
+
+    color: #D09100;
+}
+
+
+.repair-detail-icon.green {
+    background: #E2F7E9;
+
+    color: #2D8950;
+}
+
+
+.repair-detail-icon.orange {
+    background: #FFF0DC;
+
+    color: #D87820;
+}
+
+
+.repair-detail-icon.purple {
+    background: #EEE7FA;
+
+    color: #7650A5;
+}
+
+
+.repair-detail-card span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #82929B;
+
+    font-size: 0.6rem;
+
+    font-weight: 600;
+}
+
+
+.repair-detail-card strong {
+    display: block;
+
+    color: #0B2E59;
+
+    font-size: 0.75rem;
+}
+
+
+/* =========================================================
+   REPORTED PROBLEM
+========================================================= */
+
+.reported-problem-section {
+    margin-top: 45px;
+}
+
+
+.reported-problem-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    padding: 25px;
+
+    border: 1px solid #F1D99E;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFF9E9,
+            #FFFDF7
+        );
+}
+
+
+.reported-problem-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #FFF0C5;
+
+    color: #D39500;
+
+    font-size: 1.15rem;
+}
+
+
+.reported-problem-card h2 {
+    margin: 0 0 7px;
+
+    color: #0B2E59;
+
+    font-size: 1.1rem;
+}
+
+
+.reported-problem-card p {
+    margin: 0;
+
+    color: #6F7477;
+
+    font-size: 0.75rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   REPAIR PROGRESS
+========================================================= */
+
+.repair-progress-section {
+    margin-top: 55px;
+
+    padding: 30px;
+
+    border: 1px solid #DFEBEF;
+
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(11, 46, 89, 0.05);
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.repair-timeline {
+    position: relative;
+
+    margin-top: 30px;
+
+    padding-left: 35px;
+}
+
+
+.repair-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 18px;
+    bottom: 18px;
+
+    left: 16px;
+
+    width: 2px;
+
+    background: #DCE9ED;
+}
+
+
+.timeline-item {
+    position: relative;
+
+    display: flex;
+
+    gap: 18px;
+
+    min-height: 100px;
+
+    padding-bottom: 25px;
+}
+
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+
+/* =========================================================
+   TIMELINE MARKER
+========================================================= */
+
+.timeline-marker {
+    position: absolute;
+
+    left: -35px;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid #E3EDF0;
+
+    border-radius: 50%;
+
+    background: #F7FBFC;
+
+    color: #A0B0B7;
+
+    font-size: 0.75rem;
+
+    z-index: 2;
+}
+
+
+.timeline-item.completed .timeline-marker {
+    border-color: #42B96B;
+
+    background: #E1F7E8;
+
+    color: #2E9854;
+}
+
+
+.timeline-item.current .timeline-marker {
+    border-color: #18B6C9;
+
+    background: #DDF7FA;
+
+    color: #1599AA;
+
+    box-shadow:
+        0 0 0 5px rgba(24, 182, 201, 0.1);
+}
+
+
+/* =========================================================
+   TIMELINE CONTENT
+========================================================= */
+
+.timeline-content {
+    width: 100%;
+
+    padding: 3px 0;
+}
+
+
+.timeline-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 5px;
+}
+
+
+.timeline-content h3 {
+    margin: 0;
+
+    color: #0B2E59;
+
+    font-size: 0.9rem;
+}
+
+
+.timeline-content span {
+    flex-shrink: 0;
+
+    color: #8B9AA2;
+
+    font-size: 0.6rem;
+}
+
+
+.timeline-content p {
+    margin: 0;
+
+    max-width: 650px;
+
+    color: #758690;
+
+    font-size: 0.68rem;
+
+    line-height: 1.6;
+}
+
+
+.timeline-item.current .timeline-content h3 {
+    color: #1599AA;
+}
+
+
+/* =========================================================
+   TECHNICIAN NOTES
+========================================================= */
+
+.technician-notes-section {
+    margin-top: 45px;
+}
+
+
+.technician-notes-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    padding: 25px;
+
+    border: 1px solid #D8CCF0;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #F5F0FC,
+            #FCFAFF
+        );
+}
+
+
+.technician-notes-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #E9DFF8;
+
+    color: #7650A5;
+
+    font-size: 1.15rem;
+}
+
+
+.technician-notes-card h2 {
+    margin: 0 0 7px;
+
+    color: #0B2E59;
+
+    font-size: 1.1rem;
+}
+
+
+.technician-notes-card p {
+    margin: 0;
+
+    color: #6F7477;
+
+    font-size: 0.75rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   COLLECTION
+========================================================= */
+
+.collection-section {
+    margin-top: 45px;
+}
+
+
+.collection-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #E5F8EB,
+            #F5FCF7
+        );
+
+    border: 1px solid #C7E9D1;
+}
+
+
+.collection-icon {
+    width: 60px;
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 17px;
+
+    background: #CFF1D9;
+
+    color: #2B8A4D;
+
+    font-size: 1.3rem;
+}
+
+
+.collection-card h2 {
+    margin: 0 0 7px;
+
+    color: #0B2E59;
+
+    font-size: 1.2rem;
+}
+
+
+.collection-card p {
+    margin: 0 0 15px;
+
+    color: #687B73;
+
+    font-size: 0.72rem;
+
+    line-height: 1.6;
+}
+
+
+.collection-location {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    color: #32784A;
+
+    font-size: 0.68rem;
+
+    line-height: 1.5;
+}
+
+
+.collection-location i {
+    margin-top: 2px;
+
+    color: #2B8A4D;
+}
+
+
+/* =========================================================
+   NEED HELP
+========================================================= */
+
+.repair-help-section {
+    margin-top: 55px;
+}
+
+
+.repair-help-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 28px 30px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0B2E59,
+            #14577C
+        );
+
+    box-shadow:
+        0 10px 25px rgba(11, 46, 89, 0.12);
+}
+
+
+.repair-help-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: #7DE8F2;
+
+    font-size: 1.25rem;
+}
+
+
+.repair-help-content > div:nth-child(2) {
+    flex: 1;
+}
+
+
+.repair-help-content span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #7DE8F2;
+
+    font-size: 0.6rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+
+.repair-help-content h2 {
+    margin: 0 0 5px;
+
+    color: #ffffff;
+
+    font-size: 1.05rem;
+}
+
+
+.repair-help-content p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 0.68rem;
+
+    line-height: 1.5;
+}
+
+
+.repair-help-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+
+    padding: 11px 17px;
+
+    border-radius: 10px;
+
+    background: #18B6C9;
+
+    color: #ffffff;
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.repair-help-button:hover {
+    background: #7DE8F2;
+
+    color: #0B2E59;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .repair-details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .repair-header-card {
+        align-items: flex-start;
+    }
+
+
+    .repair-status-wrapper {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .repairs-hero {
+        min-height: 280px;
+
+        padding: 50px 15px;
+    }
+
+
+    .repairs-hero h1 {
+        font-size: 2.4rem;
+    }
+
+
+    .repairs-hero p {
+        font-size: 0.8rem;
+    }
+
+
+    .repair-content {
+        padding: 45px 15px 65px;
+    }
+
+
+    .repair-container {
+        width: 100%;
+    }
+
+
+    /* HEADER */
+
+    .repair-header-card {
+        flex-direction: column;
+
+        gap: 22px;
+
+        padding: 23px;
+
+        border-radius: 18px;
+    }
+
+
+    .repair-header-left {
+        width: 100%;
+    }
+
+
+    .repair-status-wrapper {
+        align-items: flex-start;
+    }
+
+
+    /* UPDATE */
+
+    .repair-update-card {
+        align-items: flex-start;
+
+        padding: 20px;
+
+        border-radius: 17px;
+    }
+
+
+    /* DETAILS */
+
+    .repair-details-section {
+        margin-top: 40px;
+    }
+
+
+    .repair-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PROBLEM */
+
+    .reported-problem-card,
+    .technician-notes-card {
+        padding: 20px;
+    }
+
+
+    /* TIMELINE */
+
+    .repair-progress-section {
+        padding: 22px 18px;
+
+        border-radius: 18px;
+    }
+
+
+    .repair-timeline {
+        padding-left: 30px;
+    }
+
+
+    .repair-timeline::before {
+        left: 13px;
+    }
+
+
+    .timeline-marker {
+        left: -30px;
+
+        width: 29px;
+        height: 29px;
+
+        font-size: 0.65rem;
+    }
+
+
+    .timeline-top {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 4px;
+    }
+
+
+    /* COLLECTION */
+
+    .collection-card {
+        align-items: flex-start;
+
+        padding: 22px;
+    }
+
+
+    /* HELP */
+
+    .repair-help-content {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+
+        padding: 23px;
+    }
+
+
+    .repair-help-content > div:nth-child(2) {
+        width: calc(100% - 75px);
+
+        flex: none;
+    }
+
+
+    .repair-help-button {
+        margin-left: 75px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .repair-header-left {
+        align-items: flex-start;
+    }
+
+
+    .repair-device-icon {
+        width: 55px;
+        height: 55px;
+
+        border-radius: 15px;
+
+        font-size: 1.3rem;
+    }
+
+
+    .repair-header-card h2 {
+        font-size: 1.15rem;
+    }
+
+
+    .repair-update-card {
+        flex-direction: column;
+    }
+
+
+    .repair-update-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .reported-problem-card,
+    .technician-notes-card {
+        flex-direction: column;
+    }
+
+
+    .collection-card {
+        flex-direction: column;
+    }
+
+
+    .repair-help-content > div:nth-child(2) {
+        width: 100%;
+    }
+
+
+    .repair-help-button {
+        margin-left: 0;
     }
 
 }
